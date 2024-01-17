@@ -1,0 +1,196 @@
+
+.typography-h680 {
+  @include typography-h680;
+}
+
+.typography-h620 {
+  @include typography-h620;
+}
+
+.typography-h580 {
+  @include typography-h580;
+}
+
+.typography-h520 {
+  @include typography-h520;
+}
+
+.typography-h480 {
+  @include typography-h480;
+}
+
+.typography-h420 {
+  @include typography-h420;
+}
+
+.typography-h380 {
+  @include typography-h380;
+}
+
+.typography-h370 {
+  @include typography-h370;
+}
+
+.typography-h320 {
+  @include typography-h320;
+}
+
+.typography-h319 {
+  @include typography-h319;
+}
+
+.typography-h280 {
+  @include typography-h280;
+}
+
+.typography-h220 {
+  @include typography-h220;
+}
+
+.typography-h219 {
+  @include typography-h219;
+}
+
+.typography-h180 {
+  @include typography-h180;
+}
+
+.typography-h182 {
+  @include typography-h182;
+}
+
+.typography-h158 {
+  @include typography-h158;
+}
+
+.typography-h156 {
+  @include typography-h156;
+}
+
+.typography-h155 {
+  @include typography-h155;
+}
+
+.typography-h154 {
+  @include typography-h154;
+}
+
+.typography-h152 {
+  @include typography-h152;
+}
+
+.typography-h151 {
+  @include typography-h151;
+}
+
+.typography-h120 {
+  @include typography-h120;
+}
+
+.typography-h098 {
+  @include typography-h098;
+}
+
+.typography-h092 {
+  @include typography-h092;
+}
+
+.typography-h088 {
+  @include typography-h088;
+}
+
+.typography-h082 {
+  @include typography-h082;
+}
+
+.typography-h081 {
+  @include typography-h081;
+}
+
+.typography-h078 {
+  @include typography-h078;
+}
+
+.typography-h072 {
+  @include typography-h072;
+}
+
+.typography-h050 {
+  @include typography-h050;
+}
+
+h1, h2 {
+  margin-block-start: 1.5rem;
+  @include typography-h680;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+h3 {
+  margin-block-start: 1.5rem;
+  @include typography-h480;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+h4 {
+  margin-block-start: 1.5rem;
+  @include typography-h380;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+p {
+  margin-block-start: 1rem;
+  @include typography-h320;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+ul, ol {
+  margin-block-start: 1rem;
+  margin-left: 1.5rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-block-start: 0.5rem;
+  @include typography-h320;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+strong {
+  font-weight: var(--text-weight-bold);
+}
+
+a {
+  color: inherit;
+}

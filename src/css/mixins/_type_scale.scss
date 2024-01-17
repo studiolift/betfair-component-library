@@ -1,0 +1,206 @@
+// 600
+
+@mixin typography-h680 {
+  font-size: var(--text-size-10);
+  line-height: var(--line-height-7);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h620 {
+  font-size: var(--text-size-10);
+  line-height: var(--line-height-7);
+  font-weight: var(--text-weight-regular);
+}
+
+// 500
+
+@mixin typography-h580 {
+  font-size: var(--text-size-9);
+  line-height: var(--line-height-6);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h520 {
+  font-size: var(--text-size-9);
+  line-height: var(--line-height-6);
+  font-weight: var(--text-weight-regular);
+}
+
+// 400
+
+@mixin typography-h480 {
+  font-size: var(--text-size-8);
+  line-height: var(--line-height-5);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h420 {
+  font-size: var(--text-size-8);
+  line-height: var(--line-height-5);
+  font-weight: var(--text-weight-regular);
+}
+
+// 300
+
+@mixin typography-h380 {
+  font-size: var(--text-size-7);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--line-height-5);
+}
+
+@mixin typography-h370 {
+  font-size: var(--text-size-7);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--line-height-6);
+}
+
+@mixin typography-h320 {
+  font-size: var(--text-size-7);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-5);
+}
+
+@mixin typography-h319 {
+  font-size: var(--text-size-7);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-5);
+  -webkit-text-decoration-line: var(--line-through);
+  text-decoration-line: var(--line-through);
+}
+
+// 200
+
+@mixin typography-h280 {
+  font-size: var(--text-size-6);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--line-height-4);
+}
+
+@mixin typography-h220 {
+  font-size: var(--text-size-6);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-4);
+}
+
+@mixin typography-h219 {
+  font-size: var(--text-size-6);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-4);
+  -webkit-text-decoration-line: var(--line-through);
+  text-decoration-line: var(--line-through);
+}
+
+// 100
+
+@mixin typography-h180 {
+  font-size: var(--text-size-4);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--line-height-3);
+}
+
+@mixin typography-h182 {
+  font-size: var(--text-size-4);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--line-height-3);
+}
+
+@mixin typography-h158 {
+  font-size: var(--text-size-5);
+  line-height: var(--line-height-4);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h156 {
+  font-size: var(--text-size-5);
+  line-height: var(--line-height-4);
+  font-weight: var(--text-weight-regular);
+}
+
+@mixin typography-h155 {
+  font-size: var(--text-size-5);
+  line-height: var(--line-height-4);
+  -webkit-text-decoration-line: var(--line-through);
+  text-decoration-line: var(--line-through);
+  font-weight: var(--text-weight-regular);
+}
+
+@mixin typography-h154 {
+  font-size: var(--text-size-5);
+  line-height: var(--line-height-3);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h152 {
+  font-size: var(--text-size-5);
+  line-height: var(--line-height-3);
+  font-weight: var(--text-weight-regular);
+}
+
+@mixin typography-h151 {
+  font-size: var(--text-size-5);
+  -webkit-text-decoration-line: var(--line-through);
+  text-decoration-line: var(--line-through);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-3);
+}
+
+@mixin typography-h120 {
+  font-size: var(--text-size-4);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-3);
+}
+
+// < 100
+
+@mixin typography-h098 {
+  font-size: var(--text-size-3);
+  line-height: var(--line-height-3);
+  text-transform: var(--uppercase);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h092 {
+  font-size: var(--text-size-3);
+  line-height: var(--line-height-3);
+  text-transform: var(--uppercase);
+  font-weight: var(--text-weight-regular);
+}
+
+@mixin typography-h088 {
+  font-size: var(--text-size-3);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--line-height-3);
+}
+
+@mixin typography-h082 {
+  font-size: var(--text-size-3);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-3);
+}
+
+@mixin typography-h081 {
+  font-size: var(--text-size-3);
+  font-weight: var(--text-weight-regular);
+  line-height: var(--line-height-3);
+  -webkit-text-decoration-line: var(--line-through);
+  text-decoration-line: var(--line-through);
+}
+
+@mixin typography-h078 {
+  font-size: var(--text-size-2);
+  line-height: var(--line-height-2);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h072 {
+  font-size: var(--text-size-2);
+  line-height: var(--line-height-2);
+  letter-spacing: var(--letter-spacing-1);
+  font-weight: var(--text-weight-regular);
+}
+
+@mixin typography-h050 {
+  font-size: var(--text-size-1);
+  line-height: var(--line-height-1);
+  font-weight: var(--text-weight-regular);
+}

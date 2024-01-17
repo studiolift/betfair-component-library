@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box
+}
+
+*,:after,:before {
+  box-sizing: inherit
+}
+
+a,article,aside,audio,body,caption,dd,div,dl,dt,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,iframe,img,label,li,menu,nav,ol,p,section,span,table,tbody,td,tfoot,th,thead,time,tr,ul,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: initial;
+  text-decoration: none
+}
+
+body {
+  line-height: 1
+}
+
+ol,ul {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+button,input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  font-family: inherit
+}
