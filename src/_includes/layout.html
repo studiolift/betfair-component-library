@@ -1,37 +1,30 @@
 <html lang="en">
-<head>
+<head data-theme="light">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="{{ '/css/light.css' | url }}" />
   <link rel="stylesheet" href="{{ '/css/dark.css' | url }}" />
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+  <script src="{{ '/scripts/colour-theme.js' | url }}"></script>
 </head>
 <body>
   <div class="doc_layout">
     <header class="doc_layout__header">
       <h1 class="typography-h380">Betfair Component Library</h1>
       <nav>
-        <ul>
+        <ul class="menu_list">
           <li>
             <a href="/">
               Base Typography
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="System / Arrow (Small) Right">
-                  <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M9.40827 15.5687C9.57494 15.7271 9.78329 15.8104 9.99996 15.8104L9.99161 15.8271C10.2083 15.8271 10.4249 15.7437 10.5833 15.5854L16.175 10.0021L15.6847 9.51186C15.6275 9.42949 15.5558 9.35782 15.4735 9.30059L10.5833 4.41041C10.2583 4.08541 9.73327 4.08541 9.40827 4.41041C9.08327 4.73541 9.08327 5.26041 9.40827 5.58541L12.9749 9.15201H4.99999C4.54166 9.15201 4.16666 9.52701 4.16666 9.98534C4.16666 10.4437 4.54166 10.8187 4.99999 10.8187H12.9901L9.40827 14.3937C9.08327 14.7187 9.08327 15.2437 9.40827 15.5687Z"/>
-                </g>
-              </svg>
+              {% include "svg/arrow-right.svg" %}
             </a>
           </li>
         {% for component in collections.component %}
           <li>
             <a href="{{ component.url }}">
               {{ component.data.title }}
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="System / Arrow (Small) Right">
-                  <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M9.40827 15.5687C9.57494 15.7271 9.78329 15.8104 9.99996 15.8104L9.99161 15.8271C10.2083 15.8271 10.4249 15.7437 10.5833 15.5854L16.175 10.0021L15.6847 9.51186C15.6275 9.42949 15.5558 9.35782 15.4735 9.30059L10.5833 4.41041C10.2583 4.08541 9.73327 4.08541 9.40827 4.41041C9.08327 4.73541 9.08327 5.26041 9.40827 5.58541L12.9749 9.15201H4.99999C4.54166 9.15201 4.16666 9.52701 4.16666 9.98534C4.16666 10.4437 4.54166 10.8187 4.99999 10.8187H12.9901L9.40827 14.3937C9.08327 14.7187 9.08327 15.2437 9.40827 15.5687Z"/>
-                </g>
-              </svg>
+              {% include "svg/arrow-right.svg" %}
             </a>
           </li>
         {% endfor %}
@@ -43,6 +36,9 @@
         {{ content }}
       </div>
     </main>
+  </div>
+  <div class="theme_toggle">
+    <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
   </div>
 </body>
 </html>

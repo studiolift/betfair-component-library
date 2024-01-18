@@ -10,8 +10,35 @@
 @import "base/typography";
 @import "base/media";
 
-@import "component/nav_accordion";
+@import "component/accordion";
+@import "component/menu_list";
+@import "component/entry_summary";
+@import "component/card";
 
+.theme_toggle {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+
+  button {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    background-color: var(--neutrals-text-default);
+    border: 1px solid var(--neutrals-text-default);
+    color: var(--neutrals-background-elevation2, #FCFCFD);
+    border-radius: 4px;
+    @include typography-h180;
+    transition: ease 0.5s all;
+  }
+
+  button:hover,
+  button:focus {
+    outline: none;
+    background-color: var(--neutrals-background-elevation1);
+    color: var(--neutrals-text-default);
+  }
+
+}
 
 // Doc Layout Styles
 
@@ -37,44 +64,6 @@
 
   nav {
     margin-top: 0.5rem;
-  }
-
-  ul {
-    margin: 0;
-    list-style-type: none;
-  }
-
-  li {
-    margin: 0;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 153.846% */
-  }
-
-  li:first-child a {
-    border-radius: 4px 4px 0 0;
-  }
-
-  li:last-child a {
-    border-radius: 0 0 4px 4px;
-  }
-
-  li a {
-    background: var(--neutrals-background-elevation2, #FCFCFD);
-    padding: 0.75rem 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-    color: var(--neutrals-text-default, #18181A);
-  }
-
-  li a:hover {
-    background: var(--neutrals-background-elevation3, #FCFCFD);
-  }
-
-  li a svg {
-    fill: var(--neutrals-text-default, #18181A);
   }
 
 }

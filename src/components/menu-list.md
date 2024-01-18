@@ -1,0 +1,96 @@
+---
+title: Menu Lists
+date: 2024-01-01
+---
+
+# Menu Lists
+
+### Default
+<ul class="menu_list">
+  <li>
+    <a href="#">
+      {% include "svg/football.svg" %}
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      {% include "svg/horse-racing.svg" %}
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      {% include "svg/golf.svg" %}
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      {% include "svg/cricket.svg" %}
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+</ul>
+
+### Ruled
+<ul class="menu_list menu_list--ruled">
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+</ul>
+
+### Example HTML
+
+```html
+<!-- Default -->
+<ul class="menu_list">
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+      <svg style="margin-left: auto;" with="20" height="20" viewBox="0 0 20 20" fill="none"><g>
+        <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M9.40827 15.5687C9.57494 15.7271 9.78329 15.8104 9.99996 15.8104L9.99161 15.8271C10.2083 15.8271 10.4249 15.7437 10.5833 15.5854L16.175 10.0021L15.6847 9.51186C15.6275 9.42949 15.5558 9.35782 15.4735 9.30059L10.5833 4.41041C10.2583 4.08541 9.73327 4.08541 9.40827 4.41041C9.08327 4.73541 9.08327 5.26041 9.40827 5.58541L12.9749 9.15201H4.99999C4.54166 9.15201 4.16666 9.52701 4.16666 9.98534C4.16666 10.4437 4.54166 10.8187 4.99999 10.8187H12.9901L9.40827 14.3937C9.08327 14.7187 9.08327 15.2437 9.40827 15.5687Z"/>
+      </g></svg>
+    </a>
+  </li>
+</ul>
+
+<!-- Ruled -->
+<ul class="menu_list menu_list--ruled">
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+      <svg style="margin-left: auto;" with="20" height="20" viewBox="0 0 20 20" fill="none"><g>
+        <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M9.40827 15.5687C9.57494 15.7271 9.78329 15.8104 9.99996 15.8104L9.99161 15.8271C10.2083 15.8271 10.4249 15.7437 10.5833 15.5854L16.175 10.0021L15.6847 9.51186C15.6275 9.42949 15.5558 9.35782 15.4735 9.30059L10.5833 4.41041C10.2583 4.08541 9.73327 4.08541 9.40827 4.41041C9.08327 4.73541 9.08327 5.26041 9.40827 5.58541L12.9749 9.15201H4.99999C4.54166 9.15201 4.16666 9.52701 4.16666 9.98534C4.16666 10.4437 4.54166 10.8187 4.99999 10.8187H12.9901L9.40827 14.3937C9.08327 14.7187 9.08327 15.2437 9.40827 15.5687Z"/>
+      </g></svg>
+    </a>
+  </li>
+</ul>
+```

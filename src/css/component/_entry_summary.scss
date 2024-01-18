@@ -1,0 +1,92 @@
+.entry_summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.entry_summary__text {
+  display: flex;
+  flex-direction: column;
+  
+  .category {
+    @include typography-h092;
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  .title {
+    margin-block-start: 0.25rem;
+    @include typography-h280;
+  }
+
+  .title a {
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  .meta {
+    margin: 0;
+    margin-block-start: 0.25rem;
+    list-style-type: none;
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .meta li {
+    margin: 0;
+    @include typography-h092;
+    color: var(--neutrals-text-secondary, #444446);
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  & :last-child {
+    margin-block-start: auto !important;
+  }
+
+}
+
+.entry_summary__image {
+  position: relative;
+  flex: 7.5rem 0 0;
+  width: 7.5rem;
+  height: 7.5rem;
+  overflow: hidden;
+  border-radius: 4px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  a:hover img {
+    transition: ease 0.5s all;
+    transform: scale(1.1);
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include typography-h088;
+    text-transform: uppercase;
+    background-color: var(--brand-betfair-background-default, #FFB80C);
+    color: var(--agnostic-neutrals-text-default, #18181A);
+    padding: 0 0.25rem 0 0.5rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -0.375rem;
+      top: 0;
+      width: 0.375rem;
+      height: 100%;
+      background-color: var(--brand-betfair-background-default, #FFB80C);;
+      clip-path: polygon(100% 0%, 0 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    }
+    
+  }
+
+}
