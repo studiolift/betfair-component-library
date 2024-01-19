@@ -3,9 +3,9 @@ title: Accordion
 date: 2024-01-02
 ---
 
-# Accordion
+<h1>Accordion</h1>
 
-### Component Demo
+<h3>Component Demo</h3>
 
 <div class="accordion">
   <header class="accordion__title" onclick="toggleAccordion(this)">
@@ -42,16 +42,16 @@ date: 2024-01-02
   </div>
 </div>
 
-### Example HTML
+<h3>Example HTML</h3>
 
-```html
+{% highlight html %}
 <div class="accordion">
   <header class="accordion__title" onclick="toggleAccordion(this)">
   <div class="accordion__content">
     <!-- content goes here -->
   </div>
 </div>
-```
+{% endhighlight %}
 
 <script>
   function toggleAccordion(element) {

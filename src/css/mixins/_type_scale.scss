@@ -1,3 +1,17 @@
+// 700
+
+@mixin typography-h780 {
+  font-size: var(--text-size-11);
+  line-height: var(--line-height-8);
+  font-weight: var(--text-weight-bold);
+}
+
+@mixin typography-h720 {
+  font-size: var(--text-size-11);
+  line-height: var(--line-height-8);
+  font-weight: var(--text-weight-regular);
+}
+
 // 600
 
 @mixin typography-h680 {

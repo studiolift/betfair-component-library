@@ -2,7 +2,7 @@
   margin: 0;
   margin-block-start: 1rem;
   list-style-type: none;
-  background: var(--neutrals-background-elevation2, #fcfcfd);
+  background-color: var(--neutrals-background-elevation2, #fcfcfd);
   border-radius: 4px;
   overflow: clip;
 
@@ -22,7 +22,7 @@
   }
 
   li a:hover {
-    background: var(--neutrals-background-elevation3, #FCFCFD);
+    background-color: var(--neutrals-background-elevation3, #FCFCFD);
   }
 
   li:last-child {
@@ -36,7 +36,7 @@
 }
 
 .menu_list--ruled {
-  background: var(--neutrals-background-elevation3, #EAEAEB);
+  background-color: var(--neutrals-background-elevation3, #EAEAEB);
 
   li {
     border-bottom: 1px solid var(--neutrals-border-elevation2, #D0D0D2);

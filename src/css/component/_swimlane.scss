@@ -1,0 +1,23 @@
+.swimlane {
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 90%;
+  gap: 0.75rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 0.75rem;
+
+  & > * {
+    margin: 0;
+    scroll-snap-align: center;
+  }
+
+}

@@ -1,0 +1,56 @@
+.most_read {
+  margin: 0;
+  list-style-type: none;
+  counter-reset: numbers;
+
+  li {
+    position: relative;
+    margin-block-start: 0.5rem;
+    padding-block-start: 0.5rem;
+    border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
+    padding-left: 3rem;
+  }
+
+  li:first-child {
+    margin-block-start: 0;
+    padding-block-start: 0;
+    border-top: 0;
+  }
+
+  li::before {
+    counter-increment: numbers;
+    content: counter(numbers, decimal-leading-zero);
+    @include typography-h720;
+    color: var(--neutrals-text-secondary, #444446);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.48;
+    width: 2.5rem;
+    text-align: center;
+  }
+
+  li:first-child:before {
+    top: -0.5rem
+  }
+  
+  .category {
+    @include typography-h092;
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  .title {
+    margin-block-start: 0;
+    @include typography-h280;
+  }
+
+  .title a {
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+}
