@@ -1,0 +1,17 @@
+.button_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 1rem;
+
+  li {
+    margin: 0;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+}

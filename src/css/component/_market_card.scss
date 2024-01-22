@@ -1,0 +1,25 @@
+.market_card {
+  margin-block-start: 0.5rem;
+  padding-block-start: 0.5rem;
+  border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  &:first-child {
+    margin-block-start: 0;
+    padding-block-start: 0;
+    border-top: 0;
+  }
+
+}
+
+.market_card__description {
+  margin-right: auto;
+  padding-right: 0.75rem;
+
+  p {
+    @include typography-h152;
+  }
+
+}

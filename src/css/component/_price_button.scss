@@ -1,0 +1,37 @@
+.price_button {
+  display: block;
+  border-radius: 4px;
+  background-color: var(--action-sportsbook-background-default, #007385);
+  display: flex;
+  height: 48px;
+  min-width: 48px;
+  padding: 0px 1px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--action-sportsbook-text-secondary, #FCFCFD);
+  @include typography-h280;
+
+  &:hover,
+  &:focus {
+    background-color: var(--action-sportsbook-background-hover, #006170);
+  }
+
+}
+
+.price_button__label {
+  display: block;
+  @include typography-h082;
+  color: var(--action-sportsbook-text-secondary, #FCFCFD);
+}
+
+.price_button--exc {
+  background-color: var(--action-exchange-back-background-default, #395ACF);
+
+  &:hover,
+  &:focus {
+    background-color: var(--action-exchange-back-background-hover, #2d499c);
+  }
+
+}
