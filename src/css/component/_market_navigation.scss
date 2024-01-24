@@ -1,0 +1,46 @@
+.market_navigation {
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 1rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.market_navigation__item {
+  margin: 0;
+  text-align: center;
+  @include typography-h098;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    svg {
+      display: block;
+      margin-inline: auto;
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+
+    svg {
+      fill: var(--agnostic-action-primary-text-default, #ffb80c);
+    }
+
+  }
+
+}

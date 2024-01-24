@@ -25,6 +25,10 @@
     background-color: var(--neutrals-background-elevation3, #FCFCFD);
   }
 
+  .active a {
+    background-color: var(--neutrals-background-elevation4, #e0e0e1);
+  }
+
   li:last-child {
     border-bottom: 0;
   }
@@ -43,7 +47,7 @@
   }
 
   li a:hover {
-    background: var(--neutrals-background-elevation4, #FCFCFD);
+    background: var(--neutrals-background-elevation4, #e0e0e1);
   }
 
 }

@@ -14,14 +14,14 @@
       <h1 class="typography-h380">Betfair Component Library</h1>
       <nav>
         <ul class="menu_list">
-          <li>
+          <li class="{% if title == 'Base Typography' %}active{% endif %}">
             <a href="/">
               Base Typography
               {% include "svg/arrow-right.svg" %}
             </a>
           </li>
         {% for component in collections.component %}
-          <li>
+          <li class="{% if title == component.data.title %}active{% endif %}">
             <a href="{{ component.url }}">
               {{ component.data.title }}
               {% include "svg/arrow-right.svg" %}
@@ -34,6 +34,7 @@
     </header>
     <main class="doc_layout__main">
       <div class="component_content">
+        <h1>{{ title }}</h1>
         {{ content }}
       </div>
     </main>
