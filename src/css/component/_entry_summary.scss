@@ -100,3 +100,24 @@
   }
 
 }
+
+.entry_summary--vertical {
+  //display: grid;
+  //height: 100%;
+  flex-direction: column;
+
+  .entry_summary__image {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .entry_summary__text {
+    flex-grow: 1;
+  }
+
+}
