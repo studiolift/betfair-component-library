@@ -1,0 +1,84 @@
+.tab_navigation {
+  --tab-spacing: 0.5rem;
+  padding-inline: var(--tab-spacing);
+  margin: 0;
+  margin-block-start: 1rem;
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  background-color: pink;
+  background: var(--components-navigation-tabs-background-elevation1, linear-gradient(0deg, #E0E0E1 0%, #F2F2F3 100%));
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.tab_navigation__item {
+  margin: 0;
+  text-wrap: nowrap;
+  padding: 0.75rem 0.5rem;
+  border-radius: var(--tab-spacing) var(--tab-spacing) 0 0;
+  @include typography-h280;
+
+  a {
+    position: relative;
+    display: block;
+    color: var(--components-navigation-tabs-text-unselected, #444446);
+  }
+
+  a:before {
+    content: '';
+    position: absolute;
+    top: -0.75rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    border-radius: 0 0 2px 2px;
+  }
+
+  a:hover:before,
+  a:focus:before {
+    background-color: var(--components-navigation-tabs-background-active, #18181A);
+    opacity: 0.37;
+  }
+
+}
+
+.tab_navigation__item.active {
+  position: relative;
+  background: var(--components-navigation-tabs-background-elevation2);
+  
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: var(--tab-spacing);
+    height: var(--tab-spacing);
+    bottom: 0;
+    background: var(--components-navigation-tabs-background-elevation2);
+  }
+  
+  &:before {
+    left: calc(var(--tab-spacing) * -1);
+    clip-path: polygon( 100% 0%,100% 0%,98.692% 16.226%,94.904% 31.616%,88.842% 45.965%,80.712% 59.068%,70.719% 70.719%,59.068% 80.712%,45.965% 88.842%,31.616% 94.904%,16.226% 98.692%,0% 100%,100% 100%,100% 0%,100% 0% );
+  }
+  
+  &:after {
+    right: calc(var(--tab-spacing) * -1);
+    clip-path: polygon( 100% 100%,100% 100%,83.774% 98.692%,68.384% 94.904%,54.035% 88.842%,40.932% 80.712%,29.281% 70.719%,19.288% 59.068%,11.158% 45.965%,5.096% 31.616%,1.308% 16.226%,0% 0%,0% 100%,100% 100% );
+  }
+
+  a {
+    color: var(--components-navigation-tabs-text-active, #18181A);
+  }
+
+  a:before {
+    background-color: var(--components-navigation-tabs-background-active, #18181A);
+  }
+
+}
+

@@ -1,6 +1,6 @@
 ---
 title: Accordion
-date: 2024-01-02
+date: 2024-01-03
 ---
 
 <h3>Component Demo</h3>
@@ -8,7 +8,7 @@ date: 2024-01-02
 <div class="accordion">
   <header class="accordion__title" onclick="toggleAccordion(this)">
     <h3>Title</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M9.99374 13.6771L4.41041 8.08542C4.08541 7.76042 4.08541 7.23542 4.41041 6.91042C4.73541 6.58542 5.26041 6.58542 5.58541 6.91042L9.98541 11.3188L14.4021 6.91042C14.7271 6.58542 15.2521 6.58542 15.5771 6.91042C15.9021 7.23542 15.9021 7.76042 15.5771 8.08542L9.98541 13.6771H9.99374Z"/></svg>
+    {% include "svg/accordion.svg" %}
   </header>
   <div class="accordion__content">
     <ul class="menu_list menu_list--ruled">
@@ -45,29 +45,11 @@ date: 2024-01-02
 {% highlight html %}
 <div class="accordion">
   <header class="accordion__title" onclick="toggleAccordion(this)">
+    <h3>Title</h3>
+    {% include "svg/accordion.svg" %}
+  </header>
   <div class="accordion__content">
     <!-- content goes here -->
   </div>
 </div>
 {% endhighlight %}
-
-<script>
-  function toggleAccordion(element) {
-      // Find the nearest parent element with class .nav_accordion
-      var accordion = findNearestParent(element, 'accordion');
-
-      // Toggle the class .nav_accordion--active
-      if (accordion) {
-          accordion.classList.toggle('accordion--show');
-      }
-  }
-
-  function findNearestParent(element, className) {
-      // Traverse up the DOM to find the nearest parent with the specified class
-      while (element && !element.classList.contains(className)) {
-          element = element.parentElement;
-      }
-
-      return element;
-  }
-</script>

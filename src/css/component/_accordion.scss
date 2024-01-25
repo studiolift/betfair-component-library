@@ -18,9 +18,14 @@
   justify-content: space-between;
   gap: 1rem;
 
-  h2, h3, h4 {
+  h1, h2, h3, h4, h5 {
     margin: 0;
     @include typography-h280;
+  }
+
+  svg {
+    flex-shrink: 0;
+    transition: 200ms ease all;
   }
 
 }
@@ -38,6 +43,7 @@
 
   .accordion__content {
     display: block;
+    height: auto;
   }
 
 }
