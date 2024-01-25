@@ -169,7 +169,6 @@ p {
 ul, ol {
   margin-block-start: 1rem;
   margin-left: 1.5rem;
-  @include typography-h220;
 
   &:first-child {
     margin-block-start: 0;
@@ -187,7 +186,7 @@ ol {
 
 li {
   margin-block-start: 0.5rem;
-  @include typography-h320;
+  @include typography-h220;
 
   &:first-child {
     margin-block-start: 0;
