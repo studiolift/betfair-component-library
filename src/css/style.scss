@@ -14,7 +14,9 @@
 @import "component/button_group";
 @import "component/price_button";
 @import "component/menu_list";
+@import "component/tab_navigation";
 @import "component/market_navigation";
+@import "component/quick_links";
 @import "component/card";
 @import "component/market_card";
 @import "component/entry_summary";
@@ -53,26 +55,23 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  max-width: 600px;
+  max-width: 37.5rem;
   margin-inline: auto;
-  padding: 3rem;
-  gap: 3rem;
+  padding: 2rem;
+  gap: 2rem;
 
   @include media('>920px') {
-    grid-template-columns: 200px 3fr;
-    max-width: 960px;
+    grid-template-columns: 15rem 1fr;
+    max-width: 60rem;
     margin-inline: auto;
+    padding: 4rem;
+    gap: 4rem;
   }
 
 }
 
 .doc_layout__header {
-  background-color: var(--neutrals-background-elevation1);  
-
-  nav {
-    margin-top: 0.5rem;
-  }
-
+  background-color: var(--neutrals-background-elevation1);
 }
 
 .doc_layout__main {

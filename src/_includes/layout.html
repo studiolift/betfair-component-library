@@ -7,30 +7,38 @@
   <link rel="stylesheet" href="{{ '/css/dark.css' | url }}" />
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
   <script src="{{ '/scripts/colour-theme.js' | url }}"></script>
+  <script src="{{ '/scripts/accordion.js' | url }}"></script>
 </head>
 <body>
   <div class="doc_layout">
     <header class="doc_layout__header">
       <h1 class="typography-h380">Betfair Component Library</h1>
-      <nav>
-        <ul class="menu_list">
-          <li class="{% if title == 'Base Typography' %}active{% endif %}">
-            <a href="/">
-              Base Typography
-              {% include "svg/arrow-right.svg" %}
-            </a>
-          </li>
-        {% for component in collections.component %}
-          <li class="{% if title == component.data.title %}active{% endif %}">
-            <a href="{{ component.url }}">
-              {{ component.data.title }}
-              {% include "svg/arrow-right.svg" %}
-            </a>
-          </li>
-        {% endfor %}
-        </ul>
-      </nav>
-      <p class="typography-h180">&copy; Betfair 2024</p>
+      <div class="accordion accordion--show">
+        <header class="accordion__title" onclick="toggleAccordion(this)">
+          <h1>Components</h1>
+          {% include "svg/accordion.svg" %}
+        </header>
+        <div class="accordion__content">
+          <nav>
+            <ul class="menu_list menu_list--ruled">
+              <li class="{% if title == 'Base Typography' %}active{% endif %}">
+                <a href="/">
+                  Base Typography
+                  {% include "svg/arrow-right.svg" %}
+                </a>
+              </li>
+            {% for component in collections.component %}
+              <li class="{% if title == component.data.title %}active{% endif %}">
+                <a href="{{ component.url }}">
+                  {{ component.data.title }}
+                  {% include "svg/arrow-right.svg" %}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>   
     </header>
     <main class="doc_layout__main">
       <div class="component_content">
@@ -38,6 +46,9 @@
         {{ content }}
       </div>
     </main>
+    <footer>
+      <p class="typography-h180">&copy; Betfair 2024</p>
+    </footer>
   </div>
   <div class="theme_toggle">
     <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
