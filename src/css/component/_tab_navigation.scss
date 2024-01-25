@@ -19,6 +19,7 @@
 .tab_navigation__item {
   margin: 0;
   text-wrap: nowrap;
+  white-space: nowrap;
   padding: 0.75rem 0.5rem;
   border-radius: var(--tab-spacing) var(--tab-spacing) 0 0;
   @include typography-h280;
