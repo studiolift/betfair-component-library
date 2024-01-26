@@ -1,0 +1,11 @@
+.article_card {
+  margin-block-start: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background-color: var(--neutrals-background-elevation3, #EAEAEB);
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}

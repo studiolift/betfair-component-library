@@ -1,0 +1,49 @@
+.featured_runner {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.featured_runner__number {
+  flex: 0 0 1.5rem;
+  text-align: center;
+
+  .number {
+    @include typography-h158;
+  }
+
+  .position {
+    @include typography-h120;
+  }
+
+}
+
+.featured_runner__silks {
+  flex: 0 0 2rem;
+}
+
+.featured_runner__details {
+
+  .name {
+    margin: 0;
+    color: var(--neutrals-text-default, #18181A);
+    @include typography-h156;
+  }
+
+  .team {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .team li {
+    margin: 0;
+    color: var(--neutrals-text-secondary, #444446);
+    @include typography-h120;
+  }
+  
+}
+
+
+.featured_runner__price {
+  margin-left: auto;
+  align-self: center;
+}
