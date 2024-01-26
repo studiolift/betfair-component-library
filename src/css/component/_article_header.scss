@@ -1,0 +1,40 @@
+.article_header {
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.article_header__tag a {
+  display: inline-block;
+  border-radius: 2px;
+  background: var(--agnostic-neutrals-background-alternative, #232325);
+  color: var(--agnostic-neutrals-text-alternative, #FCFCFD);
+  @include typography-h078;
+  text-transform: uppercase;
+  padding: 0 0.25rem;
+}
+
+.article_header__title {
+  margin-block-start: 0.5rem;
+  color: var(--neutrals-text-default, #18181A);
+  @include typography-h680;
+}
+
+.article_header__meta {
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  li {
+    margin: 0;
+    color: var(--neutrals-text-secondary, #444446);
+    @include typography-h092;
+  }
+
+}
