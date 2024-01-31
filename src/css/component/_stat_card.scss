@@ -1,0 +1,27 @@
+.stat_card {
+  margin-block-start: 1rem;
+  border-radius: 4px;
+  overflow: clip;
+  background: var(--neutrals-background-elevation2, #FCFCFD);
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.stat_card__title {
+  padding: 0.5rem;
+  background-color: var(--neutrals-background-elevation4, #E0E0E1);
+
+  h1, h2, h3, h4, h5 {
+    color: var(--neutrals-text-default, #18181A);
+    @include typography-h380;
+  }
+
+}
+
+.stat_card__content {
+  padding: 0.5rem;
+
+}

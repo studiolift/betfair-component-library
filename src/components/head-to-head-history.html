@@ -1,0 +1,53 @@
+---
+title: Head to Head History
+date: 2024-01-04
+tags: stats
+---
+
+<h3>Default</h3>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Head to Head History</h2>
+  </header>
+  <div class="stat_card__content">
+    <div style="--stat_percent: 100%" class="head_to_head">
+      <span class="label">Label</span>
+      <span class="home">10</span>
+      <span class="away">0</span>
+    </div>
+    <div style="--stat_percent: 50%" class="head_to_head">
+      <span class="label">Label</span>
+      <span class="home">1</span>
+      <span class="away">1</span>
+    </div>
+    <div style="--stat_percent: 10%" class="head_to_head">
+      <span class="label">Label</span>
+      <span class="home">1</span>
+      <span class="away">10</span>
+    </div>
+    <div style="--stat_percent: 85.7142857143%" class="head_to_head">
+      <span class="label">Label</span>
+      <span class="home">6</span>
+      <span class="away">7</span>
+    </div>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Head to Head History</h2>
+  </header>
+  <div class="stat_card__content">
+    <!-- Pass the data into a custom property called stat_percent for each head_to_head stat -->
+    <div style="--stat_percent: 50%" class="head_to_head">
+      <span class="label">Label</span>
+      <span class="home">1</span>
+      <span class="away">1</span>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
