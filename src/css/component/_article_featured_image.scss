@@ -1,0 +1,15 @@
+.article_featured_image {
+  margin-block-start: 1rem;
+
+  img {
+    border-radius: 4px;
+  }
+
+  figcaption {
+    margin-block-start: 0.5rem;
+    @include typography-h098;
+    color: var(--neutrals-text-secondary, #444446);
+    text-overflow: ellipsis;
+  }
+
+}

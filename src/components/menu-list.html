@@ -1,6 +1,7 @@
 ---
 title: Menu Lists
-date: 2024-01-01
+date: 2024-01-02
+tags: navigation
 ---
 
 <h3>Default</h3>
@@ -64,6 +65,16 @@ date: 2024-01-01
   </li>
 </ul>
 
+<h3>Alternative</h3>
+<ul class="menu_list menu_list--alt">
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+</ul>
+
 <h3>Example HTML</h3>
 
 {% highlight html %}
@@ -79,6 +90,16 @@ date: 2024-01-01
 
 <!-- Ruled -->
 <ul class="menu_list menu_list--ruled">
+  <li>
+    <a href="#">
+      Navigation Item
+      {% include "svg/arrow-right.svg" %}
+    </a>
+  </li>
+</ul>
+
+<!-- Alt -->
+<ul class="menu_list menu_list--alt">
   <li>
     <a href="#">
       Navigation Item

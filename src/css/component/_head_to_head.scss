@@ -1,0 +1,54 @@
+.head_to_head {
+  --stat_percent: -2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  .home,
+  .away {
+    min-width: 3rem;
+    color: var(--neutrals-text-default, #18181A);
+    @include typography-h380;
+    order: 1;
+  }
+
+  .label {
+    color: var(--neutrals-text-default, #18181A);
+    @include typography-h120;
+    order: 2;
+  }
+
+  .away {
+    order: 3;
+    text-align: right;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.25rem;
+    border-radius: 2px;
+  }
+  
+  &:before {
+    width: 100%;
+    background: linear-gradient(
+      90deg, 
+      var(--signposting-indicators-rich-content-icon-home-team, #3073E7) 0%, 
+      var(--signposting-indicators-rich-content-icon-home-team, #3073E7) var(--stat_percent), 
+      rgba(255,255,255,0) var(--stat_percent), 
+      rgba(255,255,255,0) calc(var(--stat_percent) + 2px), 
+      var(--signposting-indicators-rich-content-icon-away-team, #E27229) calc(var(--stat_percent) + 2px), 
+      var(--signposting-indicators-rich-content-icon-away-team, #E27229) 100%);
+  }
+
+}

@@ -1,0 +1,115 @@
+---
+title: Match Results
+date: 2024-01-04
+tags: stats
+---
+
+<h3>Default</h3>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Previous Results</h2>
+  </header>
+  <div class="stat_card__content">
+    <h3 class="match_result_date">27 Nov 2023</h3>
+    <div class="match_result">
+      <span class="match_result__home_team">Liverpool</span>
+      <span class="match_result__home_goals">4</span>
+      <span class="match_result__away_team">Sheffield Utd</span>
+      <span class="match_result__away_goals">1</span>
+    </div>
+    <h3 class="match_result_date">1 March 2023</h3>
+    <div class="match_result">
+      <span class="match_result__home_team">Sheffield Utd</span>
+      <span class="match_result__home_goals">1</span>
+      <span class="match_result__away_team">Liverpool</span>
+      <span class="match_result__away_goals">1</span>
+    </div>
+    <h3 class="match_result_date">4 Jan 2022</h3>
+    <div class="match_result">
+      <span class="match_result__home_team">Liverpool</span>
+      <span class="match_result__home_goals">2</span>
+      <span class="match_result__away_team">Sheffield Utd</span>
+      <span class="match_result__away_goals">0</span>
+    </div>
+  </div>
+</div>
+
+<h3>Form Guide</h3>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Sheffield Utd Form</h2>
+  </header>
+  <div class="stat_card__content">
+    <h3 class="match_result_date">27 Nov 2023</h3>
+    <div class="match_result match_result--home-win">
+      <span class="match_result__home_team">Sheffield Utd</span>
+      <span class="match_result__home_goals">3</span>
+      <span class="match_result__away_team">Luton</span>
+      <span class="match_result__away_goals">2</span>
+    </div>
+    <h3 class="match_result_date">1 March 2023</h3>
+    <div class="match_result match_result--away-loss">
+      <span class="match_result__home_team">Arsenal</span>
+      <span class="match_result__home_goals">3</span>
+      <span class="match_result__away_team">Sheffield Utd</span>
+      <span class="match_result__away_goals">1</span>
+    </div>
+    <h3 class="match_result_date">4 Jan 2022</h3>
+    <div class="match_result">
+      <span class="match_result__home_team">Fulham</span>
+      <span class="match_result__home_goals">1</span>
+      <span class="match_result__away_team">Sheffield Utd</span>
+      <span class="match_result__away_goals">1</span>
+    </div>
+    <h3 class="match_result_date">4 Jan 2022</h3>
+    <div class="match_result match_result--home-loss">
+      <span class="match_result__home_team">Sheffield Utd</span>
+      <span class="match_result__home_goals">1</span>
+      <span class="match_result__away_team">Notts Forest</span>
+      <span class="match_result__away_goals">2</span>
+    </div>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Default -->
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Previous Results</h2>
+  </header>
+  <div class="stat_card__content">
+    <h3 class="match_result_date">27 Nov 2023</h3>
+    <div class="match_result">
+      <span class="match_result__home_team">Liverpool</span>
+      <span class="match_result__home_goals">4</span>
+      <span class="match_result__away_team">Sheffield Utd</span>
+      <span class="match_result__away_goals">1</span>
+    </div>
+  </div>
+</div>
+
+<!-- Form Guide -->
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Sheffield Utd Form</h2>
+  </header>
+  <div class="stat_card__content">
+    <h3 class="match_result_date">27 Nov 2023</h3>
+    <div class="match_result match_result--home-win">
+      <span class="match_result__home_team">Sheffield Utd</span>
+      <span class="match_result__home_goals">3</span>
+      <span class="match_result__away_team">Luton</span>
+      <span class="match_result__away_goals">2</span>
+    </div>
+    <!-- Modifier classes for form:
+      .match_result--home-loss 
+      .match_result--away-loss 
+      .match_result--home-win 
+      .match_result--away-win 
+    -->
+  </div>
+</div>
+{% endhighlight %}
