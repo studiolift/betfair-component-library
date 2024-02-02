@@ -135,6 +135,7 @@
 
 .doc_layout__nav {
   transition: ease 0.5s left;
+  z-index: 99999;
 
   @include media('<920px') {
     position: absolute;
