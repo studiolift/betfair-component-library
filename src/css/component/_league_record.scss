@@ -1,0 +1,21 @@
+.league_record {
+  width: 100%;
+
+  th, td {
+    text-align: left;
+    padding: 0.5rem;
+    @include typography-h280;
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  td {
+    border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
+    @include typography-h220;
+  }
+
+  td:last-child,
+  th:last-child {
+    text-align: right;
+  }
+
+}

@@ -38,6 +38,9 @@
 @import "component/match_preview";
 @import "component/stat_chip";
 @import "component/team_form";
+@import "component/league_record";
+@import "component/recommended_bet";
+
 
 .theme_toggle {
   padding: 1rem;
@@ -66,6 +69,51 @@
 
 // Doc Layout Styles
 
+.doc_header {
+  background-color: var(--components-navigation-header-background-default, #FFB80C);
+  padding: 0.5rem 0.75rem;
+  min-height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doc_header__menu_toggle {
+  cursor: pointer;
+
+  @include media('>920px') {
+    display: none;
+  }
+
+}
+
+.doc_header__menu_toggle.active {
+  position: relative;
+
+  svg {
+    fill: none;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 1rem;
+    height: 0.125rem;
+    border-radius: 2px;
+    background-color: var(--neutrals-text-default);
+  }
+
+  &:after {
+    content: '';
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+}
+
 .doc_layout {
   display: grid;
   grid-template-columns: 100%;
@@ -85,6 +133,21 @@
 
 }
 
-.doc_layout__header {
-  background-color: var(--neutrals-background-elevation1);
+.doc_layout__nav {
+  transition: ease 0.5s left;
+
+  @include media('<920px') {
+    position: absolute;
+    top: 3.75rem;
+    left: -100%;
+    padding: 1rem;
+    background-color: var(--neutrals-background-elevation1);
+    border-bottom: 2px solid var(--neutrals-background-elevation3);
+    width: 100%;
+  }
+
+}
+
+.doc_layout__nav--show {
+  left: 0;
 }

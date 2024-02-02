@@ -8,13 +8,20 @@
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="{{ '/scripts/colour-theme.js' | url }}"></script>
+  <script src="{{ '/scripts/main-nav.js' | url }}"></script>
   <script src="{{ '/scripts/accordion.js' | url }}"></script>
   <script src="{{ '/scripts/show-more.js' | url }}"></script>
 </head>
 <body>
+  <header class="doc_header">
+    <h1 class="typography-h380">Betfair Component Library</h1>
+    <div class="doc_header__menu_toggle" onclick="toggleNav()">
+      {% include "svg/menu.svg" %}
+    </div>
+  </header>
+
   <div class="doc_layout">
-    <header class="doc_layout__header">
-      <h1 class="typography-h380">Betfair Component Library</h1>
+    <nav class="doc_layout__nav">
       <ul class="menu_list menu_list--alt">
         <li class="{% if title == 'Base Typography' %}active{% endif %}">
           <a href="/">
@@ -30,18 +37,16 @@
           {% include "svg/accordion.svg" %}
         </header>
         <div class="accordion__content">
-          <nav>
-            <ul class="menu_list menu_list--ruled">
-            {% for component in collections.navigation %}
-              <li class="{% if title == component.data.title %}active{% endif %}">
-                <a href="{{ component.url }}">
-                  {{ component.data.title }}
-                  {% include "svg/arrow-right.svg" %}
-                </a>
-              </li>
-            {% endfor %}
-            </ul>
-          </nav>
+          <ul class="menu_list menu_list--ruled">
+          {% for component in collections.navigation %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+                {% include "svg/arrow-right.svg" %}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
       </div>
       <div class="accordion {% if tags.last == 'content' %}accordion--show{% endif %}">
@@ -50,18 +55,16 @@
           {% include "svg/accordion.svg" %}
         </header>
         <div class="accordion__content">
-          <nav>
-            <ul class="menu_list menu_list--ruled">
-            {% for component in collections.content %}
-              <li class="{% if title == component.data.title %}active{% endif %}">
-                <a href="{{ component.url }}">
-                  {{ component.data.title }}
-                  {% include "svg/arrow-right.svg" %}
-                </a>
-              </li>
-            {% endfor %}
-            </ul>
-          </nav>
+          <ul class="menu_list menu_list--ruled">
+          {% for component in collections.content %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+                {% include "svg/arrow-right.svg" %}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
       </div>
       <div class="accordion {% if tags.last == 'article' %}accordion--show{% endif %}">
@@ -70,18 +73,16 @@
           {% include "svg/accordion.svg" %}
         </header>
         <div class="accordion__content">
-          <nav>
-            <ul class="menu_list menu_list--ruled">
-            {% for component in collections.article %}
-              <li class="{% if title == component.data.title %}active{% endif %}">
-                <a href="{{ component.url }}">
-                  {{ component.data.title }}
-                  {% include "svg/arrow-right.svg" %}
-                </a>
-              </li>
-            {% endfor %}
-            </ul>
-          </nav>
+          <ul class="menu_list menu_list--ruled">
+          {% for component in collections.article %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+                {% include "svg/arrow-right.svg" %}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
       </div>
       <div class="accordion {% if tags.last == 'layout' %}accordion--show{% endif %}">
@@ -90,18 +91,16 @@
           {% include "svg/accordion.svg" %}
         </header>
         <div class="accordion__content">
-          <nav>
-            <ul class="menu_list menu_list--ruled">
-            {% for component in collections.layout %}
-              <li class="{% if title == component.data.title %}active{% endif %}">
-                <a href="{{ component.url }}">
-                  {{ component.data.title }}
-                  {% include "svg/arrow-right.svg" %}
-                </a>
-              </li>
-            {% endfor %}
-            </ul>
-          </nav>
+          <ul class="menu_list menu_list--ruled">
+          {% for component in collections.layout %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+                {% include "svg/arrow-right.svg" %}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
       </div>
       <div class="accordion {% if tags.last == 'stats' %}accordion--show{% endif %}">
@@ -110,21 +109,19 @@
           {% include "svg/accordion.svg" %}
         </header>
         <div class="accordion__content">
-          <nav>
-            <ul class="menu_list menu_list--ruled">
-            {% for component in collections.stats %}
-              <li class="{% if title == component.data.title %}active{% endif %}">
-                <a href="{{ component.url }}">
-                  {{ component.data.title }}
-                  {% include "svg/arrow-right.svg" %}
-                </a>
-              </li>
-            {% endfor %}
-            </ul>
-          </nav>
+          <ul class="menu_list menu_list--ruled">
+          {% for component in collections.stats %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+                {% include "svg/arrow-right.svg" %}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
     <main class="doc_layout__main">
       <h1>{{ title }}</h1>
       {{ content }}

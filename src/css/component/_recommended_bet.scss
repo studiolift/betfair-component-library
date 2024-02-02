@@ -1,0 +1,43 @@
+.recommended_bet {
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.recommended_bet__label {
+  display: inline-block;
+  background-color: var(--neutrals-background-elevation2, #FCFCFD);
+  border-radius: 4px 4px 0 0;
+  padding: 0.5rem;
+  padding-block-end: 0;
+
+  span {
+    display: block;
+    border-radius: 2px;
+    background-color: var(--signposting-generosity-background-default, #FFB80C);
+    color: var(--agnostic-neutrals-text-default, #18181A);
+    @include typography-h088;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.25rem;
+  }
+
+  svg {
+    fill: var(--agnostic-neutrals-text-default, #18181A);
+  }
+
+}
+
+.recommended_bet__bets {
+  background: var(--neutrals-background-elevation2, #FCFCFD);
+  padding: 0.5rem;
+  border-radius: 0 4px 4px 4px;
+
+  .market_card__description p {
+    @include typography-h380;
+  }
+
+}
