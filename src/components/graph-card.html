@@ -1,0 +1,131 @@
+---
+title: Graph Cards
+date: 2024-01-01
+tags: stats
+---
+
+<h3>Default</h3>
+<div class="graph_columns">
+  <div class="graph_card graph_card--home">
+    <div class="graph_chart__text">
+      <h3 class="title">This Season <strong>Sheffield Utd</strong></h3>
+      <ul class="legend">
+        <li>Win</li>
+        <li>Loss</li>
+        <li>Draw</li>
+      </ul>
+    </div>
+    <div class="graph_card__chart">
+      <canvas id="homeChart"></canvas>
+    </div>
+  </div>
+
+  <div class="graph_card graph_card--away">
+    <div class="graph_chart__text">
+      <h3 class="title">This Season <strong>Manchester City</strong></h3>
+      <ul class="legend">
+        <li>Win</li>
+        <li>Loss</li>
+        <li>Draw</li>
+      </ul>
+    </div>
+    <div class="graph_card__chart">
+      <canvas id="awayChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<div class="graph_columns">
+  <div class="graph_card graph_card--home">
+    <div class="graph_chart__text">
+      <h3 class="title">This Season <strong>Sheffield Utd</strong></h3>
+      <ul class="legend">
+        <li>Win</li>
+        <li>Loss</li>
+        <li>Draw</li>
+      </ul>
+    </div>
+    <div class="graph_card__chart">
+      <canvas id="homeChart"></canvas>
+    </div>
+  </div>
+
+  <div class="graph_card graph_card--away">
+    <div class="graph_chart__text">
+      <h3 class="title">This Season <strong>Sheffield Utd</strong></h3>
+      <ul class="legend">
+        <li>Win</li>
+        <li>Loss</li>
+        <li>Draw</li>
+      </ul>
+    </div>
+    <div class="graph_card__chart">
+      <canvas id="awayChart"></canvas>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+<script>
+
+  var homeWin = 10;
+  var homeLoss = 6;
+  var homeDraw = 5;
+
+  var awayWin = 17;
+  var awayLoss = 1;
+  var awayDraw = 1;
+
+  const homeRecord = document.getElementById('homeChart');
+  const myChart = new Chart(homeRecord, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [homeWin, homeLoss, homeDraw],
+        backgroundColor: [
+          'rgba(62, 193, 65, 1)',
+          'rgba(217, 32, 39, 1)',
+          'rgba(180, 180, 184, 1)'
+        ],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      cutout: '55%',
+      animation: {
+        animateRotate: false
+      },
+      legend: {
+        display: false
+      }
+    }
+  });
+
+  const awayRecord = document.getElementById('awayChart');
+  const myChart2 = new Chart(awayRecord, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [awayWin, awayLoss, awayDraw],
+        backgroundColor: [
+          'rgba(62, 193, 65, 1)',
+          'rgba(217, 32, 39, 1)',
+          'rgba(180, 180, 184, 1)'
+        ],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      cutout: '55%',
+      animation: {
+        animateRotate: false
+      },
+      legend: {
+        display: false
+      }
+    }
+  });
+
+</script>

@@ -1,0 +1,33 @@
+.match_preview_date {
+  margin-block-start: 0.5rem;
+  @include typography-h088;
+  color: var(--neutrals-text-default, #18181A);
+  text-align: center;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.match_preview {
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: 1fr 3rem 1fr;
+  margin-block-start: 0.5rem;
+}
+
+.match_preview__home_team,
+.match_preview__away_team {
+  color: var(--neutrals-text-default, #18181A);
+  @include typography-h152;
+  flex: 50% 1 1;
+}
+
+.match_preview__home_team {
+  text-align: right;
+}
+
+.match_preview__away_versus {
+  text-align: center;
+}

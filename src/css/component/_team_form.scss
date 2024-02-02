@@ -1,0 +1,116 @@
+.team_form_columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-radius: 4px;
+  background-color: var(--neutrals-background-elevation1, #F2F2F3);
+  padding: 0.5rem;
+  margin-block: 0.5rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+
+}
+
+.team_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.team_form__teamname {
+  margin: 0;
+  @include typography-h082;
+}
+
+.team_form__guide {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 0.375rem;
+
+  li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    @include typography-h078;
+    border-radius: 2px;
+    background: var(--signposting-pnl-background-neutral, #D0D0D2);
+    color: var(--signposting-pnl-text-default, #18181A);
+  }
+
+  .win {
+    background: var(--signposting-pnl-background-profit, #1D6F1D);
+    color: var(--signposting-inplay-text-secondary, #FCFCFD);
+  }
+
+  .loss{
+    background: var(--signposting-pnl-background-loss, #D92027);
+    color: var(--signposting-inplay-text-secondary, #FCFCFD);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0.375rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: var(--agnostic-neutrals-border-default, #18181A);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: calc(100% + 0.375rem);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 4px 0 4px 8px;
+    border-color: transparent transparent transparent var(--agnostic-neutrals-border-default, #18181A);
+  }
+
+}
+
+.team_form--home {
+  align-items: start;
+
+}
+
+.team_form--away {
+  align-items: end;
+
+  .team_form__guide {
+    flex-direction: row-reverse;
+  }
+
+  .team_form__guide:before {
+    left: -0.375rem;
+  }
+
+  .team_form__guide:after {
+    content: '';
+    position: absolute;
+    left: calc(-0.375rem + -0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 4px 8px 4px 0;
+    border-color: transparent var(--agnostic-neutrals-border-default, #18181A) transparent transparent;
+  }
+
+}

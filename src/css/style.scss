@@ -12,6 +12,7 @@
 
 @import "component/accordion";
 @import "component/button_group";
+@import "component/buttons";
 @import "component/price_button";
 @import "component/menu_list";
 @import "component/tab_navigation";
@@ -21,6 +22,7 @@
 @import "component/share_options";
 @import "component/card";
 @import "component/stat_card";
+@import "component/graph_card";
 @import "component/article_card";
 @import "component/article_header";
 @import "component/article_featured_image";
@@ -33,7 +35,9 @@
 @import "component/featured_runner";
 @import "component/head_to_head";
 @import "component/match_result";
+@import "component/match_preview";
 @import "component/stat_chip";
+@import "component/team_form";
 
 .theme_toggle {
   padding: 1rem;

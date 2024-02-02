@@ -1,0 +1,19 @@
+.primary_button {
+  display: block;
+  border-radius: 4px;
+  background-color: var(--agnostic-action-primary-background-default, #FFB80C);
+  @include typography-h280;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+
+  span {
+    display: block;
+    @include typography-h120;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--agnostic-action-primary-background-hit, #e09e00);
+  }
+
+}
