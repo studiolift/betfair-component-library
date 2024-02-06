@@ -1,0 +1,141 @@
+---
+title: Stat Table
+date: 2024-01-01
+tags: football-stats
+---
+
+<h3>Default</h3>
+
+<div class="table_container">
+  <table class="stat_table sortable_table">
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Goals scored</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Harry Kane</td>
+        <td><span style="--kit-colour-1: #FF0000; --kit-colour-2: #FFFFFF;" class="team">Bayern München</span></td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>Kylian Mbappé</td>
+        <td><span style="--kit-colour-1: #FF0000; --kit-colour-2: #003399;" class="team">PSG</span></td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Lautaro Martínez</td>
+        <td><span style="--kit-colour-1: #0066CC; --kit-colour-2: #003366;" class="team">Inter</span></td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Serhou Guirassy</td>
+        <td><span style="--kit-colour-1: #FF0000; --kit-colour-2: #FFFFFF;" class="team">Stuttgart</span></td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>Morgan Whittaker</td>
+        <td><span style="--kit-colour-1: #003300; --kit-colour-2: #003300;" class="team">Plymouth</span></td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Sammie Szmodics</td>
+        <td><span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #0066FF;" class="team">Blackburn</span></td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Adam Armstrong</td>
+        <td><span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Southampton</span></td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Borja Mayoral</td>
+        <td><span style="--kit-colour-1: #0000CC; --kit-colour-2: #0000CC;" class="team">Getafe</span></td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>Dominic Solanke</td>
+        <td><span style="--kit-colour-1: #000000; --kit-colour-2: #FF0000;" class="team">Bournemouth</span></td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>Artem Dovbyk</td>
+        <td><span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Girona</span></td>
+        <td>14</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<div class="table_container">
+  <table class="stat_table sortable_table">
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Goals scored</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Harry Kane</td>
+        <td><span style="--kit-colour-1: #FF0000; --kit-colour-2: #FFFFFF;" class="team">Bayern München</span></td>
+        <td>24</td>
+      </tr>
+      <!-- More Table Rows -->
+    </tbody>
+  </table>
+</div>
+{% endhighlight %}
+
+
+<script>
+
+  function sortTableByColumn(table, column, asc = true) {
+    const dirModifier = asc ? 1 : -1;
+    const tBody = table.tBodies[0];
+    const rows = Array.from(tBody.querySelectorAll("tr"));
+
+    // Sort each row
+    const sortedRows = rows.sort((a, b) => {
+      let aColText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+      let bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+
+      if (!isNaN(parseFloat(aColText)) && !isNaN(parseFloat(bColText))) {
+        aColText = parseFloat(aColText)
+        bColText = parseFloat(bColText)
+      }
+
+      return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+    });
+
+    // Remove all existing TRs from the table
+    while (tBody.firstChild) {
+        tBody.removeChild(tBody.firstChild);
+    }
+
+    // Re-add the newly sorted rows
+    tBody.append(...sortedRows);
+
+    // Remember how the column is currently sorted
+    table.querySelectorAll("th").forEach(th => th.classList.remove("th_sort_asc", "th_sort_desc"));
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th_sort_asc", asc);
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th_sort_desc", !asc);
+  }
+
+  document.querySelectorAll(".sortable_table th").forEach(headerCell => {
+    headerCell.addEventListener("click", () => {
+        const tableElement = headerCell.parentElement.parentElement.parentElement;
+        const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+        const currentIsAscending = headerCell.classList.contains("th_sort_asc");
+
+        sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+    }, {passive: true});
+  });
+
+</script>

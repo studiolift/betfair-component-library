@@ -1,4 +1,10 @@
 .table_container {
   border-radius: 4px;
   overflow-x: auto;
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
 }
