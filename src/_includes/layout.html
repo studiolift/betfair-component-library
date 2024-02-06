@@ -103,14 +103,14 @@
           </ul>
         </div>
       </div>
-      <div class="accordion {% if tags.last == 'stats' %}accordion--show{% endif %}">
+      <div class="accordion {% if tags.last == 'football-stats' %}accordion--show{% endif %}">
         <header class="accordion__title" onclick="toggleAccordion(this)">
-          <h1>Stats Components</h1>
+          <h1>Football Stats Components</h1>
           {% include "svg/accordion.svg" %}
         </header>
         <div class="accordion__content">
           <ul class="menu_list menu_list--ruled">
-          {% for component in collections.stats %}
+          {% for component in collections.football-stats %}
             <li class="{% if title == component.data.title %}active{% endif %}">
               <a href="{{ component.url }}">
                 {{ component.data.title }}

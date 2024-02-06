@@ -1,0 +1,101 @@
+.league_table {
+  width: 100%;
+  border-radius: 4px;
+  overflow: clip;
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.75rem;
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  th {
+    position: relative;
+    @include typography-h092;
+    vertical-align: middle;
+    color: var(--neutrals-text-disabled, #76767A);
+    padding-left: 1.5rem;
+    cursor: pointer;
+  }
+
+  th:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 3px 0 3px;
+    border-color: var(--neutrals-text-default, #18181A) transparent transparent transparent;
+    top: calc(50% + 3px);
+    left: 0.75rem;
+    transform: translateY(calc(-50% - 0px));
+  }
+
+  th:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 3px 3px 3px;
+    border-color: transparent transparent var(--neutrals-text-default, #18181A) transparent;
+    top: calc(50% - 3px);
+    left: 0.75rem;
+    transform: translateY(calc(-50% + 0px));
+  }
+
+  .th_sort_asc:after {
+    border-color: transparent transparent var(--neutrals-text-disabled, #76767A) transparent;
+  }
+
+  .th_sort_desc:before {
+    border-color: var(--neutrals-text-disabled, #76767A) transparent transparent transparent;
+  }
+
+  th:first-child {
+    @include typography-h480;
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+  abbr {
+    text-decoration: none;
+  }
+
+  td {
+    @include typography-h220;
+  }
+
+  tr {
+    background-color: var(--neutrals-background-elevation3, #EAEAEB);
+  }
+
+  thead tr {
+    background-color: var(--neutrals-background-elevation4, #E0E0E1);
+    border-bottom: 1px solid var(--neutrals-border-elevation3, #B4B4B8);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--neutrals-background-elevation2, #FCFCFD);
+  }
+
+  td:first-child {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  th:last-child {
+    @include typography-h098;
+  }
+
+  td:last-child {
+    @include typography-h280;
+  }
+
+}

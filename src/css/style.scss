@@ -39,6 +39,7 @@
 @import "component/match_preview";
 @import "component/stat_chip";
 @import "component/team_form";
+@import "component/league_table";
 @import "component/league_record";
 @import "component/recommended_bet";
 
@@ -73,10 +74,14 @@
 .doc_header {
   background-color: var(--components-navigation-header-background-default, #FFB80C);
   padding: 0.5rem 0.75rem;
-  min-height: 3.75rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  width: 100%;
 }
 
 .doc_header__menu_toggle {
@@ -121,6 +126,7 @@
   grid-template-rows: auto;
   max-width: 37.5rem;
   margin-inline: auto;
+  margin-block-start: 3.75rem;
   padding: 2rem;
   gap: 2rem;
 
@@ -139,13 +145,14 @@
   z-index: 99999;
 
   @include media('<920px') {
-    position: absolute;
+    position: fixed;
     top: 3.75rem;
     left: -100%;
     padding: 1rem;
     background-color: var(--neutrals-background-elevation1);
     border-bottom: 2px solid var(--neutrals-background-elevation3);
     width: 100%;
+    height: calc(100vh - 3.75rem);
   }
 
 }
