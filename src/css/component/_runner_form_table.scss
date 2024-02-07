@@ -1,0 +1,41 @@
+.runner_form_table {
+  width: 100%;
+  margin-block-start: 0.5rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  th {
+    @include typography-h098;
+    color: var(--neutrals-text-disabled, #76767A);
+    text-align: left;
+    padding: 0.25rem 0.5rem;
+  }
+
+  td {
+    @include typography-h120;
+    color: var(--neutrals-text-default, #18181A);
+    text-align: left;
+    padding: 0.5rem;
+    vertical-align: middle;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--neutrals-background-elevation3, #EAEAEB);
+  }
+
+  a {
+    display: block;
+  }
+
+  a svg {
+    border-radius: 2px;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0.125rem;
+    fill: var(--agnostic-neutrals-icon-alternative, #FFFFFF);
+    background-color: var(--agnostic-action-primary-background-default, #FFB80C);
+  }
+
+}

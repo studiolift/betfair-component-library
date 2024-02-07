@@ -18,8 +18,10 @@
 @import "component/price_button";
 @import "component/menu_list";
 @import "component/tab_navigation";
+@import "component/secondary_tab_navigation";
 @import "component/market_navigation";
 @import "component/breadcrumb_navigation";
+@import "component/race_navigation";
 @import "component/quick_links";
 @import "component/share_options";
 @import "component/card";
@@ -44,6 +46,7 @@
 @import "component/league_table";
 @import "component/league_record";
 @import "component/recommended_bet";
+@import "component/runner_form_table";
 
 
 .theme_toggle {

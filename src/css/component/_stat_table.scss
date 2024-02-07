@@ -61,6 +61,7 @@
 
   td {
     @include typography-h220;
+    vertical-align: top;
   }
 
   tr {
@@ -74,6 +75,7 @@
   .team {
     position: relative;
     padding-left: 1rem;
+    display: inline-block;
   }
 
   .team:before {
