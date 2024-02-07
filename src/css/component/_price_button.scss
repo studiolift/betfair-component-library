@@ -12,9 +12,11 @@
   text-align: center;
   color: var(--action-sportsbook-text-secondary, #FCFCFD);
   @include typography-h280;
+  text-decoration: none;
 
   &:hover,
   &:focus {
+    color: var(--action-sportsbook-text-secondary, #FCFCFD);
     background-color: var(--action-sportsbook-background-hover, #006170);
   }
 
@@ -31,6 +33,7 @@
 
   &:hover,
   &:focus {
+    color: var(--action-sportsbook-text-secondary, #FCFCFD);
     background-color: var(--action-exchange-back-background-hover, #2d499c);
   }
 

@@ -24,10 +24,12 @@
     border-radius: 4px;
     border: 1px solid var(--neutrals-background-elevation5, #D0D0D2);
     background-color: var(--neutrals-background-elevation2, #FCFCFD);
+    text-decoration: none;
   }
 
   a:hover,
   a:focus {
+    color: var(--neutrals-text-default, #18181A);
     border: 1px solid var(--neutrals-background-elevation6, #D0D0D2);
   }
 

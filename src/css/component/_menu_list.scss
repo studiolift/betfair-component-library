@@ -16,12 +16,14 @@
   }
 
   li a {
+    text-decoration: none;
     display: flex;
     gap: 0.5rem;
     padding: 0.75rem 0.5rem 0.75rem 1.25rem;
   }
 
   li a:hover {
+    color: inherit;
     background-color: var(--neutrals-background-elevation3, #FCFCFD);
   }
 

@@ -25,6 +25,7 @@
   @include typography-h280;
 
   a {
+    text-decoration: none;
     position: relative;
     display: block;
     color: var(--components-navigation-tabs-text-unselected, #444446);
@@ -39,6 +40,11 @@
     height: 2px;
     background-color: transparent;
     border-radius: 0 0 2px 2px;
+  }
+
+  a:hover,
+  a:focus {
+    color: inherit;
   }
 
   a:hover:before,

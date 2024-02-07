@@ -28,6 +28,7 @@
     gap: 0.5rem;
     @include typography-h156;
     color: var(--neutrals-text-default, #18181A);
+    text-decoration: none;
   }
 
   a svg {
@@ -40,6 +41,7 @@
 
   a:hover,
   a:focus {
+    color: inherit;
     background-color: var(--neutrals-background-elevation3, #EAEAEB);
   }
 

@@ -201,3 +201,17 @@ strong {
 a {
   color: inherit;
 }
+
+p, h1, h2, h3, h4, h5, li {
+
+  a {
+    text-decoration: underline;
+  
+    &:hover,
+    &:focus {
+      color: var(--action-sportsbook-background-default, #007385);
+    }
+  
+  }
+
+}

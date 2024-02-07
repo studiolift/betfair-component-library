@@ -36,6 +36,9 @@
   
   .category {
     @include typography-h092;
+  }
+
+  .category a {
     color: var(--neutrals-text-default, #18181A);
   }
 
@@ -46,6 +49,10 @@
 
   .title a {
     color: var(--neutrals-text-default, #18181A);
+  }
+
+  a {
+    text-decoration: none;
   }
 
   a:hover,
