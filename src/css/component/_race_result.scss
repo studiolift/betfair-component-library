@@ -1,0 +1,118 @@
+.race_result {
+  width: 100%;
+  margin-block-start: 0.5rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  th {
+    @include typography-h098;
+    color: var(--neutrals-text-disabled, #76767A);
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  th:last-child {
+    text-align: right;
+  }
+
+  td {
+    @include typography-h120;
+    color: var(--neutrals-text-default, #18181A);
+    text-align: left;
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+
+  thead tr {
+    background-color: var(--neutrals-background-elevation4, #E0E0E1);
+    border-radius: 4px 4px 0 0;
+  }
+
+  tbody tr {
+    background: var(--neutrals-background-elevation2, #FCFCFD);
+    border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
+  }
+
+  tbody tr:first-child {
+    border-top: 0;
+  }
+
+  .finish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include typography-h098;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--signposting-indicators-counter-text-default, #FCFCFD);
+    background-color: var(--signposting-indicators-counter-background-secondary, #232325);
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  .distance {
+    @include typography-h120;
+    color: var(--neutrals-text-default, #18181A);
+
+    svg {
+      width: 1.25rem;
+    }
+
+  }
+
+  .runner {
+    display: grid;
+    grid-template-columns: 1.5rem 1.25rem minmax(0, 1fr);
+    gap: 0.375rem;
+  }
+
+  .runner__number {
+    text-align: center;
+
+    .number {
+      @include typography-h158;
+    }
+  
+    .position {
+      @include typography-h120;
+    }
+
+  }
+
+  .runner__details {
+
+    .name {
+      margin: 0;
+      color: var(--neutrals-text-default, #18181A);
+      @include typography-h156;
+    }
+  
+    .team {
+      list-style-type: none;
+      margin: 0;
+    }
+  
+    .team li {
+      margin: 0;
+      color: var(--neutrals-text-secondary, #444446);
+      @include typography-h120;
+    }
+  
+    abbr {
+      text-decoration: none;
+    }
+
+  }
+
+  .final_odds {
+    @include typography-h156;
+    color: var(--neutrals-text-default, #18181A);
+  }
+
+}
