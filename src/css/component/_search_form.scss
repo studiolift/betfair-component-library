@@ -1,0 +1,32 @@
+.search_form {
+
+  input[type="search"] {
+    @include typography-h120;
+    border-radius: 4px;
+    background-color: var(--neutrals-background-elevation1, #F2F2F3);
+    color: var(--neutrals-text-secondary, #444446);
+    padding: 0.75rem 0.5rem;
+    padding-left: 2.25rem;
+    border: 1px solid transparent;
+    background-image: url('/assets/search.svg');
+    background-repeat: no-repeat;
+    background-position: center left 0.5rem;
+    width: 100%;
+  }
+
+  input[type="search"]:active,
+  input[type="search"]:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #FFB80C;
+    background-color: var(--neutrals-background-elevation2, #FCFCFD);
+  }
+
+  button {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+    width: 0px;
+    height: 0px;
+  }
+
+}

@@ -1,0 +1,34 @@
+.social_channels {
+  margin-block-start: 1rem;
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  a svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--neutrals-text-default, #18181A);
+  }
+
+  a:hover svg {
+    fill: var(--agnostic-action-primary-text-default, #ffb80c);
+  }
+
+}
