@@ -1,0 +1,51 @@
+.promo_banner {
+  background-color: var(--brand-betfair-background-default, #ffb80c);
+  color: var(--agnostic-neutrals-text-default, #18181a);
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-block-start: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.promo_banner__text {
+
+  & * {
+    margin-block-start: 0.25rem;
+  }
+
+  p a {
+    color: var(--agnostic-action-tertiary-text-default);
+    text-decoration: none;
+  }
+
+  p a:hover,
+  p a:focus {
+    text-decoration: underline;
+  }
+
+}
+
+.promo_banner__image {
+  flex: 5rem 0 0;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 0.125rem 0.25rem;
+    @include typography-h078;
+    background-color: #232325;
+    text-align: center;
+    color: #FCFCFD;
+    margin-inline: auto;
+    margin-block-start: 0.5rem;
+    border-radius: 2px;
+  }
+
+}
