@@ -18,8 +18,22 @@
   margin-right: auto;
   padding-right: 0.75rem;
 
+  h2, h3, h4 {
+    @include typography-h180;
+  }
+
   p {
+    margin-block-start: 0.25rem;
     @include typography-h152;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
   }
 
 }
