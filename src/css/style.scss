@@ -36,8 +36,6 @@
 @import "component/market_card";
 @import "component/entry_summary";
 @import "component/most_read";
-@import "component/card_grid";
-@import "component/swimlane";
 @import "component/featured_runner";
 @import "component/head_to_head";
 @import "component/match_result";
@@ -51,6 +49,10 @@
 @import "component/runner_form_table";
 @import "component/race_result";
 @import "component/search_form";
+@import "component/podcast_embed";
+@import "component/card_grid";
+@import "component/swimlane";
+
 
 .theme_toggle {
   padding: 1rem;
