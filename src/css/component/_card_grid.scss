@@ -12,3 +12,12 @@
   }
 
 }
+
+.card_grid--mobile-single-col {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  @include media('>phone') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
