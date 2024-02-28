@@ -6,3 +6,15 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.soundcloud_embed {
+
+  iframe {
+    height: 140px;
+  }
+
+  & > div {
+    display: none;
+  }
+
+}
