@@ -1,0 +1,91 @@
+---
+title: Bottom Sheet
+date: 2024-01-11
+tags: navigation
+---
+
+<h3>Default</h3>
+
+<div class="bottom_sheet">
+  <h3 class="typography-h480 bottom_sheet__toggle" onclick="toggleBottomSheet(this)">Title content here {% include "svg/accordion.svg" %}</h3>
+  <div class="bottom_sheet__slideout">
+    <div>
+      <h4 class="typography-h280">Bottom Sheet title</h4>
+      <span class="close" onclick="toggleBottomSheet(this)"></span>
+    </div>
+    <ul class="menu_list menu_list--ruled">
+      <li>
+        <a href="#">
+          {% include "svg/football.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          {% include "svg/horse-racing.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          {% include "svg/golf.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          {% include "svg/cricket.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+
+{% highlight html %}
+<div class="bottom_sheet">
+  <h3 class="typography-h480 bottom_sheet__toggle" onclick="toggleBottomSheet(this)">Title content here {% include "svg/accordion.svg" %}</h3>
+  <div class="bottom_sheet__slideout">
+    <div>
+      <h4 class="typography-h280">Bottom Sheet title</h4>
+      <span class="close" onclick="toggleBottomSheet(this)"></span>
+    </div>
+    <ul class="menu_list menu_list--ruled">
+      <li>
+        <a href="#">
+          {% include "svg/football.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          {% include "svg/horse-racing.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          {% include "svg/golf.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          {% include "svg/cricket.svg" %}
+          Navigation Item
+          {% include "svg/arrow-right.svg" %}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}
