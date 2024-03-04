@@ -38,3 +38,14 @@
   }
 
 }
+
+.price_button--exc-lay {
+  background-color: var(--action-exchange-lay-background-default, #cf396f);
+
+  &:hover,
+  &:focus {
+    color: var(--action-sportsbook-text-secondary, #FCFCFD);
+    background-color: var(--action-exchange-lay-background-hover, #a63253);
+  }
+
+}
