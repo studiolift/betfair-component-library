@@ -1,0 +1,21 @@
+.pebble {
+  cursor: pointer;
+  @include typography-h120;
+  border-radius: 16px;
+  border: 1px solid var(--components-action-pebbles-border-unselected, #B4B4B8);
+  background-color: var(--components-action-pebbles-background-default, #FCFCFD);
+  color: var(--components-action-pebbles-text-active, #18181A);
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+}
+
+.pebble--active {
+  border: 1px solid var(----brand-betfair-border-default, #FFB80C);
+}
+
+.pebble:hover,
+.pebble:focus {
+  border-color: var(--components-action-pebbles-text-active, #18181A);
+}

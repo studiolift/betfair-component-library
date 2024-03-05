@@ -1,0 +1,30 @@
+.platform_toggle--sbk {
+
+  *[data-platform="exc"] {
+    display: none;
+  }
+
+  .pebble--sbk {
+    border: 1px solid var(----brand-betfair-border-default, #FFB80C);
+  }
+
+}
+
+.platform_toggle--exc {
+  
+  *[data-platform="sbk"] {
+    display: none;
+  }
+
+  .pebble--exc {
+    border: 1px solid var(----brand-betfair-border-default, #FFB80C);
+  }
+
+}
+
+.platform_toggle__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
