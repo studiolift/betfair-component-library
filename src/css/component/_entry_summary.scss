@@ -17,6 +17,7 @@
 .entry_summary__text {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   
   .category {
     @include typography-h092;
