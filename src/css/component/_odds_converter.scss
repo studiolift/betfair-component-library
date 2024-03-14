@@ -1,0 +1,98 @@
+.odds_converter {
+  position: relative;
+  margin-block-start: 0.75rem;
+  border-radius: 4px;
+  background: var(--neutrals-background-elevation2, #FCFCFD);
+  overflow: hidden;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.odds_converter__nav {
+  display: flex;
+
+  .active {
+    background: var(--neutrals-background-elevation2, #FCFCFD);
+    cursor: default;
+  }
+
+}
+
+.odds_converter__nav_fractional,
+.odds_converter__nav_decimal {
+  cursor: pointer;
+  flex: 50% 1 1;
+  text-align: center;
+  padding: 1rem 0.75rem;
+  background: var(--neutrals-background-elevation3, #FCFCFD);
+  @include typography-h380;
+}
+
+.odds_converter__fractional,
+.odds_converter__decimal {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  & > label {
+    display: none;
+  }
+
+  & > input,
+  & > span,
+  & > button,
+  & > .result {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: Noto Sans, Arial, Helvetica Neue, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    width: calc(100% - 1rem);
+  }
+
+  & > input {
+    border: 1px solid var(--brand-betfair-background-default,#ffb80c);
+    min-height: 2.5rem;
+    width: calc(40% - 1rem);
+    color: var(--neutrals-text-default);
+    border-radius: 4px;
+  }
+
+  & > span {
+    width: calc(20% - 1rem);
+  }
+
+  & > button {
+    @include typography-h380;
+    border: 1px solid var(--brand-betfair-background-default,#ffb80c);
+    background-color: var(--brand-betfair-background-default,#ffb80c);
+    color: var(--agnostic-neutrals-text-default);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    min-height: 2.5rem;
+    border-radius: 4px;
+  }
+
+  & > button:hover {
+    border: 1px solid var(--brand-betfair-background-default,#ffb80c);
+    background-color: transparent;
+    color: var(--neutrals-text-default);
+  }
+
+  & > .result {
+    @include typography-h780;
+  }
+
+}
+
+.odds_converter__decimal {
+
+  & > input {
+    width: calc(100% - 1rem);
+  }
+
+}

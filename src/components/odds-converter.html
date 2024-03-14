@@ -1,0 +1,104 @@
+---
+title: Odds Converter
+date: 2024-01-12
+tags: content
+---
+
+<h3>Default</h3>
+<div class="odds_converter">
+  <div class="odds_converter__nav">
+    <div class="odds_converter__nav_fractional active">Fractional</div>
+    <div class="odds_converter__nav_decimal">Decimal</div>
+  </div>
+  <div class="odds_converter__fractional">
+    <label for="numerator">Numerator</label>
+    <input id="numerator" class="numerator" aria-label="Numerator" type="number" value="5"><span>/</span>
+    <label for="denominator">Denominator</label>
+    <input id="denominator" class="denominator" aria-label="Denominator" type="number" value="2">
+    <button class="convert_fractional">Convert</button>
+    <div class="result">5/2 = 3.5</div>
+  </div>
+  <div style="display: none;" class="odds_converter__decimal">
+    <label for="decimal">Decimal</label>
+    <input step="0.01" id="decimal" class="decimal" type="number" value="3.5">
+    <button class="convert_decimal">Convert</button>
+    <div class="result">3.5 = 5/2</div>
+  </div>
+</div>
+
+<h3>Shortcode</h3>
+{% highlight html %}
+[oddsConverter]
+{% endhighlight %}
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Default -->
+<div class="odds_converter">
+  <div class="odds_converter__nav">
+    <div class="odds_converter__nav_fractional active">Fractional</div>
+    <div class="odds_converter__nav_decimal">Decimal</div>
+  </div>
+  <div class="odds_converter__fractional">
+    <label for="numerator">Numerator</label>
+    <input id="numerator" class="numerator" aria-label="Numerator" type="number" value="5"><span>/</span>
+    <label for="denominator">Denominator</label>
+    <input id="denominator" class="denominator" aria-label="Denominator" type="number" value="2">
+    <button class="convert_fractional">Convert</button>
+    <div class="result">5/2 = 3.5</div>
+  </div>
+  <div style="display: none;" class="odds_converter__decimal">
+    <label for="decimal">Decimal</label>
+    <input step="0.01" id="decimal" class="decimal" type="number" value="3.5">
+    <button class="convert_decimal">Convert</button>
+    <div class="result">3.5 = 5/2</div>
+  </div>
+</div>
+{% endhighlight %}
+
+<script>
+$(document).ready(function(){
+
+  // Add the Convertor Markup
+
+  $('.convert_fractional').click(function(e){
+    var numerator = $(this).siblings('.numerator').val();
+    var denominator = $(this).siblings('.denominator').val();
+    e.preventDefault();
+    var convertFractional = (numerator / denominator) + 1;
+    $(this).siblings('.result').html(numerator + '/' + denominator + ' = ' + convertFractional);
+  });
+
+  $('.convert_decimal').click(function(e){
+    e.preventDefault();
+
+    // Get Decimal odd and minus 1
+    var decimalOriginal = $(this).siblings('.decimal').val();
+    var decimal = new Fraction($(this).siblings('.decimal').val() - 1);
+
+    // Convert the Decimal odds into an inproper fraction
+    var decimalToFraction = decimal.toFraction(false);
+
+    // Split fraction into numerator and denominator
+    var fraction = new Fraction(decimalToFraction);
+    $(this).siblings('.result').html(decimalOriginal + ' = ' + fraction.n + '/' + fraction.d);
+  });
+
+  // Tabs for Fractional and Decimal Odds conversion
+
+  $('.odds_converter__nav_fractional').click(function(){
+    $(this).siblings('.odds_converter__nav_decimal').removeClass('active');
+    $(this).addClass('active');
+    $(this).parent().siblings('.odds_converter__fractional').show();
+    $(this).parent().siblings('.odds_converter__decimal').hide();
+  });
+
+  $('.odds_converter__nav_decimal').click(function(){
+    $(this).siblings('.odds_converter__nav_fractional').removeClass('active');
+    $(this).addClass('active');
+    $(this).parent().siblings('.odds_converter__fractional').hide();
+    $(this).parent().siblings('.odds_converter__decimal').show();
+  });
+
+});
+</script>
