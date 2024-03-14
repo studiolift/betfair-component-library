@@ -1,13 +1,7 @@
 .stat_chip_grid {
-  margin-block-start: 1rem;
   display: grid;
   gap: 0.5rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  &:first-child {
-    margin-block-start: 0;
-  }
-
 }
 
 .stat_chip {

@@ -23,6 +23,8 @@
 
 .stat_card__content {
   padding: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .stat_card__content--no-padding {
