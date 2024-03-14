@@ -1,0 +1,99 @@
+---
+title: Lay Bet Calculator
+date: 2024-01-12
+tags: content
+---
+
+<h3>Default</h3>
+<div class="laybet_calculator">
+  <div class="laybet_calculator__inputs">
+    <div>
+      <label for="lbc_stake">Stake (£)</label>
+      <input id="lbc_stake" name="lbc_stake" type="number" step="0.10" value="0.00" />
+    </div>
+    <div>
+      <label for="lbc_odds">Odds</label>
+      <input id="lbc_odds" name="lbc_odds" type="number" step="0.10" value="1.00" />
+    </div>
+    <div>
+      <label for="lbc_commission">Commission (%)</label>
+      <input id="lbc_commission" name="lbc_commission" type="number" step="1" value="0" />
+    </div>
+  </div>
+  <div class="laybet_calculator__outputs">
+    <ul>
+      <li class="liability">Liability: <span>£0</span></li>
+      <li class="commission">Commission: <span>£0</span></li>
+      <li class="profit">Profit: <span>£0</span></li>
+      <li class="return">Return: <span>£0</span></li>
+    </ul>
+  </div>
+</div>
+
+<h3>Shortcode</h3>
+{% highlight html %}
+[layBetCalculator]
+{% endhighlight %}
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Default -->
+<div class="laybet_calculator">
+  <div class="laybet_calculator__inputs">
+    <div>
+      <label for="lbc_stake">Stake (£)</label>
+      <input id="lbc_stake" name="lbc_stake" type="number" step="0.10" value="0.00" />
+    </div>
+    <div>
+      <label for="lbc_odds">Odds</label>
+      <input id="lbc_odds" name="lbc_odds" type="number" step="0.10" value="1.00" />
+    </div>
+    <div>
+      <label for="lbc_commission">Commission (%)</label>
+      <input id="lbc_commission" name="lbc_commission" type="number" step="1" value="0" />
+    </div>
+  </div>
+  <div class="laybet_calculator__outputs">
+    <ul>
+      <li class="liability">Liability: <span>£0</span></li>
+      <li class="commission">Commission: <span>£0</span></li>
+      <li class="profit">Profit: <span>£0</span></li>
+      <li class="return">Return: <span>£0</span></li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}
+
+<script>
+  $(document).ready(function(){
+
+  // Function to calculate the liability
+
+  function calculateLiability() {
+
+    var inputStake = $(this).find('input[id="lbc_stake"]').val();
+    var inputOdds = $(this).find('input[id="lbc_odds"]').val();
+    var inputCommission = $(this).find('input[id="lbc_commission"]').val();
+
+    // Calculate Liability
+    var liability = (inputStake * inputOdds) - inputStake;
+    $(this).find('.liability span').html('£' + liability.toFixed(2));
+
+    // Calculate Commission
+    var commission = (inputCommission * inputStake) / 100;
+    $(this).find('.commission span').html('£' + commission.toFixed(2));
+
+    // Calculate Profit
+    var profit = (inputStake * 1) - commission;
+    $(this).find('.profit span').html('£' + profit.toFixed(2));
+
+    // Calculate Return
+    var theReturn = profit + liability;
+    $(this).find('.return span').html('£' + theReturn.toFixed(2));
+
+  }
+
+  $('.laybet_calculator').on('change', calculateLiability);
+
+});
+</script>

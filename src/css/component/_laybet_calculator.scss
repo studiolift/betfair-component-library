@@ -1,0 +1,71 @@
+.laybet_calculator {
+  position: relative;
+  margin-block-start: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background: var(--neutrals-background-elevation2, #FCFCFD);
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.laybet_calculator__inputs {
+
+  div {
+    margin-block-start: 0.75rem;
+  }
+
+  label {
+    display: block;
+    @include typography-h280;
+  }
+
+  input {
+    width: 100%;
+    font-family: Noto Sans, Arial, Helvetica Neue, Helvetica, sans-serif;
+    background-color: var(--neutrals-background-elevation1);
+    color: var(--neutrals-text-default);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-block-start: 0.25rem;
+    @include typography-h120;
+  }
+
+  & > :first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.laybet_calculator__outputs {
+  margin-block-start: 0.75rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  li {
+    @include typography-h220;
+    padding-block-start: 0.25rem;
+    margin-block-start: 0.25rem;
+    border-top: 1px solid var(--neutrals-background-elevation4);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
+  li:first-child {
+    padding-block-start: 0;
+    margin-block-start: 0;
+    border-top: 0;
+  }
+
+  li:last-child {
+    @include typography-h280;
+    border-top: 1px solid var(--neutrals-text-default);
+  }
+
+}
