@@ -2,9 +2,11 @@
   display: block;
   border-radius: 4px;
   background-color: var(--agnostic-action-primary-background-default, #FFB80C);
+  color: var(--agnostic-neutrals-text-default);
   @include typography-h280;
   text-align: center;
   padding: 0.25rem 0.5rem;
+  text-decoration: none;
 
   span {
     display: block;
@@ -13,7 +15,14 @@
 
   &:hover,
   &:focus {
+    text-decoration: none;
+    color: var(--agnostic-neutrals-text-default);
     background-color: var(--agnostic-action-primary-background-hit, #e09e00);
   }
 
+}
+
+.primary_button--colour-theme {
+  margin-block-start: 1rem;
+  padding: 0.5rem;
 }

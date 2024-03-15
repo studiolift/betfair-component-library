@@ -184,6 +184,11 @@ ol {
   list-style-type: decimal;
 }
 
+.no_bullets {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 li {
   margin-block-start: 0.5rem;
   @include typography-h220;

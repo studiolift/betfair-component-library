@@ -1,0 +1,17 @@
+.text_advert {
+  position: relative;
+  margin-block-start: 0.75rem;
+  background-color: var(--agnostic-neutrals-background-alternative);
+  color: var(--agnostic-neutrals-text-alternative);
+  padding: 1rem;
+  border-radius: 4px;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  h1, h2, h3, h4, h5, strong {
+    color: var(--brand-betfair-text-default);
+  }
+
+}
