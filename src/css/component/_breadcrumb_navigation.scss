@@ -22,8 +22,6 @@
   li {
     position: relative;
     margin: 0;
-    text-wrap: nowrap;
-    white-space: nowrap;
     @include typography-h120;
   }
 

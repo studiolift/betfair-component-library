@@ -1,0 +1,23 @@
+.notification {
+  position: relative;
+  margin-block-start: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: var(--messaging-info-background-elevation1, #d4e3ef);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  & * {
+    margin: 0;
+  } 
+
+  svg {
+    fill: var(--messaging-info-icon-default);
+  }
+
+}
