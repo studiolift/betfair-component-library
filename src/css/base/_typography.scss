@@ -221,6 +221,20 @@ p, h1, h2, h3, h4, h5, li {
 
 }
 
+.arrow_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-decoration: none;
+
+  &:hover svg,
+  &:focus svg {
+    fill: var(--action-sportsbook-background-default, #007385);
+  }
+
+}
+
 hr {
   margin-block: 0.75rem;
   border: 0;
