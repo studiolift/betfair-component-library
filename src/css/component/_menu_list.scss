@@ -22,7 +22,8 @@
     padding: 0.75rem 0.5rem 0.75rem 1.25rem;
   }
 
-  li a:hover {
+  li a:hover,
+  li a:focus {
     color: inherit;
     background-color: var(--neutrals-background-elevation3, #FCFCFD);
   }
@@ -60,6 +61,31 @@
     padding: 0.5rem;
     margin: 0;
     @include typography-h280;
+  }
+
+}
+
+.menu_list--depth-2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  border-radius: 0;
+
+  li {
+    padding-inline: 1.75rem;
+    border: 0;
+  }
+
+  li a {
+    padding-inline: 0;
+    padding-block: 0.5rem;
+  }
+
+  li a:hover,
+  li a:focus {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: underline;
   }
 
 }

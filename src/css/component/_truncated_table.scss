@@ -1,0 +1,45 @@
+.truncated_table {
+
+  tbody tr:nth-child(n+6) {
+    display: none;
+  }
+
+}
+
+.truncated_table--show-all {
+
+  tbody tr:nth-child(n+6) {
+    display: table-row;
+  }
+
+}
+
+.toggle_table {
+
+  .toggle_table__less,
+  .toggle_table__more {
+    cursor: pointer;
+    display: block;
+    @include typography-h120;
+    padding: 0.5rem;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+  }
+
+  .toggle_table__less {
+    display: none;
+  }
+
+  &--hide .toggle_table__more {
+    display: none;
+  }
+
+  &--hide .toggle_table__less {
+    display: block;
+  }
+
+}

@@ -98,4 +98,23 @@
     @include typography-h280;
   }
 
+  .team {
+    position: relative;
+    padding-left: 1rem;
+    display: inline-block;
+  }
+
+  .team:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid var(--neutrals-text-default, #18181A);
+    background: linear-gradient(90deg, var(--kit-colour-1) 0%, var(--kit-colour-1) 50%, var(--kit-colour-2) 50%, var(--kit-colour-2) 92%);
+  }
+
 }
