@@ -6,6 +6,14 @@
 
 }
 
+.truncated_table--limit-20 {
+
+  tbody tr:nth-child(n+21) {
+    display: none;
+  }
+
+}
+
 .truncated_table--show-all {
 
   tbody tr:nth-child(n+6) {
