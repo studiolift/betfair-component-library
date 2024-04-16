@@ -1,6 +1,7 @@
 .entry_summary {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 0.75rem;
   margin-block-start: 0.5rem;
   padding-block-start: 0.5rem;
@@ -53,10 +54,6 @@
     text-decoration: underline;
   }
 
-  & :last-child {
-    margin-block-start: auto !important;
-  }
-
 }
 
 .entry_summary__video {
@@ -79,8 +76,7 @@
 .entry_summary__image {
   position: relative;
   flex: 7.5rem 0 0;
-  width: 7.5rem;
-  height: 7.5rem;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 4px;
 
@@ -116,6 +112,20 @@
       clip-path: polygon(100% 0%, 0 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
     }
     
+  }
+
+}
+
+.entry_summary--square-thumbnail {
+  align-items: normal;
+
+  .entry_summary__text :last-child {
+    margin-block-start: auto;
+  }
+
+  .entry_summary__image {
+    aspect-ratio: 1 / 1;
+    align-self: flex-start;
   }
 
 }
