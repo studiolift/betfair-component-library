@@ -19,6 +19,10 @@
     @include typography-h380;
   }
 
+  p {
+    margin-block-start: 0.25rem;
+  }
+
 }
 
 .stat_card__content {

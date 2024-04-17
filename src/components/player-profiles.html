@@ -1,0 +1,91 @@
+---
+title: Player Profiles (WIP)
+date: 2024-01-05
+tags: football-stats
+---
+
+<h3>Default</h3>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Erling Haaland</h2>
+    <p>23 appearances for Manchester City this season</p>
+  </header>
+  <div class="stat_card__content">
+    <div class="stat_chip_grid">
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Goals</h3>
+        <p class="stat_chip__stat"><strong>18</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Assists</h3>
+        <p class="stat_chip__stat"><strong>6</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Total shots</h3>
+        <p class="stat_chip__stat"><strong>91</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots per 90</h3>
+        <p class="stat_chip__stat"><strong>4.3</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Total shots on target</h3>
+        <p class="stat_chip__stat"><strong>44</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots on Target per 90</h3>
+        <p class="stat_chip__stat"><strong>2.1</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Bruno Fernandes</h2>
+    <p>27 appearances for Manchester United this season</p>
+  </header>
+  <div class="stat_card__content">
+    <div class="stat_chip_grid">
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Chances created</h3>
+        <p class="stat_chip__stat"><strong>82</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Chances created per 90</h3>
+        <p class="stat_chip__stat"><strong>3</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Passes</h3>
+        <p class="stat_chip__stat"><strong>1,692</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Passes per 90</h3>
+        <p class="stat_chip__stat"><strong>54.58</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Player Name</h2>
+    <p>[X] appearances for [TEAM NAME] this season</p>
+  </header>
+  <div class="stat_card__content">
+    <div class="stat_chip_grid">
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Label</h3>
+        <p class="stat_chip__stat"><strong>[X]</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Label</h3>
+        <p class="stat_chip__stat"><strong>[X]</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endhighlight %}

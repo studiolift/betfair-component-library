@@ -16,6 +16,10 @@
 
 }
 
+.stat_chip--span-2 {
+  grid-column: span 2;
+}
+
 .stat_chip:before {
   content: '';
   position: absolute;
@@ -25,7 +29,7 @@
   height: 100%;
   z-index: 1;
   opacity: 0.2;
-  background-color: var(--signposting-indicators-rich-content-icon-home-team, #3073E7);
+  background-color: var(--signposting-indicators-rich-content-icon-neutral2, #d0d0d2);
   border-radius: 4px;
 }
 
