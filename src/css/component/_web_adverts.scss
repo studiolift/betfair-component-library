@@ -1,0 +1,38 @@
+.web_advert {
+  container-type: inline-size;
+  container-name: web_advert;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.web_advert--desktop_only {
+
+  @include media('<tablet') {
+    display: none;
+  }
+
+}
+
+.web_advert--mobile_only {
+  
+  @include media('>tablet') {
+    display: none;
+  }
+
+
+}
+
+$sizes: 300px, 468px, 728px;
+
+@each $size in $sizes {
+
+  @container web_advert (max-width: #{$size}) {
+
+    .web_advert--#{$size} .web_advert__content {
+      display: none;
+    }
+  
+  }
+
+}

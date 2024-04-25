@@ -1,0 +1,64 @@
+---
+title: Web Adverts
+date: 2024-01-15
+tags: content
+---
+
+<h3>Container based</h3>
+<p>Adverts that respond to their container sizes. When the parent container reaches a certain size the advert will be hidden.</p>
+<h4>Supported sizes:</h4>
+<ul>
+  <li>300px</li>
+  <li>468px</li>
+  <li>728px</li>
+</ul>
+
+<div class="web_advert web_advert--300px">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <img src="https://placehold.co/300x250" alt="">
+  </div>
+</div>
+
+<div class="web_advert web_advert--468px">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <img src="https://placehold.co/468x60" alt="">
+  </div>
+</div>
+
+<h3>Media Query based</h3>
+<p>These adverts respond to standard media queries targeting the browser width. There are options for mobile and desktop.</p>
+
+<div class="web_advert web_advert--desktop_only">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <img src="https://placehold.co/728x90?text=Desktop+Only" alt="">
+  </div>
+</div>
+
+<div class="web_advert web_advert--mobile_only">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <img src="https://placehold.co/300x250?text=Mobile+Only" alt="">
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Container based -->
+<div class="web_advert web_advert--300px">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <!-- Advert Content -->
+  </div>
+</div>
+
+<!-- Media Query based -->
+<div class="web_advert web_advert--desktop_only">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <!-- Advert Content -->
+  </div>
+</div>
+
+<div class="web_advert web_advert--mobile_only">
+  <div style="margin-block-start: 1rem;" class="web_advert__content">
+    <!-- Advert Content -->
+  </div>
+</div>
+{% endhighlight %}
