@@ -3,6 +3,7 @@
   background-color: var(--action-sportsbook-background-default, #007385);;
   color: var(--brand-betfair-text-secondary, #FCFCFD);
   @include typography-h280;
+  font-size: inherit;
   padding: 0 0.25rem;
   border-radius: 4px;
 }
