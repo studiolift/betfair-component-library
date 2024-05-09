@@ -11,6 +11,7 @@
     padding: 0.5rem;
     @include typography-h280;
     color: var(--neutrals-text-default, #18181A);
+    background-color: var(--neutrals-background-elevation2, #FCFCFD);
   }
 
   td {

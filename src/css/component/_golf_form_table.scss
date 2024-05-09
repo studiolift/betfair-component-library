@@ -1,0 +1,64 @@
+.golf_form_table_header {
+  margin-block-start: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.golf_form_table_header__filters {
+
+  select {
+    margin-block-start: 0.25rem;
+    appearance: none;
+    @include typography-h120;
+    border-radius: 4px;
+    background-color: var(--neutrals-background-elevation3, #F2F2F3);
+    color: var(--neutrals-text-secondary, #444446);
+    padding: 0.75rem;
+    padding-right: 2.25rem;
+    border: 1px solid transparent;
+    background-image: url('../img/rebuild_2024/icons/carret_down.svg');
+    background-repeat: no-repeat;
+    background-position: center right 0.5rem;
+    width: 100%;
+  }
+
+}
+
+.golf_form_table_header__key {
+
+  ul {
+    margin: 0;
+    margin-block-start: 0.25rem;
+    display: flex;
+    gap: 0.75rem;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 0;
+  }
+
+}
+
+.golf_form_table,
+.golf_form_table_header__key {
+
+  .form_chip {
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    @include typography-h280;
+    background-color: var(--agnostic-signposting-notifications-icon-active);
+    color: var(--agnostic-neutrals-text-default);
+  }
+
+  .form_chip--high {
+    background-color: var(--agnostic-signposting-pnl-background-profit);
+  }
+
+  .form_chip--low {
+    background-color: var(--agnostic-signposting-pnl-background-loss);
+  }
+
+}

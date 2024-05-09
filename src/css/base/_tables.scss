@@ -8,3 +8,105 @@
   }
 
 }
+
+table {
+  width: 100%;
+  border-radius: 4px;
+  overflow: clip;
+  margin-block-start: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.75rem;
+    color: var(--neutrals-text-default, #18181A);
+    @include typography-h220;
+  }
+
+  th {
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    @include typography-h280;
+    background-color: var(--brand-betfair-background-default);
+    color: var(--agnostic-neutrals-text-default);
+  }
+
+  td {
+    @include typography-h220;
+    vertical-align: top;
+  }
+
+  tr {
+    background-color: var(--neutrals-background-elevation3, #EAEAEB);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--neutrals-background-elevation2, #FCFCFD);
+  }
+
+  .team {
+    position: relative;
+    padding-left: 1rem;
+    display: inline-block;
+  }
+
+  .team:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid var(--neutrals-text-default, #18181A);
+    background: linear-gradient(90deg, var(--kit-colour-1) 0%, var(--kit-colour-1) 50%, var(--kit-colour-2) 50%, var(--kit-colour-2) 92%);
+  }
+
+}
+
+.sortable_table {
+
+  th {
+    padding-left: 1.5rem;
+  }
+
+  th:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 3px 0 3px;
+    border-color: var(--agnostic-neutrals-text-default, #18181A) transparent transparent transparent;
+    top: calc(50% + 3px);
+    left: 0.75rem;
+    transform: translateY(calc(-50% - 0px));
+  }
+
+  th:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 3px 3px 3px;
+    border-color: transparent transparent var(--agnostic-neutrals-text-default, #18181A) transparent;
+    top: calc(50% - 3px);
+    left: 0.75rem;
+    transform: translateY(calc(-50% + 0px));
+  }
+
+  .th_sort_asc:after {
+    border-color: transparent transparent var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent;
+  }
+
+  .th_sort_desc:before {
+    border-color: var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent transparent transparent;
+  }
+
+}
