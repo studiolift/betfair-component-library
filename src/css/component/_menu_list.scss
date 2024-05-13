@@ -28,7 +28,7 @@
     background-color: var(--neutrals-background-elevation3, #FCFCFD);
   }
 
-  .active a {
+  .active > a {
     background-color: var(--neutrals-background-elevation4, #e0e0e1);
   }
 
@@ -65,27 +65,8 @@
 
 }
 
-.menu_list--depth-2 {
-  margin: 0;
-  margin-bottom: 0.5rem;
-  background-color: transparent;
+.menu_list li > .menu_list {
+  margin-block-start: 0;
+  margin-inline-start: 0.75rem;
   border-radius: 0;
-
-  li {
-    padding-inline: 1.75rem;
-    border: 0;
-  }
-
-  li a {
-    padding-inline: 0;
-    padding-block: 0.5rem;
-  }
-
-  li a:hover,
-  li a:focus {
-    color: inherit;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
 }
