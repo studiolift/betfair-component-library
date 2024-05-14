@@ -25,6 +25,7 @@
 .price_button__label {
   display: block;
   @include typography-h082;
+  text-transform: uppercase;
   color: var(--action-sportsbook-text-secondary, #FCFCFD);
 }
 
