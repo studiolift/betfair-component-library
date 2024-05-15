@@ -1,10 +1,16 @@
 .table_container {
+  position: relative;
   border-radius: 4px;
   overflow-x: auto;
   margin-block-start: 1rem;
 
   &:first-child {
     margin-block-start: 0;
+  }
+
+  .search_form {
+    position: sticky;
+    left: 0;
   }
 
 }
@@ -107,6 +113,37 @@ table {
 
   .th_sort_desc:before {
     border-color: var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent transparent transparent;
+  }
+
+}
+
+.fixed_first_column {
+
+  th:first-child,
+  td:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    white-space: nowrap;
+  }
+
+  thead tr {
+    background-color: var(--brand-betfair-background-default);
+  }
+
+  tr th:first-child {
+    background: linear-gradient(90deg, var(--brand-betfair-background-default) 90%, rgba(255,255,255,0) 100%);
+  }
+
+  tr td:first-child {
+    background-color: var(--neutrals-background-elevation3, #EAEAEB);
+    background: linear-gradient(90deg, var(--neutrals-background-elevation3, #EAEAEB) 90%, rgba(255,255,255,0) 100%);
+  }
+
+  tbody tr:nth-child(odd) td:first-child {
+    background-color: var(--neutrals-background-elevation2, #FCFCFD);
+    background: linear-gradient(90deg, var(--neutrals-background-elevation2, #FCFCFD) 90%, rgba(255,255,255,0) 100%);
   }
 
 }
