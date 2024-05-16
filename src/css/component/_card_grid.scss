@@ -21,3 +21,11 @@
   }
 
 }
+
+.card_grid--desktop-4-col {
+
+  @include media('>1024px') {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+}
