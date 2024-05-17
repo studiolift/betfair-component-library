@@ -1,0 +1,92 @@
+---
+title: Banner
+date: 2024-01-16
+tags: content
+---
+
+<h3>Banner with wrapping</h3>
+<div class="banner banner--wrap">
+  <div class="banner__text">
+    <h1>How to use Betfair</h1>
+    <p class="typography-h220">Learn the basics of Exchange betting or advance your expertise with our short tutorials.</p>
+    <ul class="button_group">
+      <li><a class="primary_button" href="#">Beginner Guides</a></li>
+    </ul>
+  </div>
+  <figure class="banner__image banner__image--bottom-bleed">
+    <img src="https://betting.betfair.com/images/betfair-education-main.png">
+  </figure>
+</div>
+
+<h3>Banner with no wrapping</h3>
+<div class="banner">
+  <div class="banner__text">
+    <h1>How to use Betfair</h1>
+    <p class="typography-h220">Learn the basics of Exchange betting or advance your expertise with our short tutorials.</p>
+    <ul class="button_group">
+      <li><a class="primary_button" href="#">Beginner Guides</a></li>
+    </ul>
+  </div>
+  <figure class="banner__image banner__image--bottom-bleed">
+    <img src="https://betting.betfair.com/images/betfair-education-main.png">
+  </figure>
+</div>
+
+<h3>Custom Property Modifiers</h3>
+<div class="banner" style="--banner-bg: var(--neutrals-background-elevation3);">
+  <figure class="banner__image" style="--content-width: 150px;">
+    <img src="https://betting.cdnppb.net/podcasts/FootballOnlyBettor_thumb_1x1%20copy_2023.728x728.png">
+  </figure>
+  <div class="banner__text">
+    <h1>Podcasts</h1>
+    <p class="typography-h220">Podcast description goes here.</p>
+    <ul class="button_group">
+      <li><a class="primary_button" href="#">Listen</a></li>
+    </ul>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Banner with wrapping -->
+<div class="banner banner--wrap">
+  <div class="banner__text">
+    <h1>How to use Betfair</h1>
+    <p class="typography-h220">Learn the basics of Exchange betting or advance your expertise with our short tutorials.</p>
+    <ul class="button_group">
+      <li><a class="primary_button" href="#">Beginner Guides</a></li>
+    </ul>
+  </div>
+  <figure class="banner__image banner__image--bottom-bleed">
+    <img src="https://betting.betfair.com/images/betfair-education-main.png">
+  </figure>
+</div>
+
+<!-- Banner with no wrapping -->
+<div class="banner">
+  <div class="banner__text">
+    <h1>How to use Betfair</h1>
+    <p class="typography-h220">Learn the basics of Exchange betting or advance your expertise with our short tutorials.</p>
+    <ul class="button_group">
+      <li><a class="primary_button" href="#">Beginner Guides</a></li>
+    </ul>
+  </div>
+  <figure class="banner__image banner__image--bottom-bleed">
+    <img src="https://betting.betfair.com/images/betfair-education-main.png">
+  </figure>
+</div>
+
+<!-- Custom Property Modifiers -->
+<div class="banner" style="--banner-bg: var(--neutrals-background-elevation3);">
+  <figure class="banner__image" style="--content-width: 150px;">
+    <img src="https://betting.cdnppb.net/podcasts/FootballOnlyBettor_thumb_1x1%20copy_2023.728x728.png">
+  </figure>
+  <div class="banner__text">
+    <h1>Podcasts</h1>
+    <p class="typography-h220">Podcast description goes here.</p>
+    <ul class="button_group">
+      <li><a class="primary_button" href="#">Listen</a></li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}

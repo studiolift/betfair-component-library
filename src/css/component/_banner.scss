@@ -1,0 +1,30 @@
+.banner {
+  --banner-padding: 1.5rem;
+  --banner-bg: var(--neutrals-background-elevation2);
+  --content-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--banner-padding);
+  background-color: var(--banner-bg);
+  margin-block-start: 0.75rem;
+  border-radius: 3px;
+  gap: 1.5rem;
+  overflow: clip;
+}
+
+.banner--wrap {
+  flex-wrap: wrap;
+}
+
+.banner__text {
+  flex: var(--content-width) 0 1;
+}
+
+.banner__image {
+  flex: var(--content-width) 0 1;
+}
+
+.banner__image--bottom-bleed {
+  margin-block-end: calc(var(--banner-padding) * -1);
+}
