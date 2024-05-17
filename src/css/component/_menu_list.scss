@@ -38,6 +38,7 @@
 
   li svg:last-child {
     margin-left: auto;
+    flex-shrink: 0;
   }
 
 }
