@@ -36,9 +36,12 @@
     border-bottom: 0;
   }
 
+  li svg {
+    flex-shrink: 0;
+  }
+
   li svg:last-child {
     margin-left: auto;
-    flex-shrink: 0;
   }
 
 }
