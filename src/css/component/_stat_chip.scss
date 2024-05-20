@@ -4,6 +4,12 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.stat_chip_grid--threecols {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .stat_chip {
   position: relative;
   z-index: 2;
