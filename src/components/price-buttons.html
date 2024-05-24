@@ -19,6 +19,49 @@ tags: navigation
   </li>
 </ul>
 
+<h3>Shortcode</h3>
+<p>You can generate a price button using the following shortcode.</p>
+{% highlight html %}
+[price_button label="sbk" odds="2.5" url="https://www.betfair.com" style="lay" target="_blank"]
+{% endhighlight %}
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>label</td>
+      <td>The button label e.g. sbk</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>odds</td>
+      <td>The button text as odds e.g. 2.5</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>The url for the link</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>'back' or 'lay' adjusts the background colour of the button</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>target</td>
+      <td>link target. Defaults to _blank</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+
 <h3>Example HTML</h3>
 
 {% highlight html %}

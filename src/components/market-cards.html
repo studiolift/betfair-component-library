@@ -68,6 +68,48 @@ tags: content
   </div>
 </div>
 
+<h3>Shortcode</h3>
+<p>You can generate a market card using the following shortcode.</p>
+{% highlight html %}
+[marketCard text="text" exc_odds="2.5" exc_url="https://betfair.com" sbk_odds="2.5" sbk_url="https://betfair.com"]
+{% endhighlight %}
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>text</td>
+      <td>The description text for the card</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>exc_odds</td>
+      <td>Odds for the exchange button</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>exc_url</td>
+      <td>URL for the exchange button</td>
+      <td>Only if exc_odds are added</td>
+    </tr>
+    <tr>
+      <td>sbk_odds</td>
+      <td>Odds for the sportsbook button</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>sbk_url</td>
+      <td>URL for the sportsbook button</td>
+      <td>Only if sbk_odds are added</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3>Example HTML</h3>
 {% highlight html %}
 <!-- Standalone -->

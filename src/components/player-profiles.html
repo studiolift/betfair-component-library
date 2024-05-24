@@ -68,6 +68,33 @@ tags: football-stats
   </div>
 </div>
 
+<h3>Shortcode</h3>
+<p>You can generate a player stat profile using the following shortcode.</p>
+{% highlight html %}
+[playerStats player="10572" stats="goals|shots|shotsOnTarget"]
+{% endhighlight %}
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>player</td>
+      <td>The ID of the player.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>stats</td>
+      <td>List of stats you would like to display</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3>Example HTML</h3>
 {% highlight html %}
 <div class="stat_card">

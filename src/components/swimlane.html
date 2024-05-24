@@ -63,6 +63,47 @@ tags: layout
   </div>
 </div>
 
+<h3>Shortcode</h3>
+<p>You can generate a swimlane containing collected entries using the following shortcode.</p>
+{% highlight html %}
+[contentBlock title="Football" limit="6" url="https://betting.betfair.com/football/" layout="swimlane"]
+{% endhighlight %}
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title</td>
+      <td>The title above the swimlane</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>limit</td>
+      <td>The number of entries you would like to display.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>The url for the collection of entries (usually a blog or category)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>layout</td>
+      <td>The layout determines how the content will be displayed. In this case 'swimlane'.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>Set as 'hide' to hide the date within the entry summary.</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3>Example HTML</h3>
 {% highlight html %}
