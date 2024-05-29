@@ -22,6 +22,15 @@
 
 }
 
+.card_grid--tablet-single-col {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  @include media('>960px') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
 .card_grid--desktop-4-col {
 
   @include media('>1024px') {

@@ -1,0 +1,21 @@
+.embed_summary {
+  position: relative;
+  margin-block-start: 0.75rem;
+  border-radius: 4px;
+  background: var(--neutrals-background-elevation2, #FCFCFD);
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+}
+
+.embed_summary__actions {
+  margin-block-start: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: end;
+}

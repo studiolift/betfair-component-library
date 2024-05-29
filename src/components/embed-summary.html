@@ -1,0 +1,70 @@
+---
+title: Embed Summary
+date: 2024-01-03
+tags: content
+---
+
+<h3>Default</h3>
+
+<div class="embed_summary">
+  <div class="embed_summary__embed">
+    <iframe src="https://banners.streameye.net/eeb9b8af-2fa9-4d09-a2d0-1e946c471e92" style="border:0px #FFFFFF none;" name="Trump" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen=""></iframe>
+  </div>
+  <div class="embed_summary__actions">
+    <ul class="button_group">
+      <li><a data-market_full="http://bbc.co.uk" href="http://bbc.co.uk" class="secondary_button">Bet here</a></li>
+    </ul>
+  </div>
+</div>
+
+<h3>Shortcode</h3>
+<p>You can generate a list containing collected entries using the following shortcode.</p>
+{% highlight html %}
+[contentBlock title="US Trackers" limit="2" url="http://bb.dream/betfair-predicts/us-trackers/" layout="embed_list"]
+{% endhighlight %}
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title</td>
+      <td>The title above the swimlane</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>limit</td>
+      <td>The number of entries you would like to display.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>The url for the collection of entries (usually a blog or category)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>layout</td>
+      <td>The layout determines how the content will be displayed. In this case 'embed_list'.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Default -->
+<div class="embed_summary">
+  <div class="embed_summary__embed">
+    <iframe src="https://banners.streameye.net/eeb9b8af-2fa9-4d09-a2d0-1e946c471e92" style="border:0px #FFFFFF none;" name="Trump" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen=""></iframe>
+  </div>
+  <div class="embed_summary__actions">
+    <ul class="button_group">
+      <li><a data-market_full="http://bbc.co.uk" href="http://bbc.co.uk" class="secondary_button">Bet here</a></li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}

@@ -1,4 +1,5 @@
-.primary_button {
+.primary_button,
+.secondary_button {
   display: block;
   border-radius: 4px;
   background-color: var(--agnostic-action-primary-background-default, #FFB80C);
@@ -19,6 +20,18 @@
     text-decoration: none;
     color: var(--agnostic-neutrals-text-default);
     background-color: var(--agnostic-action-primary-background-hit, #e09e00);
+  }
+
+}
+
+.secondary_button {
+  background-color: var(--action-sportsbook-background-default, #007385);
+  color: var(--action-sportsbook-text-secondary, #FCFCFD);
+
+  &:hover,
+  &:focus {
+    color: var(--action-sportsbook-text-secondary, #FCFCFD);
+    background-color: var(--action-sportsbook-background-hover, #006170);
   }
 
 }
