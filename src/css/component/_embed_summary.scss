@@ -14,8 +14,23 @@
 }
 
 .embed_summary__actions {
-  margin-block-start: auto;
   padding: 0.5rem;
   display: flex;
   justify-content: end;
+
+  .button_group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+}
+
+.embed_summary__readmore {
+  display: none;
+  padding: 0.5rem;
+  padding-block-start: 0;
+}
+
+.embed_summary__readmore--show {
+  display: block;
 }

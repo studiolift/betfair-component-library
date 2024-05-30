@@ -36,6 +36,20 @@
 
 }
 
+.primary_button--outline {
+  background-color: transparent;
+  color: var(--neutrals-text-default);
+  outline: 1px solid var(--agnostic-action-primary-background-default, #FFB80C);
+  outline-offset: -1px;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--agnostic-action-primary-background-hit, #e09e00);
+    background-color: var(--agnostic-action-primary-background-hit, #e09e00);
+  }
+
+}
+
 .primary_button--colour-theme {
   margin-block-start: 1rem;
   padding: 0.5rem;
