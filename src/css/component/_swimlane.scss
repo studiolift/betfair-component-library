@@ -25,3 +25,11 @@
   }
 
 }
+
+.swimlane--narrow {
+
+  @include media('>tablet') {
+    grid-auto-columns: 290px;
+  }
+
+}
