@@ -11,6 +11,11 @@
   border-radius: 3px;
   gap: 1.5rem;
   overflow: clip;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
 }
 
 .banner--wrap {
