@@ -52,3 +52,12 @@
   }
 
 }
+
+.head_to_head--no-bar {
+
+  &:before {
+    width: 100%;
+    background: var(--neutrals-background-elevation4, #E0E0E1);
+  }
+
+}
