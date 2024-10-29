@@ -113,3 +113,26 @@
   }
 
 }
+
+@include media('>tablet') {
+
+  .team_form__guide--large {
+    gap: 0.5rem;
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.75rem;
+      height: 1.75rem;
+      margin: 0;
+      @include typography-h158;
+      border-radius: 2px;
+      background: var(--signposting-pnl-background-neutral, #D0D0D2);
+      color: var(--signposting-pnl-text-default, #18181A);
+    }
+
+  }
+
+}
