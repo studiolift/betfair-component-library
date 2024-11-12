@@ -17,7 +17,8 @@
 }
 
 .match_preview__home_team,
-.match_preview__away_team {
+.match_preview__away_team,
+.match_preview__away_versus {
   color: var(--neutrals-text-default, #18181A);
   @include typography-h152;
   flex: 50% 1 1;
