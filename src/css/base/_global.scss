@@ -19,4 +19,12 @@ body {
   font-family: Noto Sans, Arial, Helvetica Neue, Helvetica, sans-serif;
   background-color: var(--neutrals-background-elevation1);
   color: var(--neutrals-text-default);
+
+  /* Set a scroll margin custom property for anchor links at desktop and mobile */
+  --scroll-margin: calc(var(--header-height) + 1rem);
+
+  @include media('>tablet') {
+    --scroll-margin: calc((var(--header-height) * 2) + 1rem);
+  }
+
 }
