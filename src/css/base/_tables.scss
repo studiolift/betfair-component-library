@@ -54,6 +54,15 @@ table {
     background-color: var(--neutrals-background-elevation2, #FCFCFD);
   }
 
+  td a {
+    text-decoration: underline;
+  }
+
+  td a:hover,
+  td a:focus {
+    color: var(--brand-betfair-text-hover, #007385);
+  }
+
   .team {
     position: relative;
     padding-left: 1rem;
