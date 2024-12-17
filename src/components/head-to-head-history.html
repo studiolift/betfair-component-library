@@ -34,6 +34,29 @@ tags: football-stats
   </div>
 </div>
 
+<h3>No bars</h3>
+
+<!-- Note: The nested spans are to stop wonky alignment of labels -->
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Haaland <span style="float: right;">Salah</span></h2>
+  </header>
+  <div class="stat_card__content">
+    <div class="head_to_head head_to_head--no-bars">
+      <span class="label">Label</span>
+      <span class="home highlight"><span>10</span></span>
+      <span class="away"><span>0</span></span>
+    </div>
+    <hr>
+    <div class="head_to_head head_to_head--no-bars">
+      <span class="label">Label</span>
+      <span class="home"><span>25</span></span>
+      <span class="away highlight"><span>75</span></span>
+    </div>
+  </div>
+</div>
+
 <h3>Shortcode</h3>
 <p>You can generate a match head-to-head using the following shortcode.</p>
 {% highlight html %}
@@ -58,6 +81,7 @@ tags: football-stats
 
 <h3>Example HTML</h3>
 {% highlight html %}
+<!-- Default -->
 
 <div class="stat_card">
   <header class="stat_card__title">
@@ -69,6 +93,28 @@ tags: football-stats
       <span class="label">Label</span>
       <span class="home">1</span>
       <span class="away">1</span>
+    </div>
+  </div>
+</div>
+
+<!-- No Bars -->
+<!-- Note: The nested spans are to stop wonky alignment of labels -->
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Haaland <span style="float: right;">Salah</span></h2>
+  </header>
+  <div class="stat_card__content">
+    <div class="head_to_head head_to_head--no-bars">
+      <span class="label">Label</span>
+      <span class="home highlight"><span>10</span></span>
+      <span class="away"><span>0</span></span>
+    </div>
+    <hr>
+    <div class="head_to_head head_to_head--no-bars">
+      <span class="label">Label</span>
+      <span class="home"><span>25</span></span>
+      <span class="away highlight"><span>75</span></span>
     </div>
   </div>
 </div>

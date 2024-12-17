@@ -53,11 +53,38 @@
 
 }
 
-.head_to_head--no-bar {
+.head_to_head--no-bars {
+  padding-bottom: 0;
+  margin-block-start: 0;
+
+  &:first-child {
+    margin-block-start: 0;
+    padding-block-start: 0;
+    border-top: 0;
+  }
+
+
+  .home,
+  .away {
+    @include typography-h120;
+    
+    span {
+      min-width: auto;
+      background-color: var(--neutrals-background-elevation1, #F2F2F3);
+      padding: 0.125rem 0.25rem;
+      border-radius: 3px;
+    }
+
+  }
 
   &:before {
-    width: 100%;
-    background: var(--neutrals-background-elevation4, #E0E0E1);
+    content: none;
+  }
+
+  .highlight span {
+    font-weight: bold;
+    color: var(--agnostic-neutrals-text-default);
+    background-color: var(--brand-betfair-background-default);
   }
 
 }
