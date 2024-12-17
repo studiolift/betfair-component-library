@@ -29,6 +29,13 @@
   padding: 0.5rem;
   display: grid;
   gap: 0.5rem;
+
+  hr {
+    border-top: 1px solid var(--neutrals-background-elevation4, #E0E0E1);
+    width: 100%;
+    margin: 0;
+  }
+
 }
 
 .stat_card__content--no-padding {
