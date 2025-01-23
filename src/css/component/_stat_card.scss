@@ -3,6 +3,8 @@
   border-radius: 4px;
   overflow: clip;
   background: var(--neutrals-background-elevation2, #FCFCFD);
+  container-type: inline-size;
+  container-name: stat_card;
 
   &:first-child {
     margin-block-start: 0;
@@ -29,13 +31,6 @@
   padding: 0.5rem;
   display: grid;
   gap: 0.5rem;
-
-  hr {
-    border-top: 1px solid var(--neutrals-background-elevation4, #E0E0E1);
-    width: 100%;
-    margin: 0;
-  }
-
 }
 
 .stat_card__content--no-padding {

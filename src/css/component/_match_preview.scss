@@ -13,7 +13,13 @@
 .match_preview {
   display: grid;
   gap: 0.25rem;
-  grid-template-columns: 1fr 3rem 1fr;
+  grid-template-columns: 1fr 2rem 1fr;
+}
+
+@container stat_card (max-width: 260px) {
+  .match_preview {
+    grid-template-columns: 1fr;
+  }
 }
 
 .match_preview__home_team,
@@ -21,7 +27,6 @@
 .match_preview__away_versus {
   color: var(--neutrals-text-default, #18181A);
   @include typography-h152;
-  flex: 50% 1 1;
 }
 
 .match_preview__home_team {
@@ -30,4 +35,13 @@
 
 .match_preview__away_versus {
   text-align: center;
+}
+
+@container stat_card (max-width: 260px) {
+  .match_preview__home_team,
+  .match_preview__away_team,
+  .match_preview__away_versus {
+    text-align: center;
+  }
+
 }
