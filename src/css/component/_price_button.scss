@@ -50,3 +50,17 @@
   }
 
 }
+
+.price_button--disabled,
+.price_button--disabled:hover,
+.price_button--disabled:focus {
+  background-color: transparent;
+  color: var(--neutrals-text-secondary);
+  outline: 1px solid var(--neutrals-border-elevation2);
+  outline-offset: -1px;
+
+  .price_button__label {
+    color: var(--neutrals-text-secondary);
+  }
+
+}
