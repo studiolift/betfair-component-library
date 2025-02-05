@@ -7,7 +7,6 @@
   display: flex;
   gap: 0.5rem;
   overflow-x: auto;
-  background-color: pink;
   background: var(--components-navigation-tabs-background-elevation1, linear-gradient(0deg, #E0E0E1 0%, #F2F2F3 100%));
 
   &:first-child {

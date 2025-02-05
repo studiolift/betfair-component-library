@@ -146,12 +146,10 @@ table {
   }
 
   tr td:first-child {
-    background-color: var(--neutrals-background-elevation3, #EAEAEB);
     background: linear-gradient(90deg, var(--neutrals-background-elevation3, #EAEAEB) 90%, rgba(255,255,255,0) 100%);
   }
 
   tbody tr:nth-child(odd) td:first-child {
-    background-color: var(--neutrals-background-elevation2, #FCFCFD);
     background: linear-gradient(90deg, var(--neutrals-background-elevation2, #FCFCFD) 90%, rgba(255,255,255,0) 100%);
   }
 
