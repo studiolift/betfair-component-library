@@ -1,0 +1,184 @@
+---
+title: Race Card
+date: 2024-01-02
+tags: racing-data
+---
+
+<p>Race cards use the <a href="/components/market-cards/">market card component</a> with some extra JS options to handle the platform toggle for Sportsbook and Exchange markets.</p>
+
+<h3>Default</h3>
+<div class="card">
+  <p>
+    <strong>Race Title</strong><br>
+    14:00, Tuesday 11 March 2025
+  </p>
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>Majborough (Fr)</p>
+    </div>
+    <div data-platform="sbk" class="market_card__price">
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=54245957&amp;action=addAffiliateSelection&amp;bsmId=924.446425712&amp;modules=betslip&amp;raceTime=1741701600000">
+        <span class="price_button__label">SBK</span>
+        2/5
+      </a>
+    </div>
+  </div>
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>L'eau Du Sud (Fr)</p>
+    </div>
+    <div data-platform="sbk" class="market_card__price">
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=41892333&amp;action=addAffiliateSelection&amp;bsmId=924.446425712&amp;modules=betslip&amp;raceTime=1741701600000">
+        <span class="price_button__label">SBK</span>
+        9/2
+      </a>
+    </div>
+  </div>
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>Jango Baie (Fr)</p>
+    </div>
+    <div data-platform="sbk" class="market_card__price">
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=62323840&amp;action=addAffiliateSelection&amp;bsmId=924.446425712&amp;modules=betslip&amp;raceTime=1741701600000">
+        <span class="price_button__label">SBK</span>
+        8/1
+      </a>
+    </div>
+  </div>    
+  <a data-platform="sbk" href="https://www.betfair.com/betting/horse-racing/market/r-7%7C34108486.1400" class="card__cta">View market (SBK)</a>
+</div>
+
+
+<h3>Platform Toggle</h3>
+
+<div style="margin-block-start: 1rem;" class="platform_toggle platform_toggle--exc">
+  <div class="platform_toggle__options">
+    <h2 class="typography-h380">Section Title</h2>
+    <div>
+      <button class="pebble pebble--sbk" onclick="togglePlatformSBK(this)">SBK</button>
+      <button class="pebble pebble--exc" onclick="togglePlatformEXC(this)">EXC</button>
+    </div>
+  </div>
+  <div class="card">
+    <p>
+      <strong>Race Title</strong><br>
+      13:20, Tuesday 11 March 2025
+    </p>
+    <div class="market_card">
+      <div class="market_card__description">
+        <p>Kopek Des Bordes (Fr)</p>
+      </div>
+      <div data-platform="sbk" class="market_card__price">
+        <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=67613264&amp;action=addAffiliateSelection&amp;bsmId=924.446425710&amp;modules=betslip&amp;raceTime=1741699200000">
+          <span class="price_button__label">SBK</span>
+          8/11
+        </a>
+      </div>
+      <div data-platform="exc" class="market_card__price">
+        <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.240660206">
+          <span class="price_button__label">EXC</span>
+          1.87
+        </a>
+      </div>
+    </div>
+    <div class="market_card">
+      <div class="market_card__description">
+        <p>Romeo Coolio</p>
+      </div>
+      <div data-platform="sbk" class="market_card__price">
+        <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=63058896&amp;action=addAffiliateSelection&amp;bsmId=924.446425710&amp;modules=betslip&amp;raceTime=1741699200000">
+          <span class="price_button__label">SBK</span>
+          15/2
+        </a>
+      </div>
+      <div data-platform="exc" class="market_card__price">
+        <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.240660206">
+          <span class="price_button__label">EXC</span>
+          10
+        </a>
+      </div>
+    </div>
+    <div class="market_card">
+      <div class="market_card__description">
+        <p>Workahead (Ire)</p>
+      </div>
+      <div data-platform="sbk" class="market_card__price">
+        <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=76066042&amp;action=addAffiliateSelection&amp;bsmId=924.446425710&amp;modules=betslip&amp;raceTime=1741699200000">
+          <span class="price_button__label">SBK</span>
+          7/1
+        </a>
+      </div>
+      <div data-platform="exc" class="market_card__price">
+        <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.240660206">
+          <span class="price_button__label">EXC</span>
+          11
+        </a>
+      </div>
+    </div>    
+    <a data-platform="sbk" href="https://www.betfair.com/betting/horse-racing/market/r-7%7C34108486.1320" class="card__cta">View market (SBK)</a>
+    <a data-platform="exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.240660206" class="card__cta">View market (EXC)</a>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<!-- Default -->
+<div class="card">
+  <p>
+    <strong>Race Title</strong><br>
+    14:00, Tuesday 11 March 2025
+  </p>
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>Majborough (Fr)</p>
+    </div>
+    <div data-platform="sbk" class="market_card__price">
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=54245957&amp;action=addAffiliateSelection&amp;bsmId=924.446425712&amp;modules=betslip&amp;raceTime=1741701600000">
+        <span class="price_button__label">SBK</span>
+        2/5
+      </a>
+    </div>
+  </div>
+  <!-- More Market Cards --> 
+  <a data-platform="sbk" href="https://www.betfair.com/betting/horse-racing/market/r-7%7C34108486.1400" class="card__cta">View market (SBK)</a>
+</div>
+
+
+<!-- Platform Toggle -->
+
+<div style="margin-block-start: 1rem;" class="platform_toggle platform_toggle--exc">
+  <div class="platform_toggle__options">
+    <h2 class="typography-h380">Section Title</h2>
+    <div>
+      <button class="pebble pebble--sbk" onclick="togglePlatformSBK(this)">SBK</button>
+      <button class="pebble pebble--exc" onclick="togglePlatformEXC(this)">EXC</button>
+    </div>
+  </div>
+  <div class="card">
+    <p>
+      <strong>Race Title</strong><br>
+      13:20, Tuesday 11 March 2025
+    </p>
+    <div class="market_card">
+      <div class="market_card__description">
+        <p>Kopek Des Bordes (Fr)</p>
+      </div>
+      <div data-platform="sbk" class="market_card__price">
+        <a class="price_button price_button--sbk" href="https://www.betfair.com/sport/horse-racing?eventId=34108486&amp;bssId=67613264&amp;action=addAffiliateSelection&amp;bsmId=924.446425710&amp;modules=betslip&amp;raceTime=1741699200000">
+          <span class="price_button__label">SBK</span>
+          8/11
+        </a>
+      </div>
+      <div data-platform="exc" class="market_card__price">
+        <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.240660206">
+          <span class="price_button__label">EXC</span>
+          1.87
+        </a>
+      </div>
+    </div>
+    <!-- More Market Cards -->
+    <a data-platform="sbk" href="https://www.betfair.com/betting/horse-racing/market/r-7%7C34108486.1320" class="card__cta">View market (SBK)</a>
+    <a data-platform="exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.240660206" class="card__cta">View market (EXC)</a>
+  </div>
+</div>
+{% endhighlight %}
