@@ -39,17 +39,18 @@
 .author_card_mini {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: var(--gap);
 }
 
 .author_card_mini__image {
   position: relative;
   aspect-ratio: 1 / 1;
-  width: 2.625rem;
-  height: 2.625rem;
-  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4px;
   overflow: hidden;
-  flex: 2.625rem 0 0;
+  flex: 3rem 0 0;
 
   img {
     position: absolute;
@@ -62,6 +63,11 @@
 
 .author_card_mini__text {
   flex-grow: 1;
+  margin-block: auto;
+
+  p {
+    margin-top: 0.25rem;
+  }
 
   a {
     text-decoration: none;

@@ -1,7 +1,8 @@
 .card {
+  --gap: 0.5rem;
   position: relative;
   margin-block-start: 0.75rem;
-  padding: 0.5rem;
+  padding: var(--gap);
   border-radius: 4px;
   background: var(--neutrals-background-elevation2, #FCFCFD);
 
