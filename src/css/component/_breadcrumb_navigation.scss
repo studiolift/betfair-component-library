@@ -52,3 +52,17 @@
   }
 
 }
+
+// Modifier for entries to hide the last child
+
+.breadcrumb_navigation--hide-last {
+
+  li:last-child {
+    display: none;
+  }
+
+  li:nth-last-child(2):after {
+    content: none;
+  }
+
+}
