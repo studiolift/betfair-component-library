@@ -30,36 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Function to handle the toggle events on embed summaries
-  function toggleReadMore(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-
-    // Find the closest embed_summary container
-    const embedSummary = event.target.closest('.embed_summary');
-    if (!embedSummary) return; // If no container found, exit the function
-
-    // Find the readmore div within this container
-    const readMoreDiv = embedSummary.querySelector('.embed_summary__readmore');
-
-    // Toggle the class for the readmore div
-    readMoreDiv.classList.toggle('embed_summary__readmore--show');
-
-    // Toggle the button text
-    const button = event.target;
-    const moreText = embedSummary.getAttribute('data-more-text');
-    const lessText = embedSummary.getAttribute('data-less-text');
-
-    if (button.textContent === moreText) {
-        button.textContent = lessText;
-    } else {
-        button.textContent = moreText;
-    }
-  }
-
-  // Attach event listener to all read more buttons
-  const readMoreButtons = document.querySelectorAll('.read_more_button');
-  readMoreButtons.forEach(button => {
-      button.addEventListener('click', toggleReadMore);
-  });
-
 });
