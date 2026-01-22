@@ -103,7 +103,7 @@
 // Doc Layout Styles
 
 .doc_header {
-  background-color: var(--components-navigation-header-background-default, #FFB80C);
+  background-color: var(--brand-betfair-background-default, #FFB80C);
   padding: 0.5rem 0.75rem;
   height: 3.75rem;
   display: flex;
@@ -113,6 +113,7 @@
   z-index: 9999999;
   top: 0;
   width: 100%;
+  color: var(--agnostic-neutrals-text-default);
 }
 
 .doc_header__menu_toggle {
