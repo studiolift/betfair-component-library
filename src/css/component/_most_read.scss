@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .most_read {
   margin: 0;
   list-style-type: none;
@@ -20,7 +22,7 @@
   li::before {
     counter-increment: numbers;
     content: counter(numbers, decimal-leading-zero);
-    @include typography-h720;
+    @include type_scale.typography-h720;
     color: var(--neutrals-text-secondary, #444446);
     position: absolute;
     top: 0;
@@ -35,7 +37,7 @@
   }
   
   .category {
-    @include typography-h092;
+    @include type_scale.typography-h092;
   }
 
   .category a {
@@ -44,7 +46,7 @@
 
   .title {
     margin-block-start: 0;
-    @include typography-h280;
+    @include type_scale.typography-h280;
   }
 
   .title a {

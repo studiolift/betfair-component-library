@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .odds_converter {
   position: relative;
   margin-block-start: 0.75rem;
@@ -28,7 +30,7 @@
   text-align: center;
   padding: 1rem 0.75rem;
   background: var(--neutrals-background-elevation3, #FCFCFD);
-  @include typography-h380;
+  @include type_scale.typography-h380;
 }
 
 .odds_converter__fractional,
@@ -67,7 +69,7 @@
   }
 
   & > button {
-    @include typography-h380;
+    @include type_scale.typography-h380;
     border: 1px solid var(--brand-betfair-background-default,#ffb80c);
     background-color: var(--brand-betfair-background-default,#ffb80c);
     color: var(--agnostic-neutrals-text-default);
@@ -84,7 +86,7 @@
   }
 
   & > .result {
-    @include typography-h780;
+    @include type_scale.typography-h780;
   }
 
 }

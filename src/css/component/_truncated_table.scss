@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .truncated_table {
 
   tbody tr:nth-child(n+6) {
@@ -32,7 +34,7 @@
   .toggle_table__more {
     cursor: pointer;
     display: block;
-    @include typography-h120;
+    @include type_scale.typography-h120;
     padding: 0.5rem;
 
     &:hover,

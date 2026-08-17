@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .price_button {
   display: flex;
   border-radius: 4px;
@@ -10,7 +12,7 @@
   align-items: center;
   text-align: center;
   color: var(--action-sportsbook-text-secondary, #FCFCFD);
-  @include typography-h280;
+  @include type_scale.typography-h280;
   text-decoration: none;
 
   &:hover,
@@ -23,7 +25,7 @@
 
 .price_button__label {
   display: block;
-  @include typography-h082;
+  @include type_scale.typography-h082;
   text-transform: uppercase;
   color: var(--action-sportsbook-text-secondary, #FCFCFD);
 }

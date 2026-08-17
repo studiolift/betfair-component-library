@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .market_movers {
   --movers-grid: repeat(auto-fill, minmax(300px, 1fr));
   display: grid;
@@ -32,12 +34,12 @@
 .market_mover__description {
 
   h2, h3, h4 {
-    @include typography-h320;
+    @include type_scale.typography-h320;
   }
 
   p {
     margin-block-start: 0.25rem;
-    @include typography-h220;
+    @include type_scale.typography-h220;
     color: var(--neutrals-text-secondary);
   }
 

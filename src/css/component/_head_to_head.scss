@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .head_to_head {
   --stat_percent: -2px;
   position: relative;
@@ -15,13 +17,13 @@
   .away {
     min-width: 3rem;
     color: var(--neutrals-text-default, #18181A);
-    @include typography-h380;
+    @include type_scale.typography-h380;
     order: 1;
   }
 
   .label {
     color: var(--neutrals-text-default, #18181A);
-    @include typography-h120;
+    @include type_scale.typography-h120;
     order: 2;
   }
 
@@ -66,7 +68,7 @@
 
   .home,
   .away {
-    @include typography-h120;
+    @include type_scale.typography-h120;
     
     span {
       min-width: auto;

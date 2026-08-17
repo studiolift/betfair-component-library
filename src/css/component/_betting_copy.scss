@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .betting_copy {
   margin-block-start: 1rem;
   padding: 0.75rem;
@@ -9,15 +11,15 @@
   }
 
   h2 {
-    @include typography-h480;
+    @include type_scale.typography-h480;
   }
 
   h3 {
-    @include typography-h380;
+    @include type_scale.typography-h380;
   }
 
   h4, h5 {
-    @include typography-h280;
+    @include type_scale.typography-h280;
   }
 
 }

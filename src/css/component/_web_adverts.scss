@@ -1,3 +1,5 @@
+@use "mixins/include_media";
+
 .web_advert {
   container-type: inline-size;
   container-name: web_advert;
@@ -8,7 +10,7 @@
 
 .web_advert--desktop_only {
 
-  @include media('<tablet') {
+  @include include_media.media('<tablet') {
     display: none;
   }
 
@@ -16,7 +18,7 @@
 
 .web_advert--mobile_only {
   
-  @include media('>tablet') {
+  @include include_media.media('>tablet') {
     display: none;
   }
 

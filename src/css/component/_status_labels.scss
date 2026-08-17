@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .status_labels {
   margin: 0;
   margin-block-start: 0.5rem;
@@ -18,7 +20,7 @@
 
 .status_label {
   display: inline-block;
-  @include typography-h078;
+  @include type_scale.typography-h078;
   border: 1px solid var(--signposting-generosity-background-default);
   background-color: var(--signposting-generosity-background-default);
   color: var(--agnostic-neutrals-text-default);

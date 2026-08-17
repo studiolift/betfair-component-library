@@ -1,134 +1,136 @@
+@use "mixins/type_scale";
+
 .typography-h780 {
-  @include typography-h780;
+  @include type_scale.typography-h780;
 }
 
 .typography-h720 {
-  @include typography-h720;
+  @include type_scale.typography-h720;
 }
 
 .typography-h680 {
-  @include typography-h680;
+  @include type_scale.typography-h680;
 }
 
 .typography-h620 {
-  @include typography-h620;
+  @include type_scale.typography-h620;
 }
 
 .typography-h580 {
-  @include typography-h580;
+  @include type_scale.typography-h580;
 }
 
 .typography-h520 {
-  @include typography-h520;
+  @include type_scale.typography-h520;
 }
 
 .typography-h480 {
-  @include typography-h480;
+  @include type_scale.typography-h480;
 }
 
 .typography-h420 {
-  @include typography-h420;
+  @include type_scale.typography-h420;
 }
 
 .typography-h380 {
-  @include typography-h380;
+  @include type_scale.typography-h380;
 }
 
 .typography-h370 {
-  @include typography-h370;
+  @include type_scale.typography-h370;
 }
 
 .typography-h320 {
-  @include typography-h320;
+  @include type_scale.typography-h320;
 }
 
 .typography-h319 {
-  @include typography-h319;
+  @include type_scale.typography-h319;
 }
 
 .typography-h280 {
-  @include typography-h280;
+  @include type_scale.typography-h280;
 }
 
 .typography-h220 {
-  @include typography-h220;
+  @include type_scale.typography-h220;
 }
 
 .typography-h219 {
-  @include typography-h219;
+  @include type_scale.typography-h219;
 }
 
 .typography-h180 {
-  @include typography-h180;
+  @include type_scale.typography-h180;
 }
 
 .typography-h182 {
-  @include typography-h182;
+  @include type_scale.typography-h182;
 }
 
 .typography-h158 {
-  @include typography-h158;
+  @include type_scale.typography-h158;
 }
 
 .typography-h156 {
-  @include typography-h156;
+  @include type_scale.typography-h156;
 }
 
 .typography-h155 {
-  @include typography-h155;
+  @include type_scale.typography-h155;
 }
 
 .typography-h154 {
-  @include typography-h154;
+  @include type_scale.typography-h154;
 }
 
 .typography-h152 {
-  @include typography-h152;
+  @include type_scale.typography-h152;
 }
 
 .typography-h151 {
-  @include typography-h151;
+  @include type_scale.typography-h151;
 }
 
 .typography-h120 {
-  @include typography-h120;
+  @include type_scale.typography-h120;
 }
 
 .typography-h098 {
-  @include typography-h098;
+  @include type_scale.typography-h098;
 }
 
 .typography-h092 {
-  @include typography-h092;
+  @include type_scale.typography-h092;
 }
 
 .typography-h088 {
-  @include typography-h088;
+  @include type_scale.typography-h088;
 }
 
 .typography-h082 {
-  @include typography-h082;
+  @include type_scale.typography-h082;
 }
 
 .typography-h081 {
-  @include typography-h081;
+  @include type_scale.typography-h081;
 }
 
 .typography-h078 {
-  @include typography-h078;
+  @include type_scale.typography-h078;
 }
 
 .typography-h072 {
-  @include typography-h072;
+  @include type_scale.typography-h072;
 }
 
 .typography-h050 {
-  @include typography-h050;
+  @include type_scale.typography-h050;
 }
 
 h1, h2 {
   margin-block-start: 1.5rem;
-  @include typography-h680;
+  @include type_scale.typography-h680;
 
   &:first-child {
     margin-block-start: 0;
@@ -138,7 +140,7 @@ h1, h2 {
 
 h3 {
   margin-block-start: 1.5rem;
-  @include typography-h480;
+  @include type_scale.typography-h480;
 
   &:first-child {
     margin-block-start: 0;
@@ -148,7 +150,7 @@ h3 {
 
 h4 {
   margin-block-start: 1.5rem;
-  @include typography-h380;
+  @include type_scale.typography-h380;
 
   &:first-child {
     margin-block-start: 0;
@@ -158,7 +160,7 @@ h4 {
 
 p {
   margin-block-start: 1rem;
-  @include typography-h220;
+  @include type_scale.typography-h220;
 
   &:first-child {
     margin-block-start: 0;
@@ -178,7 +180,7 @@ blockquote {
   }
 
   & > p {
-    @include typography-h320;
+    @include type_scale.typography-h320;
   }
 
 }
@@ -208,7 +210,7 @@ ol {
 
 li {
   margin-block-start: 0.5rem;
-  @include typography-h220;
+  @include type_scale.typography-h220;
 
   &:first-child {
     margin-block-start: 0;
@@ -231,7 +233,7 @@ p, h1, h2, h3, h4, h5, li {
   
     &:hover,
     &:focus {
-      color: var(--action-sportsbook-background-default, #007385);
+      color: var(--brand-betfair-text-hover, #007385);
     }
   
   }
@@ -247,7 +249,7 @@ p, h1, h2, h3, h4, h5, li {
 
   &:hover svg,
   &:focus svg {
-    fill: var(--action-sportsbook-background-default, #007385);
+    fill: var(--brand-betfair-text-hover, #007385);
   }
 
 }

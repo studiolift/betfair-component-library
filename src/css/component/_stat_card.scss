@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .stat_card {
   margin-block-start: 1rem;
   border-radius: 4px;
@@ -18,7 +20,7 @@
 
   h1, h2, h3, h4, h5 {
     color: var(--neutrals-text-default, #18181A);
-    @include typography-h380;
+    @include type_scale.typography-h380;
   }
 
   p {

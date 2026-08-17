@@ -1,3 +1,5 @@
+@use "mixins/include_media";
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,7 +26,7 @@ body {
   /* Set a scroll margin custom property for anchor links at desktop and mobile */
   --scroll-margin: calc(var(--header-height) + 1rem);
 
-  @include media('>tablet') {
+  @include include_media.media('>tablet') {
     --scroll-margin: calc((var(--header-height) * 2) + 1rem);
   }
 

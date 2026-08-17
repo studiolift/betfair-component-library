@@ -1,78 +1,78 @@
-@import "variables/spacing";
+@use "variables/spacing";
 
-@import "mixins/include_media";
-@import "mixins/type_scale";
+@use "mixins/include_media";
+@use "mixins/type_scale";
 
-@import "base/reset";
-@import "base/code";
-@import "base/fonts";
-@import "base/global";
-@import "base/typography";
-@import "base/media";
-@import "base/tables";
+@use "base/reset";
+@use "base/code";
+@use "base/fonts";
+@use "base/global";
+@use "base/typography";
+@use "base/media";
+@use "base/tables";
 
-@import "component/accordion";
-@import "component/bottom_sheet";
-@import "component/button_group";
-@import "component/buttons";
-@import "component/inline_odds";
-@import "component/price_button";
-@import "component/menu_list";
-@import "component/tab_navigation";
-@import "component/secondary_tab_navigation";
-@import "component/market_navigation";
-@import "component/breadcrumb_navigation";
-@import "component/race_navigation";
-@import "component/quick_links";
-@import "component/share_options";
-@import "component/social_channels";
-@import "component/pebble";
-@import "component/card";
-@import "component/author_card";
-@import "component/promo_banner";
-@import "component/notification";
-@import "component/ticker";
-@import "component/text_advert";
-@import "component/status_labels";
-@import "component/stat_card";
-@import "component/graph_card";
-@import "component/article_card";
-@import "component/article_header";
-@import "component/article_featured_image";
-@import "component/article_summary";
-@import "component/betting_copy";
-@import "component/market_card";
-@import "component/platform_toggle";
-@import "component/entry_summary";
-@import "component/embed_summary";
-@import "component/most_read";
-@import "component/featured_runner";
-@import "component/head_to_head";
-@import "component/match_result";
-@import "component/match_preview";
-@import "component/stat_chip";
-@import "component/team_form";
-@import "component/stat_table";
-@import "component/golf_form_table";
-@import "component/league_table";
-@import "component/league_record";
-@import "component/truncated_table";
-@import "component/recommended_bet";
-@import "component/runner_form_table";
-@import "component/race_result";
-@import "component/fast_result";
-@import "component/search_form";
-@import "component/podcast_embed";
-@import "component/odds_converter";
-@import "component/laybet_calculator";
-@import "component/card_grid";
-@import "component/swimlane";
-@import "component/web_adverts";
-@import "component/banner";
-@import "component/player_chip";
-@import "component/acca";
-@import "component/market_movers";
-@import "component/author_prediction";
+@use "component/accordion";
+@use "component/bottom_sheet";
+@use "component/button_group";
+@use "component/buttons";
+@use "component/inline_odds";
+@use "component/price_button";
+@use "component/menu_list";
+@use "component/tab_navigation";
+@use "component/secondary_tab_navigation";
+@use "component/market_navigation";
+@use "component/breadcrumb_navigation";
+@use "component/race_navigation";
+@use "component/quick_links";
+@use "component/share_options";
+@use "component/social_channels";
+@use "component/pebble";
+@use "component/card";
+@use "component/author_card";
+@use "component/promo_banner";
+@use "component/notification";
+@use "component/ticker";
+@use "component/text_advert";
+@use "component/status_labels";
+@use "component/stat_card";
+@use "component/graph_card";
+@use "component/article_card";
+@use "component/article_header";
+@use "component/article_featured_image";
+@use "component/article_summary";
+@use "component/betting_copy";
+@use "component/market_card";
+@use "component/platform_toggle";
+@use "component/entry_summary";
+@use "component/embed_summary";
+@use "component/most_read";
+@use "component/featured_runner";
+@use "component/head_to_head";
+@use "component/match_result";
+@use "component/match_preview";
+@use "component/stat_chip";
+@use "component/team_form";
+@use "component/stat_table";
+@use "component/golf_form_table";
+@use "component/league_table";
+@use "component/league_record";
+@use "component/truncated_table";
+@use "component/recommended_bet";
+@use "component/runner_form_table";
+@use "component/race_result";
+@use "component/fast_result";
+@use "component/search_form";
+@use "component/podcast_embed";
+@use "component/odds_converter";
+@use "component/laybet_calculator";
+@use "component/card_grid";
+@use "component/swimlane";
+@use "component/web_adverts";
+@use "component/banner";
+@use "component/player_chip";
+@use "component/acca";
+@use "component/market_movers";
+@use "component/author_prediction";
 
 
 .theme_toggle {
@@ -87,7 +87,7 @@
     border: 1px solid var(--neutrals-text-default);
     color: var(--neutrals-background-elevation2, #FCFCFD);
     border-radius: 4px;
-    @include typography-h180;
+    @include type_scale.typography-h180;
     transition: ease 0.5s all;
   }
 
@@ -119,7 +119,7 @@
 .doc_header__menu_toggle {
   cursor: pointer;
 
-  @include media('>920px') {
+  @include include_media.media('>920px') {
     display: none;
   }
 
@@ -162,7 +162,7 @@
   padding: 0.75rem;
   gap: 2rem;
 
-  @include media('>920px') {
+  @include include_media.media('>920px') {
     grid-template-columns: 15rem minmax(0, 1fr);
     max-width: 60rem;
     margin-inline: auto;
@@ -176,7 +176,7 @@
   transition: ease 0.5s left;
   z-index: 99999;
 
-  @include media('<920px') {
+  @include include_media.media('<920px') {
     position: fixed;
     top: 3.75rem;
     left: -100%;

@@ -1,6 +1,8 @@
+@use "mixins/type_scale";
+
 .pebble {
   cursor: pointer;
-  @include typography-h120;
+  @include type_scale.typography-h120;
   border-radius: 16px;
   border: 1px solid var(--components-action-pebbles-border-unselected, #B4B4B8);
   background-color: var(--components-action-pebbles-background-default, #FCFCFD);
