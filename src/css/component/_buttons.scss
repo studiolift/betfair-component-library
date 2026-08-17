@@ -1,18 +1,20 @@
+@use "mixins/type_scale";
+
 .primary_button,
 .secondary_button {
   display: block;
   border-radius: 4px;
   background-color: var(--agnostic-action-primary-background-default, #FFB80C);
   color: var(--agnostic-neutrals-text-default);
-  @include typography-h280;
+  @include type_scale.typography-h280;
   text-align: center;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem;
   text-decoration: none;
   white-space: nowrap;
 
   span {
     display: block;
-    @include typography-h120;
+    @include type_scale.typography-h120;
   }
 
   &:hover,

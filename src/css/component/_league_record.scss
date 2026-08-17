@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .league_record {
   width: 100%;
   margin-block-start: 1rem;
@@ -9,14 +11,14 @@
   th, td {
     text-align: left;
     padding: 0.5rem;
-    @include typography-h280;
+    @include type_scale.typography-h280;
     color: var(--neutrals-text-default, #18181A);
     background-color: var(--neutrals-background-elevation2, #FCFCFD);
   }
 
   td {
     border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
-    @include typography-h220;
+    @include type_scale.typography-h220;
   }
 
   td:last-child,

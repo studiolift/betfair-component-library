@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .stat_chip_grid {
   display: grid;
   gap: 0.5rem;
@@ -50,19 +52,19 @@
 .stat_chip__title {
   margin: 0;
   color: var(--neutrals-text-default, #18181A);
-  @include typography-h098;
+  @include type_scale.typography-h098;
   text-align: center;
 }
 
 .stat_chip__stat {
   margin: 0;
   color: var(--neutrals-text-default, #18181A);
-  @include typography-h082;
+  @include type_scale.typography-h082;
   text-align: center;
 
   strong {
     display: block;
-    @include typography-h580;
+    @include type_scale.typography-h580;
 
   }
 

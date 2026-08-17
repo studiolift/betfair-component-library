@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .table_container {
   position: relative;
   border-radius: 4px;
@@ -29,20 +31,19 @@ table {
     text-align: left;
     padding: 0.75rem;
     color: var(--neutrals-text-default, #18181A);
-    @include typography-h220;
+    @include type_scale.typography-h220;
   }
 
   th {
     position: relative;
-    cursor: pointer;
     vertical-align: middle;
-    @include typography-h280;
+    @include type_scale.typography-h280;
     background-color: var(--brand-betfair-background-default);
     color: var(--agnostic-neutrals-text-default);
   }
 
   td {
-    @include typography-h220;
+    @include type_scale.typography-h220;
     vertical-align: top;
   }
 
@@ -88,43 +89,84 @@ table {
 
   th {
     padding-left: 1.5rem;
+    cursor: pointer;
   }
 
-  th:before {
+  th::before,
+  th::after {
     content: '';
     position: absolute;
     width: 0px;
     height: 0px;
     border-style: solid;
+    left: 0.75rem;
+  }
+  
+  th::before {
     border-width: 3px 3px 0 3px;
     border-color: var(--agnostic-neutrals-text-default, #18181A) transparent transparent transparent;
     top: calc(50% + 3px);
-    left: 0.75rem;
     transform: translateY(calc(-50% - 0px));
   }
 
-  th:after {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
+  th::after {
     border-width: 0 3px 3px 3px;
     border-color: transparent transparent var(--agnostic-neutrals-text-default, #18181A) transparent;
     top: calc(50% - 3px);
-    left: 0.75rem;
     transform: translateY(calc(-50% + 0px));
   }
 
-  .th_sort_asc:after {
+  .th_sort_asc::after {
     border-color: transparent transparent var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent;
   }
 
-  .th_sort_desc:before {
+  .th_sort_desc::before {
     border-color: var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent transparent transparent;
   }
 
 }
+
+.dynamic_stat_table {
+
+  th[data-sortable] {
+    padding-left: 1.5rem;
+    cursor: pointer;
+  }
+
+  th[data-sortable]::before,
+  th[data-sortable]::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    left: 0.75rem;
+  }
+  
+  th[data-sortable]::before {
+    border-width: 3px 3px 0 3px;
+    border-color: var(--agnostic-neutrals-text-default, #18181A) transparent transparent transparent;
+    top: calc(50% + 3px);
+    transform: translateY(calc(-50% - 0px));
+  }
+
+  th[data-sortable]::after {
+    border-width: 0 3px 3px 3px;
+    border-color: transparent transparent var(--agnostic-neutrals-text-default, #18181A) transparent;
+    top: calc(50% - 3px);
+    transform: translateY(calc(-50% + 0px));
+  }
+
+  th[data-sortable].th_sort_asc::after {
+    border-color: transparent transparent var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent;
+  }
+
+  th[data-sortable].th_sort_desc::before {
+    border-color: var(--agnostic-neutrals-text-alternative, #FFFFFF) transparent transparent transparent;
+  }
+
+}
+
 
 .fixed_first_column {
 

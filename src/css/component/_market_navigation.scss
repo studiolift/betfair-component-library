@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .market_navigation {
   list-style-type: none;
   margin: 0;
@@ -17,7 +19,7 @@
 .market_navigation__item {
   margin: 0;
   text-align: center;
-  @include typography-h098;
+  @include type_scale.typography-h098;
 
   a {
     display: flex;

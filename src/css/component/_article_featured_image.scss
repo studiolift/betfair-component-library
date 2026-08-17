@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .article_featured_image {
   margin-block-start: 1rem;
 
@@ -9,7 +11,7 @@
 
   figcaption {
     margin-block-start: 0.5rem;
-    @include typography-h098;
+    @include type_scale.typography-h098;
     color: var(--neutrals-text-secondary, #444446);
     text-overflow: ellipsis;
   }

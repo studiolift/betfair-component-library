@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .ticker {
   width: 100%;
   max-width: 100%;
@@ -13,7 +15,7 @@
 .ticker p {
   --ticker-speed: 15s;
   margin: 0;
-  @include typography-h180;
+  @include type_scale.typography-h180;
   display: inline-block;
   padding-left: 100%;
   animation: tickerTape var(--ticker-speed, 20s) linear infinite;

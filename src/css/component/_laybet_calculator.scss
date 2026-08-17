@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .laybet_calculator {
   position: relative;
   margin-block-start: 0.75rem;
@@ -19,7 +21,7 @@
 
   label {
     display: block;
-    @include typography-h280;
+    @include type_scale.typography-h280;
   }
 
   input {
@@ -30,7 +32,7 @@
     padding: 0.5rem;
     border-radius: 4px;
     margin-block-start: 0.25rem;
-    @include typography-h120;
+    @include type_scale.typography-h120;
   }
 
   & > :first-child {
@@ -48,7 +50,7 @@
   }
 
   li {
-    @include typography-h220;
+    @include type_scale.typography-h220;
     padding-block-start: 0.25rem;
     margin-block-start: 0.25rem;
     border-top: 1px solid var(--neutrals-background-elevation4);
@@ -64,7 +66,7 @@
   }
 
   li:last-child {
-    @include typography-h280;
+    @include type_scale.typography-h280;
     border-top: 1px solid var(--neutrals-text-default);
   }
 

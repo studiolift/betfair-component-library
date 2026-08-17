@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .article_header {
   margin-block-start: 1rem;
 
@@ -12,7 +14,7 @@
   border-radius: 2px;
   background: var(--agnostic-neutrals-background-alternative, #232325);
   color: var(--agnostic-neutrals-text-alternative, #FCFCFD);
-  @include typography-h078;
+  @include type_scale.typography-h078;
   text-transform: uppercase;
   padding: 0 0.25rem;
 }
@@ -20,7 +22,7 @@
 .article_header__title {
   margin-block-start: 0.5rem;
   color: var(--neutrals-text-default, #18181A);
-  @include typography-h680;
+  @include type_scale.typography-h680;
 }
 
 .article_header__meta {
@@ -34,7 +36,7 @@
   li {
     margin: 0;
     color: var(--neutrals-text-secondary, #444446);
-    @include typography-h092;
+    @include type_scale.typography-h092;
   }
 
   a {

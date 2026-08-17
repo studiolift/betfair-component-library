@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .author_card {
   margin-block-start: 0.75rem;
   background-color: var(--neutrals-background-elevation2);
@@ -23,7 +25,7 @@
     border-top: 1px solid var(--neutrals-border-elevation2);
     padding: 0.75rem 0;
     display: block;
-    @include typography-h120;
+    @include type_scale.typography-h120;
     text-align: center;
   }
 

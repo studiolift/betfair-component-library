@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .race_result {
   width: 100%;
   margin-block-start: 0.5rem;
@@ -7,7 +9,7 @@
   }
 
   th {
-    @include typography-h098;
+    @include type_scale.typography-h098;
     color: var(--neutrals-text-disabled, #76767A);
     text-align: left;
     padding: 0.5rem;
@@ -18,7 +20,7 @@
   }
 
   td {
-    @include typography-h120;
+    @include type_scale.typography-h120;
     color: var(--neutrals-text-default, #18181A);
     text-align: left;
     padding: 0.5rem;
@@ -47,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include typography-h098;
+    @include type_scale.typography-h098;
     width: 1.25rem;
     height: 1.25rem;
     color: var(--signposting-indicators-counter-text-default, #FCFCFD);
@@ -57,7 +59,7 @@
   }
 
   .distance {
-    @include typography-h120;
+    @include type_scale.typography-h120;
     color: var(--neutrals-text-default, #18181A);
 
     svg {
@@ -76,11 +78,11 @@
     text-align: center;
 
     .number {
-      @include typography-h158;
+      @include type_scale.typography-h158;
     }
   
     .position {
-      @include typography-h120;
+      @include type_scale.typography-h120;
     }
 
   }
@@ -90,7 +92,7 @@
     .name {
       margin: 0;
       color: var(--neutrals-text-default, #18181A);
-      @include typography-h156;
+      @include type_scale.typography-h156;
     }
   
     .team {
@@ -101,7 +103,7 @@
     .team li {
       margin: 0;
       color: var(--neutrals-text-secondary, #444446);
-      @include typography-h120;
+      @include type_scale.typography-h120;
     }
   
     abbr {
@@ -120,7 +122,7 @@
   }
 
   .final_odds {
-    @include typography-h156;
+    @include type_scale.typography-h156;
     color: var(--neutrals-text-default, #18181A);
   }
 

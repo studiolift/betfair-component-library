@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .card {
   --gap: 0.5rem;
   position: relative;
@@ -27,7 +29,7 @@
     cursor: pointer;
     padding: 0.75rem;
     width: calc(100% + 1rem);
-    @include typography-h120;
+    @include type_scale.typography-h120;
     text-align: center;
     border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
     color: var(--neutrals-text-default, #18181A);
@@ -50,7 +52,7 @@
   display: block;
   padding: 0.75rem;
   width: calc(100% + 1rem);
-  @include typography-h120;
+  @include type_scale.typography-h120;
   text-align: center;
   border-top: 1px solid var(--neutrals-border-elevation2, #D0D0D2);
   color: var(--neutrals-text-default, #18181A);

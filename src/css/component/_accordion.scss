@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .accordion {
   background-color: var(--neutrals-background-elevation2);
   margin-block-start: 1rem;
@@ -20,7 +22,7 @@
 
   h1, h2, h3, h4, h5 {
     margin: 0;
-    @include typography-h280;
+    @include type_scale.typography-h280;
   }
 
   svg {

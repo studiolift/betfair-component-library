@@ -1,3 +1,5 @@
+@use "mixins/type_scale";
+
 .secondary_tab_navigation {
   padding-inline: 0.75rem;
   margin: 0;
@@ -18,7 +20,7 @@
   margin: 0;
   text-wrap: nowrap;
   white-space: nowrap;
-  @include typography-h220;
+  @include type_scale.typography-h220;
 
   a {
     position: relative;

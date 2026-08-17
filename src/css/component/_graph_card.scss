@@ -1,3 +1,4 @@
+@use "mixins/type_scale";
 
 .graph_columns {
   display: grid;
@@ -55,13 +56,13 @@
   justify-content: space-between;
 
   .title {
-    @include typography-h082;
+    @include type_scale.typography-h082;
     text-transform: uppercase;
   }
 
   .title strong {
     display: block;
-    @include typography-h380;
+    @include type_scale.typography-h380;
     text-transform: none;
   }
 
@@ -72,7 +73,7 @@
     li {
       position: relative;
       margin: 0;
-      @include typography-h082;
+      @include type_scale.typography-h082;
       padding-right: 1rem;
       text-align: right;
     }

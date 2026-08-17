@@ -1,6 +1,8 @@
+@use "mixins/type_scale";
+
 .match_result_date {
   margin-block-start: 0.5rem;
-  @include typography-h088;
+  @include type_scale.typography-h088;
   color: var(--neutrals-text-default, #18181A);
   text-align: center;
 
@@ -20,7 +22,7 @@
 .match_result__home_team,
 .match_result__away_team {
   color: var(--neutrals-text-default, #18181A);
-  @include typography-h152;
+  @include type_scale.typography-h152;
   flex: 50% 1 1;
 }
 
@@ -36,7 +38,7 @@
 .match_result__home_goals,
 .match_result__away_goals {
   color: var(--neutrals-text-default, #18181A);
-  @include typography-h180;
+  @include type_scale.typography-h180;
   border-radius: 2px;
   background-color: var(--neutrals-background-elevation3, #EAEAEB);
   padding: 0.25rem 0.125rem;
@@ -72,7 +74,3 @@
   background-color: var(--signposting-pnl-background-profit, #1D6F1D);
   color: var(--signposting-inplay-text-secondary, #FCFCFD);
 }
-
-
-
-
