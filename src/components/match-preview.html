@@ -11,11 +11,17 @@ tags: football-stats
     <h2>Match Preview</h2>
   </header>
   <div class="stat_card__content">
-    <h3 class="match_preview_date">27 Nov 2023</h3>
+    <h3 class="match_preview_date">27 Nov, 19:45</h3>
     <div class="match_preview">
-      <span class="match_preview__home_team">PSG</span>
+      <span class="match_preview__home_team">
+        <span style="--kit-colour-1: #FF0000; --kit-colour-2: #003399;" class="kit"></span>
+        PSG
+      </span>
       <span class="match_preview__away_versus">-</span>
-      <span class="match_preview__away_team">Newcastle United</span>
+      <span class="match_preview__away_team">
+        <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #000000;" class="kit"></span>
+        Newcastle United
+      </span>
     </div>
     <div class="team_form_columns">
       <div class="team_form team_form--home">
@@ -76,11 +82,17 @@ tags: football-stats
     <h2>Match Preview</h2>
   </header>
   <div class="stat_card__content">
-    <h3 class="match_preview_date">27 Nov 2023</h3>
+    <h3 class="match_preview_date">27 Nov, 19:45</h3>
     <div class="match_preview">
-      <span class="match_preview__home_team">PSG</span>
+      <span class="match_preview__home_team">
+        <span style="--kit-colour-1: #FF0000; --kit-colour-2: #003399;" class="kit"></span>
+        PSG
+      </span>
       <span class="match_preview__away_versus">-</span>
-      <span class="match_preview__away_team">Newcastle United</span>
+      <span class="match_preview__away_team">
+        <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #000000;" class="kit"></span>
+        Newcastle United
+      </span>
     </div>
     <div class="team_form_columns">
       <div class="team_form team_form--home">
@@ -107,6 +119,61 @@ tags: football-stats
     <a class="primary_button" href="#">
       Full Stats
       <span>Powered by Opta</span>
+    </a>
+  </div>
+</div>
+{% endhighlight %}
+
+<h3>Variant</h3>
+
+<div class="stat_card">
+  <div class="stat_card__content">
+    <h3 class="match_preview_date"><time datetime="2026-08-20T20:00:00">20 Aug, 20:00</time></h3>
+    <div class="match_preview">
+      <!-- @blucube: Market buttons for Home Win and Away Win with odds percentage conversion. Favourite needs .match_preview__favourite class adding -->
+      <a href="#" class="match_preview__home_team match_preview__favourite">
+        <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #0033FF;" class="kit"></span>
+        Sheff Wed
+        <span class="percentage">53%</span>
+      </a>
+      <span class="match_preview__away_versus">
+        vs
+      </span>
+      <a href="#" class="match_preview__away_team">
+        <span style="--kit-colour-1: #990000; --kit-colour-2: #FF9900;" class="kit"></span>
+        Bradford
+        <span class="percentage">23%</span>
+      </a>
+    </div>
+    <a class="primary_button" href="#">
+      View predictions
+    </a>
+  </div>
+</div>
+
+<h3>Example HTML</h3>
+{% highlight html %}
+<div class="stat_card">
+  <div class="stat_card__content">
+    <h3 class="match_preview_date"><time datetime="2026-08-20T20:00:00">20 Aug, 20:00</time></h3>
+    <div class="match_preview">
+      <!-- @blucube: Market buttons for Home Win and Away Win with odds percentage conversion. Favourite needs .match_preview__favourite class adding -->
+      <a href="#" class="match_preview__home_team match_preview__favourite">
+        <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #0033FF;" class="kit"></span>
+        Sheff Wed
+        <span class="percentage">53%</span>
+      </a>
+      <span class="match_preview__away_versus">
+        vs
+      </span>
+      <a href="#" class="match_preview__away_team">
+        <span style="--kit-colour-1: #990000; --kit-colour-2: #FF9900;" class="kit"></span>
+        Bradford
+        <span class="percentage">23%</span>
+      </a>
+    </div>
+    <a class="primary_button" href="#">
+      View predictions
     </a>
   </div>
 </div>
