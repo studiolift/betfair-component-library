@@ -1,0 +1,65 @@
+---
+title: Multiple Bet
+date: 2024-01-01
+tags: shortcodes
+---
+
+<p>A shortcode to display a multiple bet with several selections and a add to betslip button. You can use the <a href="https://sbktool.studiolift.com/" target="_blank">SBK tool</a> to search for markets and obtain the necessary IDs.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[multipleBet title="Premier LeagueMultiple" selections="924.533727057|1096,924.533727064|48324"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title</td>
+      <td>The title of the multiple bet</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>selections</td>
+      <td>The selections for the multiple bet. Should contain at least 2 selections. Format: marketId|selectionId,marketId|selectionId</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output examples</h2>
+
+<div class="acca">
+    <div class="acca__header">
+    <h4 class="typography-h280">Multiple bet title</h4>
+  </div>
+    <div class="acca__selections">
+    <ul>
+            <li>
+        Outright Winner: <strong>Arsenal</strong>
+        <strong style="float: right;">
+                      1/7
+                  </strong>
+        <br>
+                English Premier League - Sat 21 Nov
+      </li>
+            <li>
+        To Be Relegated: <strong>Ipswich</strong>
+        <strong style="float: right;">
+                      17/10
+                  </strong>
+        <br>
+                English Premier League - Sat 21 Nov
+      </li>
+          </ul>
+    <a style="margin-block-start: 1rem;" class="price_button" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelections&amp;bssId=1096,48324&amp;bsmId=924.533727057,924.533727064" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Add to Betslip at 3.37', 'event_context': 'clicked', 'module': 'multiples bet card', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelections&amp;bssId=1096,48324&amp;bsmId=924.533727057,924.533727064'});">
+      Add to Betslip at 3.37
+    </a>
+  </div>
+</div>

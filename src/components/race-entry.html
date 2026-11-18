@@ -1,0 +1,67 @@
+---
+title: Race Entry
+date: 2024-01-01
+tags: shortcodes
+---
+
+<p>A shortcode to display a race entry in an upcoming meet.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[raceEntry url="https://betting.betfair.com/horse-racing/racecards/18-november-2026/kempton-park/27/6/#palladas"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>The URL of the race entry to display</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output examples</h2>
+
+<div class="card">
+  <div class="featured_runner">
+    <div class="featured_runner__number">
+      <span class="number">7</span>
+      <span class="position">(8)</span>
+    </div>
+    <figure class="featured_runner__silks">
+      <img src="https://images.timeform.com/silks/opt/00862277.png" alt="">
+    </figure>
+    <div class="featured_runner__details">
+      <h4 class="name">Palladas</h4>
+      <ul class="team">
+        <li>J: Charlie Deutsch</li>
+        <li>T: Venetia Williams</li>
+        <li>F: 110-D6</li>
+      </ul>
+    </div>
+    <div class="featured_runner__price">
+      <ul class="button_group">
+        <li>
+          <a class="price_button" href="#">
+            <span class="price_button__label">SBK</span>
+            1.91
+          </a>
+        </li>
+        <li>
+          <a class="price_button price_button--exc" href="#">
+            <span class="price_button__label">EXC</span>
+            2.54
+          </a>
+        </li>
+      </ul>      
+    </div>
+  </div>
+</div>
