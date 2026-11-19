@@ -1,0 +1,183 @@
+---
+title: Featured Market
+date: 2024-01-01
+tags: shortcodes
+---
+
+<p>A featured market component to be used to display runners in a specific market. You can use the <a href="https://sbktool.studiolift.com/" target="_blank">SBK tool</a> to search for markets and obtain the necessary IDs.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[featuredMarket layout="a" id="924.533727057" limit="3" title="Optional%20Title" intro="Some%20optional%20Intro%20text.%20Favourite%20is%20%25favourite%25" showmarkettime="yes"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>layout</td>
+      <td>The layout to use for the featured market. Options are 'a', 'b' or 'c'</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>The ID of the market to display. Example: 924.533727057</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>The title of the featured market</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>intro</td>
+      <td>The intro text for the featured market. This can use variables to display dynamic content.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>showmarkettime</td>
+      <td>Whether to display the market time. Options are 'yes' or 'no'</td>
+      <td>Yes</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h2>Output examples</h2>
+
+<h3>Layout A example:</h3>
+
+<h3>Premier League Title Winners</h3>  
+<p>Saturday 21 Nov 2026 at 12:30</p>  
+<p>This is the intro text you can use variables like %favourite% to show the favourite team, for example: The favourite is Arsenal.</p>
+<div class="card featured_market">
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>Arsenal</p>
+    </div>
+    <div class="market_card__price">
+      <a class="price_button price_button" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'SBK 1/7', 'event_context': 'clicked', 'module': 'SBK featured market nav', 'position': '1', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057}'});">
+        <span class="price_button__label">SBK</span>
+        1/7
+      </a>
+    </div>
+  </div>
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>Brighton</p>
+    </div>
+    <div class="market_card__price">
+      <a class="price_button price_button" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'SBK 10/1', 'event_context': 'clicked', 'module': 'SBK featured market nav', 'position': '2', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057}'});">
+        <span class="price_button__label">SBK</span>
+        10/1
+      </a>
+    </div>
+  </div>
+  <div class="market_card">
+    <div class="market_card__description">
+      <p>Man City</p>
+    </div>
+    <div class="market_card__price">
+      <a class="price_button price_button" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'SBK 12/1', 'event_context': 'clicked', 'module': 'SBK featured market nav', 'position': '3', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057}'});">
+        <span class="price_button__label">SBK</span>
+        12/1
+      </a>
+    </div>
+  </div>
+</div>
+
+<h3>Layout B example:</h3>
+
+<div class="card">
+  <h3>Premier League Title Winners</h3>  
+  <p>Saturday 21 Nov 2026 at 12:30</p>  
+  <p>This is the intro text you can use variables like %favourite% to show the favourite team, for example: The favourite is Arsenal.</p>
+  <div class="swimlane swimlane--custom" style="--content-width: minmax(100px, 1fr); --snap-align: start; --scroll-padding: 0;">
+    <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Arsenal 88%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '1', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057'});">
+      <span style="--kit-colour-1: #FF0000; --kit-colour-2: #FFFFFF;" class="kit"></span>
+      Arsenal
+      <span class="stat_link__percent">88%</span>
+      <div class="stat_link__percent_bar"><span style="width:88%;"></span></div>
+    </a>
+    <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Brighton 9%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '2', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057'});">
+      <span style="" class="kit kit--blank"></span>
+      Brighton
+      <span class="stat_link__percent">9%</span>
+      <div class="stat_link__percent_bar"><span style="width:9%;"></span></div>
+    </a>
+    <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Man City 8%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '3', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057'});">
+      <span style="--kit-colour-1: #66CCFF; --kit-colour-2: #FFFFFF;" class="kit"></span>
+      Man City
+      <span class="stat_link__percent">8%</span>
+      <div class="stat_link__percent_bar"><span style="width:8%;"></span></div>
+    </a>                          
+  </div>
+</div>
+
+<h3>Layout C example:</h3>
+
+<p>Layout C is a special layout. It is intended for use with a parent container to handle the layout. Therefore, it does not include things like title, intro or dates.</p>
+
+<p>In its basic form, Layout C consists of a series of stat links.</p>
+
+<br>
+
+<a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Arsenal 88%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '1', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057'});">
+  <span style="--kit-colour-1: #FF0000; --kit-colour-2: #FFFFFF;" class="kit"></span>
+  Arsenal
+  <span class="stat_link__percent">88%</span>
+  <div class="stat_link__percent_bar"><span style="width:88%;"></span></div>
+</a>            
+<a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Brighton 9%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '2', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057'});">
+  <span style="" class="kit kit--blank"></span>
+  Brighton
+  <span class="stat_link__percent">9%</span>
+  <div class="stat_link__percent_bar"><span style="width:9%;"></span></div>
+</a>           
+<a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Man City 8%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '3', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057'});">
+  <span style="--kit-colour-1: #66CCFF; --kit-colour-2: #FFFFFF;" class="kit"></span>
+  Man City
+  <span class="stat_link__percent">8%</span>
+  <div class="stat_link__percent_bar"><span style="width:8%;"></span></div>
+</a>
+
+<p>These could be wrapped in a grid container and a card like this:</p>
+
+{% highlight html %}
+<div class="card card_grid">
+  [featuredMarket layout="a" id="924.533727057" limit="4" title="Optional%20Title" intro="Some%20optional%20Intro%20text.%20Favourite%20is%20%25favourite%25" showmarkettime="yes"]
+</div>
+{% endhighlight %}
+
+<div class="card card_grid">
+  <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Arsenal 88%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '1', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=1096&amp;bsmId=924.533727057'});">
+    <span style="--kit-colour-1: #FF0000; --kit-colour-2: #FFFFFF;" class="kit"></span>
+    Arsenal
+    <span class="stat_link__percent">88%</span>
+    <div class="stat_link__percent_bar"><span style="width:88%;"></span></div>
+  </a>            
+  <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Brighton 9%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '2', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=18567&amp;bsmId=924.533727057'});">
+    <span style="" class="kit kit--blank"></span>
+    Brighton
+    <span class="stat_link__percent">9%</span>
+    <div class="stat_link__percent_bar"><span style="width:9%;"></span></div>
+  </a>           
+  <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Man City 8%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '3', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=47999&amp;bsmId=924.533727057'});">
+    <span style="--kit-colour-1: #66CCFF; --kit-colour-2: #FFFFFF;" class="kit"></span>
+    Man City
+    <span class="stat_link__percent">8%</span>
+    <div class="stat_link__percent_bar"><span style="width:8%;"></span></div>
+  </a>
+  <a class="stat_link" href="https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=56323&amp;bsmId=924.533727057" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Liverpool 7%', 'event_context': 'clicked', 'module': 'featured market nav', 'position': '4', 'destination_url': 'https://www.betfair.com/betting/?modules=betslip&amp;action=addAffiliateSelection&amp;bssId=56323&amp;bsmId=924.533727057'});">
+    <span style="--kit-colour-1: #FF0000; --kit-colour-2: #FF0000;" class="kit"></span>
+    Liverpool
+    <span class="stat_link__percent">7%</span>
+    <div class="stat_link__percent_bar"><span style="width:7%;"></span></div>
+  </a>
+</div>

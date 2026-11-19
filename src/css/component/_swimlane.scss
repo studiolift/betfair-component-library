@@ -35,3 +35,16 @@
   }
 
 }
+
+.swimlane--custom {
+  grid-auto-columns: var(--content-width, 90%);
+  scroll-padding-inline: var(--scroll-padding, 0.75rem);
+
+  @include include_media.media('>tablet') {
+  }
+
+  & > * {
+    scroll-snap-align: var(--snap-align, center);
+  }
+
+}

@@ -1,0 +1,153 @@
+---
+title: Player vs Player
+date: 2024-01-17
+tags: shortcodes
+---
+
+<p>A shortcode to display player statistics for two given players.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[playerVsPlayer player1="2847" player2="2869"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>player1</td>
+      <td>The ID of the first player.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>player2</td>
+      <td>The ID of the second player.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output example</h2>
+<br>
+<div class="pvp_container">
+  
+  <div class="player_chips">
+    <div class="player_chip">
+      <p class="competition_name typography-h092">English Premier League</p>
+      <figure class="player_chip__kit" style="--kit-color: #FF0000;">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M22,43.5c-4,0-8-.4-11.7-1-.9-.2-1.6-1-1.4-2,1.1-7.6,1.1-19.1-.1-26.3v-.6c-.1,0-5.1,2.3-5.1,2.3h-.1C1.5,14,.4,11.3.5,8c0,0,0,0,0,0L8.7,1.8l6.7-1.3c1.7.6,4.1,1,6.7,1s5-.3,6.4-.9l6.7,1.2,8.2,6.2s0,0,0,0c0,3.3-.9,6-3.1,7.9h-.1s-5-2.3-5-2.3v.6c-1.3,7.2-1.3,18.7-.2,26.3.1.9-.5,1.8-1.4,2-3.7.7-7.6,1-11.6,1Z" fill="var(--kit-color)"></path>
+            <path d="M15.4,1c1.6.6,4.1.9,6.7.9s5-.3,6.5-.9l6.4,1.2,8,6c0,3-.9,5.4-2.7,7.1l-4.2-1.9-1.2-.5-.2,1.3c-1.2,7.2-1.2,18.8-.1,26.4,0,.7-.3,1.3-1,1.4-3.7.7-7.5,1-11.5,1s-8-.4-11.6-1c-.7-.1-1.1-.7-1-1.4,1.1-7.6,1.1-19.2-.1-26.4l-.2-1.3-1.2.5-4.2,1.9c-1.8-1.7-2.7-4.1-2.7-7.1l8-6,6.4-1.2M28.6,0c0,0-.2,0-.2,0-1.4.6-3.8.9-6.2.9s-4.8-.3-6.4-.9c0,0-.2,0-.2,0,0,0,0,0-.1,0l-6.6,1.2c0,0-.2,0-.3.1L.3,7.5c-.2.1-.2.3-.2.5,0,3.5,1,6.3,3.2,8.3.1.1.3.2.4.2s.2,0,.3,0c0,0,4.2-1.9,4.4-2,1.2,7.2,1.2,18.7.1,26.1-.2,1.2.6,2.3,1.8,2.5,3.7.7,7.7,1,11.8,1s8-.3,11.7-1c1.2-.2,2-1.3,1.8-2.5-1.1-7.4-1.1-18.9.1-26.1l4.4,2c0,0,.2,0,.3,0,.2,0,.3,0,.4-.2,2.2-2,3.3-4.8,3.2-8.3,0-.2,0-.4-.2-.5l-8.2-6.1c0,0-.2,0-.3-.1L28.7,0S28.6,0,28.6,0h0Z" fill="var(--neutrals-background-elevation4)"></path>
+          </g>
+        </svg>      
+        <figcaption class="shirt_number">8</figcaption>
+      </figure>
+      <h3 class="player_name typography-h280">Bruno Fernandes</h3>
+      <p class="team_name typography-h092">Man Utd</p>
+    </div>
+    <div class="player_chip">
+      <p class="competition_name typography-h092">English Premier League</p>
+      <figure class="player_chip__kit" style="--kit-color: #FF0000;">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M22,43.5c-4,0-8-.4-11.7-1-.9-.2-1.6-1-1.4-2,1.1-7.6,1.1-19.1-.1-26.3v-.6c-.1,0-5.1,2.3-5.1,2.3h-.1C1.5,14,.4,11.3.5,8c0,0,0,0,0,0L8.7,1.8l6.7-1.3c1.7.6,4.1,1,6.7,1s5-.3,6.4-.9l6.7,1.2,8.2,6.2s0,0,0,0c0,3.3-.9,6-3.1,7.9h-.1s-5-2.3-5-2.3v.6c-1.3,7.2-1.3,18.7-.2,26.3.1.9-.5,1.8-1.4,2-3.7.7-7.6,1-11.6,1Z" fill="var(--kit-color)"></path>
+            <path d="M15.4,1c1.6.6,4.1.9,6.7.9s5-.3,6.5-.9l6.4,1.2,8,6c0,3-.9,5.4-2.7,7.1l-4.2-1.9-1.2-.5-.2,1.3c-1.2,7.2-1.2,18.8-.1,26.4,0,.7-.3,1.3-1,1.4-3.7.7-7.5,1-11.5,1s-8-.4-11.6-1c-.7-.1-1.1-.7-1-1.4,1.1-7.6,1.1-19.2-.1-26.4l-.2-1.3-1.2.5-4.2,1.9c-1.8-1.7-2.7-4.1-2.7-7.1l8-6,6.4-1.2M28.6,0c0,0-.2,0-.2,0-1.4.6-3.8.9-6.2.9s-4.8-.3-6.4-.9c0,0-.2,0-.2,0,0,0,0,0-.1,0l-6.6,1.2c0,0-.2,0-.3.1L.3,7.5c-.2.1-.2.3-.2.5,0,3.5,1,6.3,3.2,8.3.1.1.3.2.4.2s.2,0,.3,0c0,0,4.2-1.9,4.4-2,1.2,7.2,1.2,18.7.1,26.1-.2,1.2.6,2.3,1.8,2.5,3.7.7,7.7,1,11.8,1s8-.3,11.7-1c1.2-.2,2-1.3,1.8-2.5-1.1-7.4-1.1-18.9.1-26.1l4.4,2c0,0,.2,0,.3,0,.2,0,.3,0,.4-.2,2.2-2,3.3-4.8,3.2-8.3,0-.2,0-.4-.2-.5l-8.2-6.1c0,0-.2,0-.3-.1L28.7,0S28.6,0,28.6,0h0Z" fill="var(--neutrals-background-elevation4)"></path>
+          </g>
+        </svg>      
+        <figcaption class="shirt_number">8</figcaption>
+      </figure>
+      <h3 class="player_name typography-h280">Martin Ødegaard</h3>
+      <p class="team_name typography-h092">Arsenal</p>
+    </div>
+  </div>
+  
+  <div class="stat_card_holder show">
+    <div class="stat_card">
+      <header class="stat_card__title">
+        <h2>Fernandes <span style="float: right;">Ødegaard</span></h2>
+      </header>
+      <div class="stat_card__content">
+        <div class="head_to_head head_to_head--no-bars appearances">
+          <span class="label">Appearances</span>
+          <span class="home highlight"><span>35</span></span>
+          <span class="away"><span>24</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars goals">
+          <span class="label">Goals</span>
+          <span class="home highlight"><span>9</span></span>
+          <span class="away"><span>1</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars shots">
+          <span class="label">Shots</span>
+          <span class="home highlight"><span>85</span></span>
+          <span class="away"><span>22</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars shots_on_target">
+          <span class="label">Shots on target</span>
+          <span class="home highlight"><span>24</span></span>
+          <span class="away"><span>8</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars assists">
+          <span class="label">Assists</span>
+          <span class="home highlight"><span>21</span></span>
+          <span class="away"><span>6</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars chances_created">
+          <span class="label">Chances created</span>
+          <span class="home highlight"><span>136</span></span>
+          <span class="away"><span>39</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars passes">
+          <span class="label">Passes</span>
+          <span class="home highlight"><span>1994</span></span>
+          <span class="away"><span>828</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars fouls">
+          <span class="label">Fouls</span>
+          <span class="home highlight"><span>25</span></span>
+          <span class="away"><span>9</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars fouls_won">
+          <span class="label">Fouls won</span>
+          <span class="home highlight"><span>35</span></span>
+          <span class="away"><span>9</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars yellow_cards">
+          <span class="label">Yellow cards</span>
+          <span class="home highlight"><span>5</span></span>
+          <span class="away"><span>0</span></span>
+        </div>
+        <hr>
+        <div class="head_to_head head_to_head--no-bars red_cards">
+          <span class="label">Red cards</span>
+          <span class="home"><span>0</span></span>
+          <span class="away"><span>0</span></span>
+        </div>
+      </div>
+    </div> 
+    <div class="stat_table_caption">
+        <div class="powered_by">
+    <p>Powered by</p>
+    <img src="/assets/opta.png" alt="Opta" loading="lazy">
+  </div>
+
+    </div>
+  </div>
+  
+</div>

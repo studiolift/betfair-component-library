@@ -1,0 +1,150 @@
+---
+title: Team Stats
+date: 2024-01-16
+tags: shortcodes
+---
+
+<p>A shortcode to display team statistics for a given team.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[teamStats team="90" stats="winLoseDraw|goals|over15Goals|over25Goals|over35Goals|bothTeamsToScore|shots|shotsOnTarget|corners|cards|fouls"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>team</td>
+      <td>The ID of the team for whom to display statistics.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>stats</td>
+      <td>A pipe-separated list of statistics to display.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output example</h2>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Arsenal</h2>
+    <p>
+      38 games played in English Premier League this season
+              <br>Next fixture: Arsenal vs Dortmund
+          </p>
+  </header>
+  <div class="stat_card__content">
+        <div class="stat_chip_grid stat_chip_grid--threecols">
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Won</h3>
+        <p class="stat_chip__stat"><strong>26</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Lost</h3>
+        <p class="stat_chip__stat"><strong>5</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Drawn</h3>
+        <p class="stat_chip__stat"><strong>7</strong></p>
+      </div>
+    </div>
+        <div class="stat_chip_grid">
+            <div class="stat_chip">
+        <h3 class="stat_chip__title">Goals Scored</h3>
+        <p class="stat_chip__stat"><strong>71</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Goals Conceded</h3>
+        <p class="stat_chip__stat"><strong>27</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Over 1.5 Goals</h3>
+        <p class="stat_chip__stat"><strong>27</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Over 1.5 Goals</h3>
+        <p class="stat_chip__stat"><strong>71.1%</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Over 2.5 Goals</h3>
+        <p class="stat_chip__stat"><strong>20</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Over 2.5 Goals</h3>
+        <p class="stat_chip__stat"><strong>52.6%</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Over 3.5 Goals</h3>
+        <p class="stat_chip__stat"><strong>9</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Over 3.5 Goals</h3>
+        <p class="stat_chip__stat"><strong>23.7%</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Both Teams to Score</h3>
+        <p class="stat_chip__stat"><strong>18</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Both Teams to Score</h3>
+        <p class="stat_chip__stat"><strong>47.4%</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots</h3>
+        <p class="stat_chip__stat"><strong>553</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots per game</h3>
+        <p class="stat_chip__stat"><strong>14.6</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots on Target</h3>
+        <p class="stat_chip__stat"><strong>187</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots on Target per game</h3>
+        <p class="stat_chip__stat"><strong>4.9</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Corners</h3>
+        <p class="stat_chip__stat"><strong>216</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Corners Against</h3>
+        <p class="stat_chip__stat"><strong>128</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Yellow Cards</h3>
+        <p class="stat_chip__stat"><strong>51</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Red Cards</h3>
+        <p class="stat_chip__stat"><strong>0</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Fouls</h3>
+        <p class="stat_chip__stat"><strong>391</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Fouls per Game</h3>
+        <p class="stat_chip__stat"><strong>10.3</strong></p>
+      </div>
+          </div>
+  </div>
+</div>
+<div class="stat_table_caption">
+  <div class="powered_by">
+    <p>Powered by</p>
+    <img src="/assets/opta.png" alt="Opta" loading="lazy">
+  </div>
+</div>

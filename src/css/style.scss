@@ -73,6 +73,9 @@
 @use "component/acca";
 @use "component/market_movers";
 @use "component/author_prediction";
+@use "component/stat_link";
+@use "component/data_viz";
+@use "component/player_vs_player";
 
 
 .theme_toggle {
@@ -104,11 +107,6 @@
 
 .doc_header {
   background-color: var(--brand-betfair-background-default, #FFB80C);
-  padding: 0.5rem 0.75rem;
-  height: 3.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   z-index: 9999999;
   top: 0;
@@ -116,8 +114,28 @@
   color: var(--agnostic-neutrals-text-default);
 }
 
+.doc_header__wrapper {
+  padding: 0.5rem 0.75rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 37.5rem;
+  margin-inline: auto;
+  
+  @include include_media.media('>920px') {
+    max-width: 60rem;
+    padding-inline: 4rem;
+  }
+
+}
+
 .doc_header__menu_toggle {
   cursor: pointer;
+
+  svg {
+    fill: var(--agnostic-neutrals-text-default);
+  }
 
   @include include_media.media('>920px') {
     display: none;
@@ -142,7 +160,7 @@
     width: 1rem;
     height: 0.125rem;
     border-radius: 2px;
-    background-color: var(--neutrals-text-default);
+    background-color: var(--agnostic-neutrals-text-default);
   }
 
   &:after {

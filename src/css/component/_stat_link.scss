@@ -1,0 +1,73 @@
+@use "mixins/type_scale";
+
+.stat_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  text-align: center;
+  padding: .5rem;
+  border-radius: 4px;
+  @include type_scale.typography-h156;
+
+  &:hover {
+    background-color: var(--neutrals-background-elevation1);
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--neutrals-border-elevation4);
+    outline-offset: -2px;
+  }
+
+  .kit {
+    display: block;
+    margin-inline: auto;
+    margin-block-end: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--neutrals-text-default, #18181A);
+    background: linear-gradient(90deg, var(--kit-colour-1) 0%, var(--kit-colour-1) 50%, var(--kit-colour-2) 50%, var(--kit-colour-2) 92%);
+  }
+
+  .kit--blank {
+    opacity: 0.3;
+    border-style: dashed;
+  }
+
+}
+
+.stat_link__percent {
+  display: block;
+  margin: .15em 0 .4em 0;
+  @include type_scale.typography-h680;
+}
+
+.stat_link__percent_bar {
+  height: 5px;
+  background: var(--neutrals-background-elevation4);
+  border-radius: 5px;
+  overflow: clip;
+
+  span {
+    display: block;
+    height: 100%;
+    background: var(--brand-betfair-background-default);
+  }
+
+}
+
+.swimlane:has(.stat_link) {
+  gap: calc(0.75rem + 1px);
+
+  & > .stat_link:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(-0.375rem - 1px);
+    width: 1px;
+    background: var(--neutrals-border-elevation2);
+  }
+
+}

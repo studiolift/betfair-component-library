@@ -1,0 +1,22 @@
+---
+title: Table of Contents
+date: 2024-01-19
+tags: shortcodes
+---
+
+<p>A shortcode for the entry body to display a table of contents. It will automatically generate a list from any h2 headings that are present in the main content.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[table_of_contents]
+{% endhighlight %}
+
+<h2>Output example</h2>
+
+<div class="article_summary">
+  <ul data-table-of-contents="">
+    <li><a href="#">Heading level 2 in the main content</a></li>
+    <li><a href="#">Another heading level 2</a></li>
+    <li><a href="#">A final heading level 2</a></li>
+  </ul>
+</div>

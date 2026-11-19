@@ -1,0 +1,128 @@
+---
+title: Race Card
+date: 2024-01-08
+tags: shortcodes
+---
+
+<p>A shortcode to display a set of runners for a particular race. The card can be customised to show if the race is still upcoming, in progress, or has completed.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[raceCard race="19-november-2026/lingfield-park/30/1" title="Optional Title" runners="3"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>race</td>
+      <td>The title of the multiple bet</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>The title of the race card. If not provided, the race title will be used.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>runners</td>
+      <td>The number of runners to display</td>
+      <td>No, defaults to 5</td>
+    </tr>
+    <tr>
+      <td>view</td>
+      <td>By default it shows racecard before race, and results afterwards. Options for 'upcoming' or 'result' only can be set.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>odds</td>
+      <td>By default it will show odds for both Sportsbook and Exchange. Options for 'sportsbook' or 'exchange' only can be set.</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output examples</h2>
+
+<h3>Upcoming Race</h3>
+
+<div class="card">
+  <p>
+    <strong>All-Weather Championship Is Back Novice Stakes (4)</strong><br>
+    11:18, Thursday 19 Nov 2026
+  </p>
+    <div class="market_card">
+    <div class="market_card__description">
+      <p>Opal Rose</p>
+    </div>
+            <div data-platform="exc" class="market_card__price">
+      <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'EXC 1.1', 'event_context': 'clicked', 'module': 'exc race card button', 'position': '1', 'destination_url': 'https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444'});">
+        <span class="price_button__label">EXC</span>
+        1.1
+      </a>
+    </div>
+      </div>
+    <div class="market_card">
+    <div class="market_card__description">
+      <p>Educating Sheila</p>
+    </div>
+            <div data-platform="exc" class="market_card__price">
+      <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'EXC 1.1', 'event_context': 'clicked', 'module': 'exc race card button', 'position': '2', 'destination_url': 'https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444'});">
+        <span class="price_button__label">EXC</span>
+        1.1
+      </a>
+    </div>
+      </div>
+    <div class="market_card">
+    <div class="market_card__description">
+      <p>Zeriya</p>
+    </div>
+            <div data-platform="exc" class="market_card__price">
+      <a class="price_button price_button--exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'EXC 1.1', 'event_context': 'clicked', 'module': 'exc race card button', 'position': '3', 'destination_url': 'https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444'});">
+        <span class="price_button__label">EXC</span>
+        1.1
+      </a>
+    </div>
+      </div>
+        <a data-platform="exc" href="https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444" class="card__cta" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'View market (EXC)', 'event_context': 'clicked', 'module': 'exc market button', 'destination_url': 'https://www.betfair.com/exchange/plus/horse-racing/market/1.265702444'});">
+    View market (EXC)
+  </a>
+  </div>
+
+<h3>Race Result</h3>
+
+<div class="card">
+  <p>
+    <strong>All-Weather Championship Is Back Novice Stakes (4)</strong><br>
+    11:18, Thursday 19 Nov 2026
+  </p>
+  <div class="fast_result">
+    <ol class="fast_result__positions">
+            <li>
+        <span>1</span>
+        <span>2</span>
+        <span>Nascondino (Ire)</span>
+        <span>4/6</span>
+      </li>
+            <li>
+        <span>2</span>
+        <span>1</span>
+        <span>Silk Braid (Ire)</span>
+        <span>2/1</span>
+      </li>
+            <li>
+        <span>3</span>
+        <span>9</span>
+        <span>Zeriya</span>
+        <span>6/1</span>
+      </li>
+          </ol>
+  </div>
+  <a class="card__cta" href="/horse-racing/results/19-november-2026/lingfield-park/30/1/">Full result</a>
+</div>

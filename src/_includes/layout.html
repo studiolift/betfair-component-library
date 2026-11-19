@@ -20,12 +20,15 @@
   <script src="{{ '/scripts/show-more.js' | url }}"></script>
   <script src="{{ '/scripts/bottom-sheet.js' | url }}"></script>
   <script src="{{ '/scripts/platform-toggle.js' | url }}"></script>
+  <script src="{{ '/scripts/head_to_head_chart.js' | url }}"></script>
 </head>
 <body>
   <header class="doc_header">
-    <h1 class="typography-h380">Betfair Component Library</h1>
-    <div class="doc_header__menu_toggle" onclick="toggleNav()">
-      {% include 'inc/rebuild_2024/icons/menu.svg' %}
+    <div class="doc_header__wrapper">
+      <h1 class="typography-h380">Betfair Component Library</h1>
+      <div class="doc_header__menu_toggle" onclick="toggleNav()">
+        {% include 'inc/rebuild_2024/icons/menu.svg' %}
+      </div>
     </div>
   </header>
 
@@ -148,9 +151,28 @@
           </ul>
         </div>
       </div>
+      <div class="accordion {% if tags.last == 'shortcodes' %}accordion--show{% endif %}">
+        <header class="accordion__title" onclick="toggleAccordion(this)">
+          <h1>Shortcodes</h1>
+          {% include 'inc/rebuild_2024/icons/accordion.svg' %}
+        </header>
+        <div class="accordion__content">
+          <ul class="menu_list menu_list--ruled">
+          {% for component in collections.shortcodes %}
+            <li class="{% if title == component.data.title %}active{% endif %}">
+              <a href="{{ component.url }}">
+                {{ component.data.title }}
+                {% include 'inc/rebuild_2024/icons/arrow-right.svg' %}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
     </nav>
     <main class="doc_layout__main">
       <h1>{{ title }}</h1>
+      <hr>
       {{ content }}
       <div class="theme_toggle">
         <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
