@@ -1,0 +1,117 @@
+---
+title: Player Stats
+date: 2024-01-15
+tags: shortcodes
+---
+
+<p>A shortcode to display player statistics for a given player.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[playerStats player="2847" stats="goals|shots|shotsOnTarget|chancesCreated|passes|cards|fouls|foulsWon"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>player</td>
+      <td>The ID of the player for whom to display statistics.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>stats</td>
+      <td>A pipe-separated list of statistics to display.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output example</h2>
+
+<div class="stat_card">
+  <header class="stat_card__title">
+    <h2>Bruno Fernandes</h2>
+    <p>35 appearances for Man Utd this season</p>
+  </header>
+  <div class="stat_card__content">
+    <div class="stat_chip_grid">
+            <div class="stat_chip">
+        <h3 class="stat_chip__title">Goals</h3>
+        <p class="stat_chip__stat"><strong>9</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Assists</h3>
+        <p class="stat_chip__stat"><strong>21</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots</h3>
+        <p class="stat_chip__stat"><strong>85</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots per 90</h3>
+        <p class="stat_chip__stat"><strong>2.5</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots on Target</h3>
+        <p class="stat_chip__stat"><strong>24</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Shots on Target per 90</h3>
+        <p class="stat_chip__stat"><strong>0.7</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Chances Created</h3>
+        <p class="stat_chip__stat"><strong>136</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Chances Created per 90</h3>
+        <p class="stat_chip__stat"><strong>4</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Passes</h3>
+        <p class="stat_chip__stat"><strong>1994</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Passes per 90</h3>
+        <p class="stat_chip__stat"><strong>58.5</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Yellow Cards</h3>
+        <p class="stat_chip__stat"><strong>5</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Red Cards</h3>
+        <p class="stat_chip__stat"><strong>0</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Fouls</h3>
+        <p class="stat_chip__stat"><strong>25</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Fouls per 90</h3>
+        <p class="stat_chip__stat"><strong>0.7</strong></p>
+      </div>
+                  <div class="stat_chip">
+        <h3 class="stat_chip__title">Fouls Won</h3>
+        <p class="stat_chip__stat"><strong>35</strong></p>
+      </div>
+      <div class="stat_chip">
+        <h3 class="stat_chip__title">Fouls Won per 90</h3>
+        <p class="stat_chip__stat"><strong>1</strong></p>
+      </div>
+          </div>
+  </div>
+</div>
+<div class="stat_table_caption">
+  <div class="powered_by">
+    <p>Powered by</p>
+    <img src="/assets/opta.png" alt="Opta" loading="lazy">
+  </div>
+</div>

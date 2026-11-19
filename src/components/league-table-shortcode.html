@@ -1,0 +1,429 @@
+---
+title: League Table
+date: 2024-01-14
+tags: shortcodes
+---
+
+<p>A shortcode to display a league table for a given competition.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[leagueTable league="english premier league"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>league</td>
+      <td>The name of the league for which to display the table.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output example</h2>
+
+<div class="table_container">
+  <div class="search_form">
+    <input type="search" placeholder="Search Team">
+  </div>
+  <table class="league_table truncated_table sortable_table filterable_table" data-no-results-message="No results found">
+    <thead>
+      <tr>
+        <th class="filterable_column"><abbr title="Position"></abbr> Teams</th>
+        <th><abbr title="Played">P</abbr></th>
+        <th><abbr title="Won">W</abbr></th>
+        <th><abbr title="Drawn">D</abbr></th>
+        <th><abbr title="Lost">L</abbr></th>
+        <th><abbr title="Goal For">GF</abbr></th>
+        <th><abbr title="Goal Against">GA</abbr></th>
+        <th><abbr title="Points">PTS</abbr></th>
+        <th style="display: none;"><abbr title="Expected Goals For">xGF</abbr></th>
+        <th style="display: none;"><abbr title="Expected Goals Against">xGA</abbr></th>
+        <th style="display: none;"><abbr title="Expected Goals Difference">xGD</abbr></th>
+        <th style="display: none;"><abbr title="Expected League Position">EXP</abbr></th>
+        <th style="display: none;"><abbr title="Forecasted League Position">FCST</abbr></th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td>
+            <strong>1</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Arsenal</span>
+          </td>
+          <td>38</td>
+          <td>26</td>
+          <td>7</td>
+          <td>5</td>
+          <td>71</td>
+          <td>27</td>
+          <td>85</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>2</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #66CCFF;" class="team">Man City</span>
+          </td>
+          <td>38</td>
+          <td>23</td>
+          <td>9</td>
+          <td>6</td>
+          <td>77</td>
+          <td>35</td>
+          <td>78</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>3</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Man Utd</span>
+          </td>
+          <td>38</td>
+          <td>20</td>
+          <td>11</td>
+          <td>7</td>
+          <td>69</td>
+          <td>50</td>
+          <td>71</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>4</strong>
+            <span style="--kit-colour-1: #95BFE5; --kit-colour-2: #670E36;" class="team">Villa</span>
+          </td>
+          <td>38</td>
+          <td>19</td>
+          <td>8</td>
+          <td>11</td>
+          <td>56</td>
+          <td>49</td>
+          <td>65</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>5</strong>
+            <span style="--kit-colour-1: #FF0000; --kit-colour-2: #FF0000;" class="team">Liverpool</span>
+          </td>
+          <td>38</td>
+          <td>17</td>
+          <td>9</td>
+          <td>12</td>
+          <td>63</td>
+          <td>53</td>
+          <td>60</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>6</strong>
+            <span style="--kit-colour-1: #000000; --kit-colour-2: #FF0000;" class="team">Bournemouth</span>
+          </td>
+          <td>38</td>
+          <td>13</td>
+          <td>18</td>
+          <td>7</td>
+          <td>58</td>
+          <td>54</td>
+          <td>57</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>7</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Sunderland</span>
+          </td>
+          <td>38</td>
+          <td>14</td>
+          <td>12</td>
+          <td>12</td>
+          <td>42</td>
+          <td>48</td>
+          <td>54</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>8</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #0033CC;" class="team">Brighton</span>
+          </td>
+          <td>38</td>
+          <td>14</td>
+          <td>11</td>
+          <td>13</td>
+          <td>52</td>
+          <td>46</td>
+          <td>53</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>9</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Brentford</span>
+          </td>
+          <td>38</td>
+          <td>14</td>
+          <td>11</td>
+          <td>13</td>
+          <td>55</td>
+          <td>52</td>
+          <td>53</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>10</strong>
+            <span style="--kit-colour-1: #0033FF; --kit-colour-2: #0033FF;" class="team">Chelsea</span>
+          </td>
+          <td>38</td>
+          <td>14</td>
+          <td>10</td>
+          <td>14</td>
+          <td>58</td>
+          <td>52</td>
+          <td>52</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>11</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FFFFFF;" class="team">Fulham</span>
+          </td>
+          <td>38</td>
+          <td>15</td>
+          <td>7</td>
+          <td>16</td>
+          <td>47</td>
+          <td>51</td>
+          <td>52</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>12</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #000000;" class="team">Newcastle</span>
+          </td>
+          <td>38</td>
+          <td>14</td>
+          <td>7</td>
+          <td>17</td>
+          <td>53</td>
+          <td>55</td>
+          <td>49</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>13</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #0000CC;" class="team">Everton</span>
+          </td>
+          <td>38</td>
+          <td>13</td>
+          <td>10</td>
+          <td>15</td>
+          <td>47</td>
+          <td>50</td>
+          <td>49</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>14</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FFFFFF;" class="team">Leeds</span>
+          </td>
+          <td>38</td>
+          <td>11</td>
+          <td>14</td>
+          <td>13</td>
+          <td>49</td>
+          <td>56</td>
+          <td>47</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>15</strong>
+            <span style="--kit-colour-1: #FF0000; --kit-colour-2: #0033FF;" class="team">Palace</span>
+          </td>
+          <td>38</td>
+          <td>11</td>
+          <td>12</td>
+          <td>15</td>
+          <td>41</td>
+          <td>51</td>
+          <td>45</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>16</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FF0000;" class="team">Forest</span>
+          </td>
+          <td>38</td>
+          <td>11</td>
+          <td>11</td>
+          <td>16</td>
+          <td>48</td>
+          <td>51</td>
+          <td>44</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>17</strong>
+            <span style="--kit-colour-1: #132257; --kit-colour-2: #FFFFFF;" class="team">Spurs</span>
+          </td>
+          <td>38</td>
+          <td>10</td>
+          <td>11</td>
+          <td>17</td>
+          <td>48</td>
+          <td>57</td>
+          <td>41</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>18</strong>
+            <span style="--kit-colour-1: #990033; --kit-colour-2: #990033;" class="team">West Ham</span>
+          </td>
+          <td>38</td>
+          <td>10</td>
+          <td>9</td>
+          <td>19</td>
+          <td>46</td>
+          <td>65</td>
+          <td>39</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>19</strong>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #990033;" class="team">Burnley</span>
+          </td>
+          <td>38</td>
+          <td>4</td>
+          <td>10</td>
+          <td>24</td>
+          <td>38</td>
+          <td>75</td>
+          <td>22</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+              <tr>
+          <td>
+            <strong>20</strong>
+            <span style="--kit-colour-1: #000000; --kit-colour-2: #FFCC00;" class="team">Wolves</span>
+          </td>
+          <td>38</td>
+          <td>3</td>
+          <td>11</td>
+          <td>24</td>
+          <td>27</td>
+          <td>68</td>
+          <td>20</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;">0</td>
+          <td style="display: none;"></td>
+          <td style="display: none;"></td>
+        </tr>
+          </tbody>
+  </table>
+  <div class="stat_table_caption">
+    <div class="toggle_table">
+      <span class="toggle_table__more">Show more</span>
+      <span class="toggle_table__less">Show less</span>
+    </div>
+      <div class="powered_by">
+    <p>Powered by</p>
+    <img src="/assets/opta.png" alt="Opta" loading="lazy">
+  </div>
+
+  </div>
+</div>

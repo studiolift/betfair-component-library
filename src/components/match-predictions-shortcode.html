@@ -1,0 +1,107 @@
+---
+title: Match Predictions
+date: 2024-01-11
+tags: shortcodes
+---
+
+<p>A shortcode to display a match prediction card with fixture information, form guides, and odds.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[matchPredictions url="https://betting.betfair.com/football/predictions/english-football-league-league-one/barnsley-vs-sheffield-wednesday/21mfhrhzm4c87r2vzqwn0dedw/" showOdds="true"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>The URL of the match predictions page.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>showOdds</td>
+      <td>True/False to determine whether to display odds for the match.</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output example</h2>
+<div class="stat_card">
+    <header class="stat_card__title">
+      <h2>Match Preview</h2>
+    </header>
+    <div class="stat_card__content">
+      <time datetime="2026-11-20T21:00:00" class="match_preview_date">20 Nov 2026 at 21:00</time>
+      <div class="match_preview">
+      <span class="match_preview__home_team">
+      <span style="--kit-colour-1: #ef2430; --kit-colour-2: #ef2430;" class="kit"></span>
+      Barnsley
+      </span>
+      <span class="match_preview__away_versus">
+      vs
+      </span>
+      <span class="match_preview__away_team">
+      <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #0033FF;" class="kit"></span>
+      Sheff Wed
+      </span>
+      </div>
+
+      <ul class="button_group button_group--fill">
+      <li>
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/betting/football/english-football-league-league-one/barnsley-vs-sheff-wed/e-36322206" target="_blank" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Barnsley 15/8', 'event_context': 'clicked', 'module': 'match predictions widget', 'position': '1', 'destination_url': 'https://www.betfair.com/betting/football/english-football-league-league-one/barnsley-vs-sheff-wed/e-36322206'});">
+      <span class="price_button__label">Barnsley</span>
+      15/8
+      </a>
+      </li>
+      <li>
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/betting/football/english-football-league-league-one/barnsley-vs-sheff-wed/e-36322206" target="_blank" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Draw 14/5', 'event_context': 'clicked', 'module': 'match predictions widget', 'position': '2', 'destination_url': 'https://www.betfair.com/betting/football/english-football-league-league-one/barnsley-vs-sheff-wed/e-36322206'});">
+      <span class="price_button__label">Draw</span>
+      14/5
+      </a>
+      </li>
+      <li>
+      <a class="price_button price_button--sbk" href="https://www.betfair.com/betting/football/english-football-league-league-one/barnsley-vs-sheff-wed/e-36322206" target="_blank" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Sheff Wed 11/10', 'event_context': 'clicked', 'module': 'match predictions widget', 'position': '3', 'destination_url': 'https://www.betfair.com/betting/football/english-football-league-league-one/barnsley-vs-sheff-wed/e-36322206'});">
+      <span class="price_button__label">Sheff Wed</span>
+      11/10
+      </a>
+      </li>
+      </ul>
+        
+    <div class="team_form_columns">
+      <div class="team_form team_form--home">
+        <h5 class="team_form__teamname">Barnsley</h5>
+        <ol class="team_form__guide">
+          <li class="loss">L</li>
+          <li class="draw">D</li>
+          <li class="loss">L</li>
+          <li class="loss">L</li>
+          <li class="loss">L</li>
+          <li class="loss">L</li>
+        </ol>
+      </div>
+      <div class="team_form team_form--away">
+        <h5 class="team_form__teamname">Sheff Wed</h5>
+        <ol class="team_form__guide">
+          <li class="win">W</li>
+          <li class="draw">D</li>
+          <li class="draw">D</li>
+          <li class="loss">L</li>
+          <li class="loss">L</li>
+          <li class="win">W</li>
+        </ol>
+      </div>
+    </div>
+    <a class="primary_button" href="https://betting.betfair.com/football/predictions/english-football-league-league-one/barnsley-vs-sheffield-wednesday/21mfhrhzm4c87r2vzqwn0dedw/" onclick="dataLayer.push({'event': 'navigation', 'element_text': 'Full stats', 'event_context': 'clicked', 'module': 'match prediction', 'destination_url': 'https://betting.betfair.com/football/predictions/english-football-league-league-one/barnsley-vs-sheffield-wednesday/21mfhrhzm4c87r2vzqwn0dedw/'});">
+      Full stats
+      <span>Powered by Opta</span>
+    </a>
+  </div>
+</div>

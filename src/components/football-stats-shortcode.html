@@ -1,0 +1,104 @@
+---
+title: Football Stats Tables
+date: 2024-01-18
+tags: shortcodes
+---
+
+<p>A shortcode to display a table of football statistics.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[goalscorers league="overall" limit="3"]
+[assists league="overall" limit="3"]
+[chancesCreated league="overall" limit="3"]
+[passes league="overall" limit="3"]
+[passes league="overall" limit="3"]
+[playerShots league="overall" limit="3"]
+[teamShots league="overall" limit="3"]
+[playerShotsOnTarget league="overall" limit="3"]
+[teamShotsOnTarget league="overall" limit="3"]
+[overUnder league="overall" limit="3" total="1.5"]
+[bothTeamsToScore league="overall" limit="3"]
+[corners league="overall" limit="3"]
+[playerCards league="overall" limit="3"]
+[playerYellowCards league="overall" limit="3"]
+[teamRedCards league="overall" limit="3"]
+[playerFouls league="overall" limit="3"]
+[playerFoulsWon league="overall" limit="3"]
+[teamFouls league="overall" limit="3"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>league</td>
+      <td>The league for which to display statistics.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>limit</td>
+      <td>The maximum number of results to display.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>total</td>
+      <td>The total value for over/under statistics.</td>
+      <td>Yes, only for over/under statistics</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Output example</h2>
+
+<div class="table_container">
+  <div class="search_form">
+    <input type="search" placeholder="Search Player or Team">
+  </div>
+  <table class="fixed_first_column stat_table dynamic_stat_table" data-api="/football/stats_api/" data-type="player_goals" data-league="" data-default-orderby="goals" data-default-order="DESC" data-num-rows="3" data-no-results-message="No results found">
+    <thead>
+      <tr>
+        <th data-col="player" data-omit-link="" data-sortable="" data-filterable="">Player</th>
+        <th data-col="team" data-omit-link="" data-sortable="" data-filterable="">Team</th>
+        <th data-col="league" data-omit-link="" data-sortable="">League</th>        <th data-col="goals" data-sortable="" class="th_sort_desc">Goals Scored</th>
+      </tr>
+    </thead>
+    <tbody>
+              <tr>
+          <td>Harry Kane</td>
+          <td>
+            <span style="--kit-colour-1: #FF0000; --kit-colour-2: #FF0000;" class="team">FC Bayern</span>
+          </td>
+          <td>German Bundesliga</td>          <td>36</td>
+        </tr>
+              <tr>
+          <td>Erling Haaland</td>
+          <td>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #66CCFF;" class="team">Man City</span>
+          </td>
+          <td>English Premier League</td>          <td>27</td>
+        </tr>
+              <tr>
+          <td>Kylian Mbappé</td>
+          <td>
+            <span style="--kit-colour-1: #FFFFFF; --kit-colour-2: #FFFFFF;" class="team">Real Madrid</span>
+          </td>
+          <td>Spanish La Liga</td>          <td>25</td>
+        </tr>
+          </tbody>
+  </table>
+</div>
+
+<div class="stat_table_caption">
+  <a class="primary_button" href="/football/stats/goalscorer/">Full stats</a>
+  <div class="powered_by">
+    <p>Powered by</p>
+    <img src="/assets/opta.png" alt="Opta" loading="lazy">
+  </div>
+</div>

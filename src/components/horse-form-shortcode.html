@@ -1,0 +1,86 @@
+---
+title: Horse form
+date: 2024-01-04
+tags: shortcodes
+---
+
+<p>A shortcode to display a form table for a particular horse.</p>
+
+<h2>Shortcode example</h2>
+{% highlight html %}
+[horseForm url="https://betting.betfair.com/horse-racing/horse/palladas/000000634561/" title="Title"]
+{% endhighlight %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Usage</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>The URL of the horse to display</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>The title to display above the horse</td>
+      <td>Yes</td>
+  </tbody>
+</table>
+
+<h2>Output examples</h2>
+
+<div class="card">
+  <h3 class="typography-h380">Title</h3>
+  <div class="table_container">
+      <table class="runner_form_table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Course/Class</th>
+          <th>Pos</th>
+          <th>Type</th>
+          <th>Dist</th>
+          <th>Going</th>
+          <th>Jockey</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>23/10/26</td>
+          <td>Doncaster </td>
+          <td>4/9</td>
+          <td>Flat</td>
+          <td>7f 6y</td>
+          <td>Heavy</td>
+          <td>William Buick</td>
+        </tr>
+        <tr>
+          <td>16/08/26</td>
+          <td>Southwell </td>
+          <td>1/10</td>
+          <td>Flat</td>
+          <td>1m 13y</td>
+          <td>Std</td>
+          <td>Billy Loughnane</td>
+        </tr>
+        <tr>
+          <td>28/01/26</td>
+          <td>Kempton Park </td>
+          <td>1/12</td>
+          <td>Flat</td>
+          <td>1m</td>
+          <td>Std</td>
+          <td>Connor Planas</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  <ul class="button_group">
+    <li><a class="primary_button" href="https://betting.betfair.com/horse-racing/horse/palladas/000000634561/">More detail</a></li>
+  </ul>
+</div>

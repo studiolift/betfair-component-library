@@ -1,0 +1,168 @@
+@use "mixins/type_scale";
+@use "mixins/include_media";
+
+.data_viz {
+  --data-viz-bg: var(--brand-betfair-background-default);
+  --home-team-colour: var(--signposting-indicators-rich-content-icon-home-team);
+  --draw-colour: #ffffff;
+  --away-team-colour: var(--signposting-indicators-rich-content-icon-away-team);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background-color: var(--data-viz-bg);
+  border-radius: 4px;
+  margin-block-start: 1rem;
+  width: 100%;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  .button_group {
+    justify-content: center;
+  }
+
+  .secondary_button {
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+}
+
+#predicts_entry .data_viz {
+  margin: 0;
+}
+
+.data_viz__chart {
+
+  .chart {
+    max-width: 70%;
+    margin-inline: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 2/1;
+  }
+
+}
+
+.data_viz__header {
+  text-align: center;
+  color: var(--agnostic-neutrals-text-default);
+
+  p {
+    margin-block-start: 0.25rem;
+  }
+
+}
+
+.data_viz__footer {
+  text-align: center;
+  color: var(--agnostic-neutrals-text-default);
+  
+  figure {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  svg {
+    fill: var(--agnostic-neutrals-text-default);
+  }
+  
+  small {
+    display: block;
+    margin-block-start: 0.5rem;
+    font-size: 0.675rem;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--agnostic-neutrals-text-default);
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+}
+
+.data_viz__legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+    gap: 0.25rem;
+    color: var(--agnostic-neutrals-text-default);
+
+    @include include_media.media('>tablet') {
+      gap: 0.5rem;
+    }
+
+  }
+
+  li:nth-child(1) {
+    order: 1;
+
+    strong {
+      background-color: var(--home-team-colour);
+    }
+
+  }
+
+  li:nth-child(2) {
+    order: 3;
+
+    strong {
+      background-color: var(--away-team-colour);
+    }
+    
+  }
+  
+  li:nth-child(3) {
+    order: 2;
+    
+    strong {
+      background-color: var(--draw-colour);
+      color: var(--agnostic-neutrals-text-default);
+    }
+
+  }
+
+  strong {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0.25rem;
+    font-weight: 700;
+    color: var(--agnostic-neutrals-text-alternative);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--agnostic-neutrals-text-default);
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--agnostic-neutrals-text-alternative);
+  }
+
+}
