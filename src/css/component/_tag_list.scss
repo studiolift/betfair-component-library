@@ -1,0 +1,45 @@
+@use "mixins/type_scale";
+
+.tag_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  margin-block-start: 0.75rem;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    background-color: var(--neutrals-background-elevation2, #fcfcfd);
+    border: 1px solid var(--neutrals-background-elevation5, #d0d0d2);
+    color: var(--neutrals-text-default, #18181A);
+    @include type_scale.typography-h120;
+    text-decoration: none;
+    transition: ease 0.25s all;
+
+    &:hover {
+      background-color: var(--neutrals-background-elevation3, #eaeaeb);
+      color: var(--neutrals-text-default, #18181A);
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--neutrals-background-elevation6, #b4b4b8);
+      color: currentColor;
+    }
+
+  }
+
+  a.active {
+    background-color: var(--brand-betfair-background-default, #ffb80c);
+    border-color: var(--brand-betfair-background-default, #ffb80c);
+    color: var(--agnostic-neutrals-text-default, #18181a);
+  }
+
+}
